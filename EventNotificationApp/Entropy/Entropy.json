@@ -27,13 +27,14 @@
     "Label7": 19,
     "Label8": 21,
     "Rectangle1": 12,
+    "Screen1": 30,
     "Splash Screen": 24,
     "Timer1": 27,
     "title": 20
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/04/2023 14:21:26",
+  "HeaderLastSavedDateTimeUTC": "01/04/2023 16:01:54",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "c2594bea-0e56-479d-a55c-17cdfcbf2255": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/790a6f34bc9b4f3fa1c477f566032e55\""
@@ -95,6 +96,7 @@
     "Label7": {},
     "Label8": {},
     "Rectangle1": {},
+    "Screen1": {},
     "Splash Screen": {},
     "Timer1": {},
     "title": {}
@@ -126,6 +128,7 @@
     "Label7": 19,
     "Label8": 21,
     "Rectangle1": 13,
+    "Screen1": 0,
     "Splash Screen": 0,
     "Timer1": 2,
     "title": 20
