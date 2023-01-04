@@ -1,0 +1,94 @@
+"'Add New Event Screen' As screen":
+
+    Container3 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =146
+        Width: =Parent.Width
+        ZIndex: =2
+
+        Label2 As label:
+            Align: =Align.Center
+            DisplayMode: =DisplayMode.View
+            FontWeight: =FontWeight.Bold
+            Height: =85
+            Size: =26
+            Text: ="Astral Computers Nepal Pvt. Ltd."
+            Width: =640
+            Y: =32
+            ZIndex: =1
+
+    Container4 As groupContainer.manualLayoutContainer:
+        Height: =990
+        Width: =Parent.Width
+        Y: =146
+        ZIndex: =3
+
+        Label7 As label:
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =
+            Size: =21
+            Text: ="Event Title"
+            Width: =560
+            X: =16
+            Y: =198
+            ZIndex: =1
+
+        Label8 As label:
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =
+            Size: =21
+            Text: ="Event Description"
+            Width: =560
+            X: =16
+            Y: =301
+            ZIndex: =2
+
+        title As text:
+            Default: =""
+            Height: =45
+            HintText: ="Enter Event Title"
+            OnSelect: =
+            Size: =18
+            Width: =600
+            X: =16
+            Y: =246
+            ZIndex: =3
+
+        desc As text:
+            Clear: =true
+            Default: =""
+            Height: =114
+            HintText: ="Enter Description"
+            Mode: =TextMode.MultiLine
+            OnSelect: =
+            Size: =16
+            Width: =600
+            X: =16
+            Y: =349
+            ZIndex: =4
+
+        Button3 As button:
+            FontWeight: =FontWeight.Bold
+            Height: =45
+            OnSelect: |-
+                =true;
+                Collect(EventInfo,{Date:DatePicker2,Title:title,EventDescription:desc.Text});
+                Navigate('Home Screen',None)
+            PressedBorderColor: =ColorValue("Green")
+            PressedColor: =ColorValue("White")
+            PressedFill: =ColorValue("Green")
+            Size: =20
+            Text: ="POST"
+            Width: =155
+            X: =238
+            Y: =787
+            ZIndex: =5
+
+        DatePicker2 As datepicker:
+            Height: =62
+            Size: =24
+            Width: =600
+            X: =16
+            Y: =80
+            ZIndex: =6
+

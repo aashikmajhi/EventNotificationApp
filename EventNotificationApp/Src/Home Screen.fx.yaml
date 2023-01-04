@@ -1,0 +1,85 @@
+"'Home Screen' As screen":
+
+    Container1 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =146
+        Width: =Parent.Width
+        ZIndex: =2
+
+        Label1 As label:
+            Align: =Align.Center
+            DisplayMode: =DisplayMode.View
+            FontWeight: =FontWeight.Bold
+            Height: =85
+            Size: =26
+            Text: ="Astral Computers Nepal Pvt. Ltd."
+            Width: =640
+            Y: =32
+            ZIndex: =1
+
+    Container2 As groupContainer.manualLayoutContainer:
+        Height: =990
+        Width: =Parent.Width
+        Y: =146
+        ZIndex: =3
+
+        Gallery1 As gallery.galleryVertical:
+            Height: =990
+            Items: =EventInfo
+            Layout: =Layout.Vertical
+            ShowScrollbar: =false
+            TemplateSize: =305
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Label3 As label:
+                Color: =RGBA(56, 96, 178, 1)
+                Fill: =RGBA(67, 202, 232, 0.21)
+                FontWeight: =FontWeight.Bold
+                Height: =57
+                OnSelect: =Select(Parent)
+                Size: =21
+                Text: =ThisItem.Title
+                Width: =585
+                X: =22
+                Y: =48
+                ZIndex: =1
+
+            Label4 As label:
+                Fill: =RGBA(232, 244, 217, 0.25)
+                Height: =200
+                OnSelect: =Select(Parent)
+                Overflow: =Overflow.Scroll
+                Size: =18
+                Text: =ThisItem.EventDescription
+                Width: =585
+                X: =22
+                Y: =105
+                ZIndex: =2
+
+            Label15 As label:
+                Fill: =RGBA(253, 222, 207, 0.29)
+                Height: =45
+                OnSelect: =Select(Parent)
+                Size: =21
+                Text: ="Date" & ThisItem.Date.SelectedDate
+                Width: =585
+                X: =22
+                ZIndex: =3
+
+            Rectangle1 As rectangle:
+                Height: =2
+                OnSelect: =Select(Parent)
+                Width: =630
+                Y: =303
+                ZIndex: =4
+
+        Icon1 As icon.Add:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(56, 96, 178, 1)
+            Icon: =Icon.Add
+            OnSelect: =true; Navigate('Add New Event Screen')
+            X: =536
+            Y: =896
+            ZIndex: =2
+

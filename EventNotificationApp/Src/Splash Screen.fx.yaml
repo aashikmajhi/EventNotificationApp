@@ -1,0 +1,46 @@
+"'Splash Screen' As screen":
+
+    Container5 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =Parent.Height
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Timer1 As timer:
+            AutoPause: =false
+            AutoStart: =true
+            Duration: =3000
+            Height: =70
+            OnTimerEnd: =Navigate('Home Screen',None)
+            Visible: =false
+            Width: =280
+            X: =182
+            Y: =278
+            ZIndex: =1
+
+        Label13 As label:
+            Align: =Align.Center
+            Color: =RGBA(39, 67, 125, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =359
+            Size: =50
+            Text: ="Astral Computers Nepal Pvt. Ltd."
+            Width: =597
+            X: =23
+            Y: =450
+            ZIndex: =2
+
+        Image5 As image:
+            Height: =320
+            Image: ='icons8-push-notifications-100'
+            Width: =320
+            X: =162
+            Y: =200
+            ZIndex: =3
+
+        Image6 As image:
+            Image: ='icons8-square-spinner'
+            X: =272
+            Y: =774
+            ZIndex: =4
+

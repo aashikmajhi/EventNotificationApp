@@ -1,0 +1,30 @@
+{
+  "c2594bea-0e56-479d-a55c-17cdfcbf2255": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/gateway/greyhound/3000.150.11/1.0.1613.3116/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://astralnepal.sharepoint.com/sites/NatRuleNITC": {
+        "dataSources": {
+          "Security Control": {
+            "tableName": "368e49d4-d7d2-4605-be24-158eb112ea23"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Security Control"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "c2594bea-0e56-479d-a55c-17cdfcbf2255"
+  }
+}
