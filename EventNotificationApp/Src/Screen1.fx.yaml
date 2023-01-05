@@ -1,2 +1,8 @@
 Screen1 As screen:
 
+    Camera1 As camera:
+        Camera: =0
+        X: =100
+        Y: =220
+        ZIndex: =1
+
