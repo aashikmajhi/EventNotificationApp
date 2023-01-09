@@ -73,6 +73,9 @@
             OnSelect: |-
                 =true;
                 Collect(EventInfo,{Date:DatePicker2,Title:title,EventDescription:desc.Text});
+                Reset(DatePicker2);
+                Reset(title);
+                Reset(desc);
                 Navigate('Home Screen',None)
             PressedBorderColor: =ColorValue("Green")
             PressedColor: =ColorValue("White")

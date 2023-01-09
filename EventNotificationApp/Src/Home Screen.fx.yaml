@@ -28,7 +28,7 @@
             Items: =EventInfo
             Layout: =Layout.Vertical
             ShowScrollbar: =false
-            TemplateSize: =305
+            TemplateSize: =250
             Width: =Parent.Width
             ZIndex: =1
 
@@ -36,13 +36,12 @@
                 Color: =RGBA(56, 96, 178, 1)
                 Fill: =RGBA(67, 202, 232, 0.21)
                 FontWeight: =FontWeight.Bold
-                Height: =57
+                Height: =47
                 OnSelect: =Select(Parent)
                 Size: =21
                 Text: =ThisItem.Title
-                Width: =585
-                X: =22
-                Y: =48
+                Width: =392
+                X: =238
                 ZIndex: =1
 
             Label4 As label:
@@ -54,7 +53,7 @@
                 Text: =ThisItem.EventDescription
                 Width: =585
                 X: =22
-                Y: =105
+                Y: =47
                 ZIndex: =2
 
             Label15 As label:
@@ -63,7 +62,7 @@
                 OnSelect: =Select(Parent)
                 Size: =21
                 Text: ="Date" & ThisItem.Date.SelectedDate
-                Width: =585
+                Width: =230
                 X: =22
                 ZIndex: =3
 
@@ -71,7 +70,7 @@
                 Height: =2
                 OnSelect: =Select(Parent)
                 Width: =630
-                Y: =303
+                Y: =248
                 ZIndex: =4
 
         Icon1 As icon.Add:
