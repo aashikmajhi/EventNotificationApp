@@ -115,7 +115,6 @@
   "ScreenOrder": [
     "Splash Screen",
     "Home Screen",
-    "Add New Event Screen",
-    "Screen1"
+    "Add New Event Screen"
   ]
 }
