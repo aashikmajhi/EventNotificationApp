@@ -13,5 +13,37 @@ App As appinfo:
                     Admin.Email = varUser.Email
                 )
             )
-        ) || Set( isUserAdminSPList,Email="naresh.dhami@astral.com.np" )
+        ) || Set( isUserAdminSPList,Email="naresh.dhami@astral.com.np" );
+        
+        ClearCollect(
+            EventInfo, 
+                    {
+                        type:"Notice", 
+                        icon:'icons8-notice-58'
+                    }
+                    ,
+                    {
+                        type:"Event", 
+                        icon:'icons8-event-accepted-tentatively-100'
+                    }
+                        ,
+                    {
+                        type:"Celebration", 
+                        icon: 'icons8-confetti-50'
+                    }
+                        ,
+                    {
+                        type:"Holiday", 
+                        icon:'icons8-leave-48'
+                    }
+                        ,
+                    {
+                        type:"Information", 
+                        icon:'icons8-info-78'
+                    },
+                    {
+                        type:"Employee Involement", 
+                        icon:'icons8-participation-64'
+                    }
+            )
 

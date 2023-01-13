@@ -1,12 +1,12 @@
 "'Home Screen' As screen":
 
-    Container1 As groupContainer.manualLayoutContainer:
+    Container1_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(241, 244, 249, 1)
         Height: =146
         Width: =Parent.Width
         ZIndex: =2
 
-        Label1 As label:
+        Label1_1 As label:
             Align: =Align.Center
             DisplayMode: =DisplayMode.View
             FontWeight: =FontWeight.Bold
@@ -17,22 +17,21 @@
             Y: =32
             ZIndex: =1
 
-    Container2 As groupContainer.manualLayoutContainer:
+    Container2_1 As groupContainer.manualLayoutContainer:
         Height: =990
         Width: =Parent.Width
         Y: =146
         ZIndex: =3
 
-        Gallery1 As gallery.galleryVertical:
+        Gallery1_1 As gallery.galleryVertical:
             Height: =990
-            Items: =EventInfo
+            Items: =Sort('Event and Notice','Event Date',Descending)
             Layout: =Layout.Vertical
-            ShowScrollbar: =false
-            TemplateSize: =250
+            TemplateSize: =231
             Width: =Parent.Width
             ZIndex: =1
 
-            Label3 As label:
+            Label3_1 As label:
                 Color: =RGBA(56, 96, 178, 1)
                 Fill: =RGBA(67, 202, 232, 0.21)
                 FontWeight: =FontWeight.Bold
@@ -40,40 +39,60 @@
                 OnSelect: =Select(Parent)
                 Size: =21
                 Text: =ThisItem.Title
-                Width: =392
-                X: =238
+                Width: =630
+                Y: =47
                 ZIndex: =1
 
-            Label4 As label:
+            Label4_1 As label:
+                AutoHeight: =true
+                DisplayMode: =DisplayMode.View
                 Fill: =RGBA(232, 244, 217, 0.25)
-                Height: =200
+                Height: =186
                 OnSelect: =Select(Parent)
                 Overflow: =Overflow.Scroll
                 Size: =18
-                Text: =ThisItem.EventDescription
-                Width: =585
-                X: =22
-                Y: =47
+                Text: =ThisItem.'Event Description'
+                Width: =630
+                Y: =94
                 ZIndex: =2
 
-            Label15 As label:
+            Label15_1 As label:
                 Fill: =RGBA(253, 222, 207, 0.29)
                 Height: =45
                 OnSelect: =Select(Parent)
                 Size: =21
-                Text: ="Date" & ThisItem.Date.SelectedDate
+                Text: ="Date " & ThisItem.'Event Date'
                 Width: =230
-                X: =22
+                Y: =2
                 ZIndex: =3
 
-            Rectangle1 As rectangle:
+            Rectangle1_1 As rectangle:
                 Height: =2
                 OnSelect: =Select(Parent)
                 Width: =630
-                Y: =248
+                Y: =229
                 ZIndex: =4
 
-        Icon1 As icon.Add:
+            Label5 As label:
+                Height: =45
+                OnSelect: =Select(Parent)
+                Size: =21
+                Text: =ThisItem.'Event Types'.Value
+                Width: =332
+                X: =230
+                Y: =2
+                ZIndex: =5
+
+            Image1 As image:
+                Height: =45
+                Image: =ThisItem.'Event Icons'
+                OnSelect: =Select(Parent)
+                Width: =62
+                X: =568
+                Y: =2
+                ZIndex: =6
+
+        Icon1_1 As icon.Add:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(56, 96, 178, 1)
             Icon: =Icon.Add
