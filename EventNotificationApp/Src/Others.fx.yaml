@@ -58,6 +58,7 @@ Others As screen:
             ZIndex: =15
 
             Image8_4 As image:
+                DisplayMode: =DisplayMode.View
                 Height: =982
                 ImagePosition: =ImagePosition.Fill
                 Width: =640
