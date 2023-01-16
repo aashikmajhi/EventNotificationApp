@@ -114,6 +114,7 @@
   },
   "ScreenOrder": [
     "Splash Screen",
+    "Dashboard",
     "Home Screen",
     "Add New Event Screen"
   ]

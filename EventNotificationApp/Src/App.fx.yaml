@@ -15,34 +15,28 @@ App As appinfo:
             )
         ) || Set( isUserAdminSPList,Email="naresh.dhami@astral.com.np" );
         
-        ClearCollect(
-            EventInfo, 
-                    {
-                        type:"Notice", 
+        Collect(
+            EventIcons, 
+                    {   ImageName:"Notice",
                         icon:'icons8-notice-58'
                     }
                     ,
-                    {
-                        type:"Event", 
+                    {   ImageName:"Event",
                         icon:'icons8-event-accepted-tentatively-100'
                     }
                         ,
-                    {
-                        type:"Celebration", 
+                    {   ImageName:"Celebration",
                         icon: 'icons8-confetti-50'
                     }
                         ,
-                    {
-                        type:"Holiday", 
+                    {   ImageName:"Holiday",
                         icon:'icons8-leave-48'
                     }
                         ,
-                    {
-                        type:"Information", 
+                    {   ImageName:"Information",
                         icon:'icons8-info-78'
                     },
-                    {
-                        type:"Employee Involement", 
+                    {   ImageName:"Employee Involvement",
                         icon:'icons8-participation-64'
                     }
             )

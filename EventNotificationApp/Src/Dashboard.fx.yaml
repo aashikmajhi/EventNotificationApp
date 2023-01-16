@@ -1,0 +1,317 @@
+Dashboard As screen:
+
+    Container1 As groupContainer.manualLayoutContainer:
+        Height: =1136
+        Width: =640
+        ZIndex: =3
+
+        Container2 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =10
+            Fill: =RGBA(141, 198, 63, 1)
+            Height: =150
+            Width: =640
+            ZIndex: =6
+
+            Image7 As image:
+                Height: =150
+                RadiusBottomLeft: =95
+                RadiusBottomRight: =95
+                RadiusTopLeft: =95
+                RadiusTopRight: =95
+                Width: =150
+                X: =490
+                ZIndex: =1
+
+            Label2 As label:
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
+                Height: =70
+                Size: =21
+                Text: ="Welcome User"
+                Width: =455
+                X: =12
+                Y: =22
+                ZIndex: =2
+
+        Container3 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =10
+            Fill: =RGBA(153, 153, 153, 1)
+            Height: =982
+            Width: =640
+            Y: =150
+            ZIndex: =15
+
+            Image8 As image:
+                Height: =982
+                ImagePosition: =ImagePosition.Fill
+                Width: =640
+                ZIndex: =1
+
+            Group5 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =11
+
+                Button2_4 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(241, 244, 249, 1)
+                    Height: =250
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Size: =24
+                    Text: =""
+                    Width: =288
+                    X: =17
+                    Y: =160
+                    ZIndex: =2
+
+                Button2 As button:
+                    BorderColor: =ColorValue("White")
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(21, 101, 192, 0.65)
+                    Height: =240
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Size: =25
+                    Text: =""
+                    Width: =280
+                    X: =21
+                    Y: =165
+                    ZIndex: =3
+
+                Button5 As button:
+                    BorderStyle: =BorderStyle.None
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    Size: =25
+                    Text: ="Notice"
+                    Width: =280
+                    X: =21
+                    Y: =313
+                    ZIndex: =4
+
+                Button5_1 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(150, 184, 240, 1)
+                    Height: =50
+                    RadiusBottomLeft: =45
+                    RadiusBottomRight: =45
+                    RadiusTopLeft: =45
+                    RadiusTopRight: =45
+                    Size: =25
+                    Text: ="01"
+                    Width: =50
+                    X: =47
+                    Y: =196
+                    ZIndex: =5
+
+            Group5_1 As group:
+                Height: =5
+                Width: =5
+                X: =23
+                Y: =-120
+                ZIndex: =15
+
+                Button2_5 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(241, 244, 249, 1)
+                    Height: =250
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Size: =24
+                    Text: =""
+                    Width: =288
+                    X: =328
+                    Y: =160
+                    ZIndex: =6
+
+                Button2_1 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(65, 152, 115, 1)
+                    Height: =240
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Size: =25
+                    Text: =""
+                    Width: =280
+                    X: =332
+                    Y: =165
+                    ZIndex: =7
+
+                Button5_3 As button:
+                    BorderStyle: =BorderStyle.None
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    Size: =25
+                    Text: ="Event"
+                    Width: =280
+                    X: =332
+                    Y: =313
+                    ZIndex: =8
+
+                Button5_2 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(82, 191, 144, 1)
+                    Height: =50
+                    RadiusBottomLeft: =45
+                    RadiusBottomRight: =45
+                    RadiusTopLeft: =45
+                    RadiusTopRight: =45
+                    Size: =25
+                    Text: ="01"
+                    Width: =50
+                    X: =358
+                    Y: =196
+                    ZIndex: =9
+
+            Group5_2 As group:
+                Height: =5
+                Width: =5
+                X: =23
+                Y: =-120
+                ZIndex: =19
+
+                Button2_6 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(241, 244, 249, 1)
+                    Height: =250
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Size: =24
+                    Text: =""
+                    Width: =288
+                    X: =21
+                    Y: =433
+                    ZIndex: =10
+
+                Button2_2 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(244, 147, 31, 1)
+                    Height: =240
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Size: =25
+                    Text: =""
+                    Width: =280
+                    X: =25
+                    Y: =438
+                    ZIndex: =11
+
+                Button5_5 As button:
+                    BorderStyle: =BorderStyle.None
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    Size: =25
+                    Text: ="Holiday"
+                    Width: =280
+                    X: =25
+                    Y: =586
+                    ZIndex: =12
+
+                Button5_4 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(248, 190, 120, 1)
+                    Height: =50
+                    RadiusBottomLeft: =45
+                    RadiusBottomRight: =45
+                    RadiusTopLeft: =45
+                    RadiusTopRight: =45
+                    Size: =25
+                    Text: ="01"
+                    Width: =50
+                    X: =51
+                    Y: =469
+                    ZIndex: =13
+
+            Group5_3 As group:
+                Height: =5
+                Width: =5
+                X: =23
+                Y: =-120
+                ZIndex: =24
+
+                Button2_7 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(241, 244, 249, 1)
+                    Height: =250
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Size: =24
+                    Text: =""
+                    Width: =288
+                    X: =332
+                    Y: =433
+                    ZIndex: =14
+
+                Button2_3 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(7, 153, 185, 1)
+                    Height: =240
+                    HoverColor: =RGBA(9,153,156,100)
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Size: =25
+                    Text: =""
+                    Width: =280
+                    X: =336
+                    Y: =438
+                    ZIndex: =15
+
+                Button5_7 As button:
+                    BorderStyle: =BorderStyle.None
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    Size: =25
+                    Text: ="Notice"
+                    Width: =280
+                    X: =336
+                    Y: =586
+                    ZIndex: =16
+
+                Button5_6 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(106, 182, 198, 1)
+                    Height: =50
+                    RadiusBottomLeft: =45
+                    RadiusBottomRight: =45
+                    RadiusTopLeft: =45
+                    RadiusTopRight: =45
+                    Size: =25
+                    Text: ="01"
+                    Width: =50
+                    X: =362
+                    Y: =469
+                    ZIndex: =17
+
