@@ -1,13 +1,12 @@
 "'Home Screen' As screen":
 
     Container2_1 As groupContainer.manualLayoutContainer:
-        Height: =971
+        Height: =1136
         Width: =Parent.Width
-        Y: =165
         ZIndex: =3
 
         Gallery1_1 As gallery.galleryVertical:
-            Height: =990
+            Height: =1136
             Items: =Sort('Event and Notice','Event Date',Descending)
             Layout: =Layout.Vertical
             TemplateSize: =231

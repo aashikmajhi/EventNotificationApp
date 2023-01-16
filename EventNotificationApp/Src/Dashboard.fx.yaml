@@ -384,7 +384,7 @@ Dashboard As screen:
                     RadiusTopRight: =45
                     Size: =25
                     Text: |
-                        =CountRows(Filter('Event and Notice','Event Types'.Value="Other"))
+                        =CountRows(Filter('Event and Notice','Event Types'.Value="Others"))
                     Width: =50
                     X: =362
                     Y: =469

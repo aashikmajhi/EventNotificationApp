@@ -304,11 +304,38 @@
         OnSelect: |-
             =SubmitForm(Form1);
             ResetForm(Form1);
-            Navigate('Home Screen');
+            Navigate(Dashboard);
         Size: =24
         Text: ="Post"
         Width: =280
         X: =168
         Y: =1028
         ZIndex: =4
+
+    Container4 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(152, 208, 70, 1)
+        Height: =146
+        Width: =640
+        ZIndex: =6
+
+        Icon2_4 As icon.BackArrow:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =50
+            Icon: =Icon.ArrowLeft
+            OnSelect: =Back()
+            Width: =50
+            Y: =86
+            ZIndex: =1
+
+        Label8 As label:
+            Align: =Align.Center
+            Font: =Font.Georgia
+            FontWeight: =FontWeight.Semibold
+            Height: =70
+            Size: =35
+            Text: ="Make new event post"
+            Width: =560
+            X: =40
+            Y: =40
+            ZIndex: =2
 

@@ -36,9 +36,18 @@
                 Size: =21
                 Text: =User().FullName
                 Width: =455
-                X: =12
-                Y: =22
+                X: =84
+                Y: =14
                 ZIndex: =2
+
+            Icon2_1 As icon.BackArrow:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =50
+                Icon: =Icon.ArrowLeft
+                OnSelect: =Back()
+                Width: =50
+                Y: =97
+                ZIndex: =3
 
         Container3_2 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)

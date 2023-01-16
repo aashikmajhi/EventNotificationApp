@@ -36,9 +36,18 @@
                 Size: =21
                 Text: =User().FullName
                 Width: =455
-                X: =12
-                Y: =22
+                X: =94
+                Y: =30
                 ZIndex: =2
+
+            Icon2_2 As icon.BackArrow:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =50
+                Icon: =Icon.ArrowLeft
+                OnSelect: =Back()
+                Width: =50
+                Y: =100
+                ZIndex: =3
 
         Container3_3 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -83,7 +92,7 @@
                     VerticalAlign: =VerticalAlign.Top
                     Width: =Parent.TemplateWidth - Image11.Width - 104
                     X: =Image11.X + Image11.Width + 24
-                    Y: =53
+                    Y: =36
                     ZIndex: =2
 
                 Subtitle3 As label:
@@ -93,7 +102,8 @@
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Text: =ThisItem.'Event Date'
+                    Text: |-
+                        ="Date: " & ThisItem.'Event Date'
                     VerticalAlign: =VerticalAlign.Top
                     Width: =Title3.Width
                     X: =168
@@ -109,13 +119,13 @@
 
                 Label7_1 As label:
                     Font: =Font.Georgia
-                    Height: =160
+                    Height: =195
                     OnSelect: =Select(Parent)
                     Size: =18
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
                     Width: =472
-                    X: =156
-                    Y: =107
+                    X: =168
+                    Y: =72
                     ZIndex: =6
 
