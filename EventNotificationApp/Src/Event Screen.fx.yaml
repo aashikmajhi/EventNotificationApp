@@ -1,0 +1,121 @@
+"'Event Screen' As screen":
+
+    Container1_2 As groupContainer.manualLayoutContainer:
+        Height: =1136
+        Width: =640
+        ZIndex: =3
+
+        Container2_3 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =10
+            Fill: =RGBA(65, 152, 115, 1)
+            Height: =150
+            PaddingBottom: =2
+            PaddingLeft: =2
+            PaddingRight: =2
+            PaddingTop: =2
+            Width: =640
+            ZIndex: =6
+
+            Image7_2 As image:
+                Height: =150
+                Image: =User().Image
+                RadiusBottomLeft: =95
+                RadiusBottomRight: =95
+                RadiusTopLeft: =95
+                RadiusTopRight: =95
+                Width: =150
+                X: =490
+                ZIndex: =1
+
+            Label2_2 As label:
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
+                Height: =70
+                Size: =21
+                Text: =User().FullName
+                Width: =455
+                X: =12
+                Y: =22
+                ZIndex: =2
+
+        Container3_2 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =5
+            Fill: =RGBA(153, 153, 153, 1)
+            Height: =982
+            Width: =640
+            Y: =150
+            ZIndex: =15
+
+            Image8_2 As image:
+                Height: =982
+                ImagePosition: =ImagePosition.Fill
+                Width: =640
+                ZIndex: =1
+
+            "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                Height: =982
+                Items: =Sort(Filter('Event and Notice','Event Types'.Value="Event"),'Event Date', Descending)
+                Layout: =Layout.Vertical
+                TemplatePadding: =0
+                TemplateSize: =268
+                ZIndex: =2
+
+                Image10 As image:
+                    Height: =128
+                    Image: =ThisItem.'Event Icon'
+                    OnSelect: =Select(Parent)
+                    Width: =128
+                    X: =18
+                    Y: =51
+                    ZIndex: =1
+
+                Title2 As label:
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.Title
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth - Image10.Width - 104
+                    X: =Image10.X + Image10.Width + 24
+                    Y: =41
+                    ZIndex: =2
+
+                Subtitle2 As label:
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: |-
+                        ="Date: "&ThisItem.'Event Date'
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Title2.Width
+                    X: =Title2.X
+                    ZIndex: =3
+
+                Separator2 As rectangle:
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - 1
+                    ZIndex: =5
+
+                Label7 As label:
+                    Font: =Font.Georgia
+                    Height: =182
+                    OnSelect: =Select(Parent)
+                    Size: =18
+                    Text: =ThisItem.'Event Description'
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =472
+                    X: =168
+                    Y: =86
+                    ZIndex: =6
+

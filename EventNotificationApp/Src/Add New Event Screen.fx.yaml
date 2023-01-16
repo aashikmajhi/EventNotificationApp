@@ -43,7 +43,7 @@
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
                 Items: =Choices([@'Event and Notice'].'Event Types')
-                OnSelect: =Set(iconType,LookUp(EventIcons,ImageName=DataCardValue6.Selected.Value));
+                OnSelect: =
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Event and Notice'.'Event Types',DataCardValue6.SearchText)

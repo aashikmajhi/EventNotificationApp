@@ -115,6 +115,10 @@
   "ScreenOrder": [
     "Splash Screen",
     "Dashboard",
+    "Notice Screen",
+    "Event Screen",
+    "Holiday Screen",
+    "Other",
     "Home Screen",
     "Add New Event Screen"
   ]

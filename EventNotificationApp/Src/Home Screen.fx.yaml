@@ -67,7 +67,7 @@
 
             Image4 As image:
                 Height: =47
-                Image: =iconType.icon
+                Image: =
                 OnSelect: =Select(Parent)
                 Width: =47
                 X: =583

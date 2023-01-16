@@ -14,30 +14,4 @@ App As appinfo:
                 )
             )
         ) || Set( isUserAdminSPList,Email="naresh.dhami@astral.com.np" );
-        
-        Collect(
-            EventIcons, 
-                    {   ImageName:"Notice",
-                        icon:'icons8-notice-58'
-                    }
-                    ,
-                    {   ImageName:"Event",
-                        icon:'icons8-event-accepted-tentatively-100'
-                    }
-                        ,
-                    {   ImageName:"Celebration",
-                        icon: 'icons8-confetti-50'
-                    }
-                        ,
-                    {   ImageName:"Holiday",
-                        icon:'icons8-leave-48'
-                    }
-                        ,
-                    {   ImageName:"Information",
-                        icon:'icons8-info-78'
-                    },
-                    {   ImageName:"Employee Involvement",
-                        icon:'icons8-participation-64'
-                    }
-            )
 

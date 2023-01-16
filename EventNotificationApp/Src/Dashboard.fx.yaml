@@ -1,4 +1,5 @@
 Dashboard As screen:
+    OnVisible: =
 
     Container1 As groupContainer.manualLayoutContainer:
         Height: =1136
@@ -7,36 +8,43 @@ Dashboard As screen:
 
         Container2 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
+            BorderStyle: =BorderStyle.None
             BorderThickness: =10
-            Fill: =RGBA(141, 198, 63, 1)
+            Fill: =RGBA(39, 113, 194, 1)
             Height: =150
+            PaddingBottom: =2
+            PaddingLeft: =2
+            PaddingRight: =2
+            PaddingTop: =2
             Width: =640
             ZIndex: =6
 
-            Image7 As image:
+            Label6 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
+                Height: =132
+                Size: =19
+                Text: =If(Hour(Now())<12, "Good morning, ", Hour(Now())<17, "Good afternoon, ", "Good evening, ")& User().FullName & Char(13) &"Welcome"
+                Width: =487
+                X: =3
+                Y: =3
+                ZIndex: =1
+
+            Image7_5 As image:
                 Height: =150
+                Image: =varUser.Image
                 RadiusBottomLeft: =95
                 RadiusBottomRight: =95
                 RadiusTopLeft: =95
                 RadiusTopRight: =95
                 Width: =150
                 X: =490
-                ZIndex: =1
-
-            Label2 As label:
-                Font: =Font.Verdana
-                FontWeight: =FontWeight.Bold
-                Height: =70
-                Size: =21
-                Text: ="Welcome User"
-                Width: =455
-                X: =12
-                Y: =22
                 ZIndex: =2
 
         Container3 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
-            BorderThickness: =10
+            BorderThickness: =5
             Fill: =RGBA(153, 153, 153, 1)
             Height: =982
             Width: =640
@@ -61,6 +69,7 @@ Dashboard As screen:
                     BorderThickness: =0
                     Fill: =RGBA(241, 244, 249, 1)
                     Height: =250
+                    OnSelect: =Navigate('Notice Screen')
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -78,6 +87,7 @@ Dashboard As screen:
                     BorderThickness: =0
                     Fill: =RGBA(21, 101, 192, 0.65)
                     Height: =240
+                    OnSelect: =Navigate('Notice Screen')
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -93,6 +103,7 @@ Dashboard As screen:
                     BorderStyle: =BorderStyle.None
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
+                    OnSelect: =Navigate('Notice Screen')
                     Size: =25
                     Text: ="Notice"
                     Width: =280
@@ -105,12 +116,14 @@ Dashboard As screen:
                     BorderThickness: =0
                     Fill: =RGBA(150, 184, 240, 1)
                     Height: =50
+                    OnSelect: =Navigate('Notice Screen')
                     RadiusBottomLeft: =45
                     RadiusBottomRight: =45
                     RadiusTopLeft: =45
                     RadiusTopRight: =45
                     Size: =25
-                    Text: ="01"
+                    Text: |
+                        =CountRows(Filter('Event and Notice','Event Types'.Value="Notice"))
                     Width: =50
                     X: =47
                     Y: =196
@@ -128,6 +141,7 @@ Dashboard As screen:
                     BorderThickness: =0
                     Fill: =RGBA(241, 244, 249, 1)
                     Height: =250
+                    OnSelect: =Navigate('Event Screen')
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -144,6 +158,7 @@ Dashboard As screen:
                     BorderThickness: =0
                     Fill: =RGBA(65, 152, 115, 1)
                     Height: =240
+                    OnSelect: =Navigate('Event Screen')
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -159,6 +174,7 @@ Dashboard As screen:
                     BorderStyle: =BorderStyle.None
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
+                    OnSelect: =Navigate('Event Screen')
                     Size: =25
                     Text: ="Event"
                     Width: =280
@@ -171,12 +187,13 @@ Dashboard As screen:
                     BorderThickness: =0
                     Fill: =RGBA(82, 191, 144, 1)
                     Height: =50
+                    OnSelect: =Navigate('Event Screen')
                     RadiusBottomLeft: =45
                     RadiusBottomRight: =45
                     RadiusTopLeft: =45
                     RadiusTopRight: =45
                     Size: =25
-                    Text: ="01"
+                    Text: =CountRows(Filter('Event and Notice','Event Types'.Value="Event"))
                     Width: =50
                     X: =358
                     Y: =196
@@ -194,6 +211,7 @@ Dashboard As screen:
                     BorderThickness: =0
                     Fill: =RGBA(241, 244, 249, 1)
                     Height: =250
+                    OnSelect: =Navigate('Holiday Screen')
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -210,6 +228,7 @@ Dashboard As screen:
                     BorderThickness: =0
                     Fill: =RGBA(244, 147, 31, 1)
                     Height: =240
+                    OnSelect: =Navigate('Holiday Screen')
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -225,6 +244,7 @@ Dashboard As screen:
                     BorderStyle: =BorderStyle.None
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
+                    OnSelect: =Navigate('Holiday Screen')
                     Size: =25
                     Text: ="Holiday"
                     Width: =280
@@ -237,16 +257,65 @@ Dashboard As screen:
                     BorderThickness: =0
                     Fill: =RGBA(248, 190, 120, 1)
                     Height: =50
+                    OnSelect: =Navigate('Holiday Screen')
                     RadiusBottomLeft: =45
                     RadiusBottomRight: =45
                     RadiusTopLeft: =45
                     RadiusTopRight: =45
                     Size: =25
-                    Text: ="01"
+                    Text: =CountRows(Filter('Event and Notice','Event Types'.Value="Holiday"))
                     Width: =50
                     X: =51
                     Y: =469
                     ZIndex: =13
+
+            Group5_4 As group:
+                Height: =5
+                Width: =5
+                X: =23
+                Y: =-120
+                ZIndex: =22
+
+                Button2_9 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(241, 244, 249, 1)
+                    Height: =142
+                    OnSelect: =Navigate('Add New Event Screen')
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Size: =24
+                    Text: =""
+                    Visible: =varUser.Email="naresh.dhami@astral.com.np"
+                    Width: =587
+                    X: =25
+                    Y: =732
+                    ZIndex: =18
+
+                Button2_8 As button:
+                    BorderColor: =ColorValue("White")
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Color: =RGBA(0, 13, 75, 1)
+                    Fill: =RGBA(152, 208, 70, 1)
+                    Font: =Font.'Courier New'
+                    FontWeight: =FontWeight.Bold
+                    Height: =136
+                    HoverFill: =ColorValue("Green")
+                    OnSelect: =Navigate('Add New Event Screen')
+                    PressedFill: =ColorValue("Green")
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Size: =35
+                    Text: ="Add"
+                    Width: =579
+                    X: =30
+                    Y: =735
+                    ZIndex: =19
 
             Group5_3 As group:
                 Height: =5
@@ -260,6 +329,7 @@ Dashboard As screen:
                     BorderThickness: =0
                     Fill: =RGBA(241, 244, 249, 1)
                     Height: =250
+                    OnSelect: =Navigate(Other)
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -278,6 +348,7 @@ Dashboard As screen:
                     Height: =240
                     HoverColor: =RGBA(9,153,156,100)
                     HoverFill: =ColorFade(RGBA(9,153,156,100), -20%)
+                    OnSelect: =Navigate(Other)
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -293,8 +364,9 @@ Dashboard As screen:
                     BorderStyle: =BorderStyle.None
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
+                    OnSelect: =Navigate(Other)
                     Size: =25
-                    Text: ="Notice"
+                    Text: ="Others"
                     Width: =280
                     X: =336
                     Y: =586
@@ -305,12 +377,14 @@ Dashboard As screen:
                     BorderThickness: =0
                     Fill: =RGBA(106, 182, 198, 1)
                     Height: =50
+                    OnSelect: =Navigate(Other)
                     RadiusBottomLeft: =45
                     RadiusBottomRight: =45
                     RadiusTopLeft: =45
                     RadiusTopRight: =45
                     Size: =25
-                    Text: ="01"
+                    Text: |
+                        =CountRows(Filter('Event and Notice','Event Types'.Value="Other"))
                     Width: =50
                     X: =362
                     Y: =469
