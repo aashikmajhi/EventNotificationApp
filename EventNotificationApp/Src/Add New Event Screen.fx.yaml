@@ -304,6 +304,7 @@
         OnSelect: |-
             =SubmitForm(Form1);
             ResetForm(Form1);
+            ClickPowerAppsbuttontosendapushnotification.Run();
             Navigate(Dashboard);
         Size: =24
         Text: ="Post"

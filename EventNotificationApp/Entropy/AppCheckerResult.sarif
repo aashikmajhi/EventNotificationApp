@@ -14,46 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Dashboard.Container1.Container3.Button5_4.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Dashboard.Container1.Container3.Button5_4.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 67,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "CountRows(Filter('Event and Notice','Event Types'.Value=\"Holiday\"))"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Dashboard",
-                "type": "Dashboard.Container1.Container3.Button5_4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Dashboard.Container1.Container3.Button5_1.Text"
                 }
               ],
@@ -74,46 +34,6 @@
                 "member": "Text",
                 "module": "Dashboard",
                 "type": "Dashboard.Container1.Container3.Button5_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Dashboard.Container1.Container3.Button5_6.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Dashboard.Container1.Container3.Button5_6.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 66,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "CountRows(Filter('Event and Notice','Event Types'.Value=\"Others\"))"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Dashboard",
-                "type": "Dashboard.Container1.Container3.Button5_6"
               }
             }
           ],
@@ -174,19 +94,99 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Add New Event Screen'.Form1.'Event Date_DataCard1'.DataCardValue2.AccessibleLabel"
+                  "fullyQualifiedName": "Dashboard.Container1.Container3.Button5_4.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Add New Event Screen'.Form1.'Event Date_DataCard1'.DataCardValue2.AccessibleLabel",
+                  "fullyQualifiedName": "Dashboard.Container1.Container3.Button5_4.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 67,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountRows(Filter('Event and Notice','Event Types'.Value=\"Holiday\"))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Dashboard",
+                "type": "Dashboard.Container1.Container3.Button5_4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Dashboard.Container1.Container3.Button5_6.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Dashboard.Container1.Container3.Button5_6.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 66,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountRows(Filter('Event and Notice','Event Types'.Value=\"Others\"))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Dashboard",
+                "type": "Dashboard.Container1.Container3.Button5_6"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Notice Screen'.Container1_1.Container2_2.Icon2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Notice Screen'.Container1_1.Container2_2.Icon2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Add New Event Screen",
-                "type": "'Add New Event Screen'.Form1.'Event Date_DataCard1'.DataCardValue2"
+                "module": "Notice Screen",
+                "type": "'Notice Screen'.Container1_1.Container2_2.Icon2"
               }
             }
           ],
@@ -204,199 +204,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Add New Event Screen'.Form1.'Event Types_DataCard1'.DataCardValue6.AccessibleLabel"
+                  "fullyQualifiedName": "'Notice Screen'.Container1_1.Container2_2.Icon2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Add New Event Screen'.Form1.'Event Types_DataCard1'.DataCardValue6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Add New Event Screen",
-                "type": "'Add New Event Screen'.Form1.'Event Types_DataCard1'.DataCardValue6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Add New Event Screen'.Form1.Title_DataCard1.DataCardValue1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Add New Event Screen'.Form1.Title_DataCard1.DataCardValue1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Add New Event Screen",
-                "type": "'Add New Event Screen'.Form1.Title_DataCard1.DataCardValue1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Add New Event Screen'.Form1.'Event Description_DataCard2'.DataCardValue5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Add New Event Screen'.Form1.'Event Description_DataCard2'.DataCardValue5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Add New Event Screen",
-                "type": "'Add New Event Screen'.Form1.'Event Description_DataCard2'.DataCardValue5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.Container2_1.Gallery1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.Container2_1.Gallery1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Home Screen",
-                "type": "'Home Screen'.Container2_1.Gallery1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.Container2_1.Gallery1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.Container2_1.Gallery1_1.TabIndex",
+                  "fullyQualifiedName": "'Notice Screen'.Container1_1.Container2_2.Icon2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Home Screen",
-                "type": "'Home Screen'.Container2_1.Gallery1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.Container2_1.Icon1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.Container2_1.Icon1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Home Screen",
-                "type": "'Home Screen'.Container2_1.Icon1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.Container2_1.Icon1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.Container2_1.Icon1_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Home Screen",
-                "type": "'Home Screen'.Container2_1.Icon1_1"
+                "module": "Notice Screen",
+                "type": "'Notice Screen'.Container1_1.Container2_2.Icon2"
               }
             }
           ],
@@ -474,246 +294,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Event Screen'.Container1_2.Container3_2.Gallery2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Event Screen'.Container1_2.Container3_2.Gallery2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Event Screen",
-                "type": "'Event Screen'.Container1_2.Container3_2.Gallery2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Event Screen'.Container1_2.Container3_2.Gallery2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Event Screen'.Container1_2.Container3_2.Gallery2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Event Screen",
-                "type": "'Event Screen'.Container1_2.Container3_2.Gallery2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Holiday Screen'.Container1_3.Container3_3.Gallery3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Holiday Screen'.Container1_3.Container3_3.Gallery3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Holiday Screen",
-                "type": "'Holiday Screen'.Container1_3.Container3_3.Gallery3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Holiday Screen'.Container1_3.Container3_3.Gallery3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Holiday Screen'.Container1_3.Container3_3.Gallery3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Holiday Screen",
-                "type": "'Holiday Screen'.Container1_3.Container3_3.Gallery3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Others.Container1_4.Container3_4.Gallery4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Others.Container1_4.Container3_4.Gallery4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Others",
-                "type": "Others.Container1_4.Container3_4.Gallery4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Others.Container1_4.Container3_4.Gallery4.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Others.Container1_4.Container3_4.Gallery4.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Others",
-                "type": "Others.Container1_4.Container3_4.Gallery4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Notice Screen'.Container1_1.Container2_2.Icon2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Notice Screen'.Container1_1.Container2_2.Icon2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Notice Screen",
-                "type": "'Notice Screen'.Container1_1.Container2_2.Icon2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Notice Screen'.Container1_1.Container2_2.Icon2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Notice Screen'.Container1_1.Container2_2.Icon2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Notice Screen",
-                "type": "'Notice Screen'.Container1_1.Container2_2.Icon2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Event Screen'.Container1_2.Container2_3.Icon2_1.AccessibleLabel"
                 }
               ],
@@ -757,6 +337,66 @@
                 "member": "TabIndex",
                 "module": "Event Screen",
                 "type": "'Event Screen'.Container1_2.Container2_3.Icon2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Event Screen'.Container1_2.Container3_2.Gallery2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Event Screen'.Container1_2.Container3_2.Gallery2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Event Screen",
+                "type": "'Event Screen'.Container1_2.Container3_2.Gallery2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Event Screen'.Container1_2.Container3_2.Gallery2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Event Screen'.Container1_2.Container3_2.Gallery2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Event Screen",
+                "type": "'Event Screen'.Container1_2.Container3_2.Gallery2"
               }
             }
           ],
@@ -834,6 +474,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Holiday Screen'.Container1_3.Container3_3.Gallery3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Holiday Screen'.Container1_3.Container3_3.Gallery3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Holiday Screen",
+                "type": "'Holiday Screen'.Container1_3.Container3_3.Gallery3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Holiday Screen'.Container1_3.Container3_3.Gallery3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Holiday Screen'.Container1_3.Container3_3.Gallery3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Holiday Screen",
+                "type": "'Holiday Screen'.Container1_3.Container3_3.Gallery3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Others.Container1_4.Container2_5.Icon2_3.AccessibleLabel"
                 }
               ],
@@ -894,19 +594,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Add New Event Screen'.Container4.Icon2_4.AccessibleLabel"
+                  "fullyQualifiedName": "Others.Container1_4.Container3_4.Gallery4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Add New Event Screen'.Container4.Icon2_4.AccessibleLabel",
+                  "fullyQualifiedName": "Others.Container1_4.Container3_4.Gallery4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Add New Event Screen",
-                "type": "'Add New Event Screen'.Container4.Icon2_4"
+                "module": "Others",
+                "type": "Others.Container1_4.Container3_4.Gallery4"
               }
             }
           ],
@@ -924,19 +624,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Add New Event Screen'.Container4.Icon2_4.TabIndex"
+                  "fullyQualifiedName": "Others.Container1_4.Container3_4.Gallery4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Add New Event Screen'.Container4.Icon2_4.TabIndex",
+                  "fullyQualifiedName": "Others.Container1_4.Container3_4.Gallery4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Add New Event Screen",
-                "type": "'Add New Event Screen'.Container4.Icon2_4"
+                "module": "Others",
+                "type": "Others.Container1_4.Container3_4.Gallery4"
               }
             }
           ],
@@ -1068,6 +768,306 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.Container2_1.Gallery1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.Container2_1.Gallery1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home Screen",
+                "type": "'Home Screen'.Container2_1.Gallery1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.Container2_1.Gallery1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.Container2_1.Gallery1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home Screen",
+                "type": "'Home Screen'.Container2_1.Gallery1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.Container2_1.Icon1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.Container2_1.Icon1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Home Screen",
+                "type": "'Home Screen'.Container2_1.Icon1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.Container2_1.Icon1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.Container2_1.Icon1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home Screen",
+                "type": "'Home Screen'.Container2_1.Icon1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add New Event Screen'.Container4.Icon2_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add New Event Screen'.Container4.Icon2_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Add New Event Screen",
+                "type": "'Add New Event Screen'.Container4.Icon2_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add New Event Screen'.Container4.Icon2_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add New Event Screen'.Container4.Icon2_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Add New Event Screen",
+                "type": "'Add New Event Screen'.Container4.Icon2_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add New Event Screen'.Form1.'Event Date_DataCard1'.DataCardValue2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add New Event Screen'.Form1.'Event Date_DataCard1'.DataCardValue2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Add New Event Screen",
+                "type": "'Add New Event Screen'.Form1.'Event Date_DataCard1'.DataCardValue2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add New Event Screen'.Form1.'Event Types_DataCard1'.DataCardValue6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add New Event Screen'.Form1.'Event Types_DataCard1'.DataCardValue6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Add New Event Screen",
+                "type": "'Add New Event Screen'.Form1.'Event Types_DataCard1'.DataCardValue6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add New Event Screen'.Form1.Title_DataCard1.DataCardValue1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add New Event Screen'.Form1.Title_DataCard1.DataCardValue1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Add New Event Screen",
+                "type": "'Add New Event Screen'.Form1.Title_DataCard1.DataCardValue1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add New Event Screen'.Form1.'Event Description_DataCard2'.DataCardValue5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add New Event Screen'.Form1.'Event Description_DataCard2'.DataCardValue5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Add New Event Screen",
+                "type": "'Add New Event Screen'.Form1.'Event Description_DataCard2'.DataCardValue5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
         },
         {
           "locations": [

@@ -697,7 +697,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate1",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -960,7 +960,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image13",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2756,7 +2756,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGallerySubtitle.ID%",
       "Name": "Subtitle1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
