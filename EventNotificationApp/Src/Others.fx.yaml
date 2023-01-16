@@ -1,4 +1,4 @@
-Other As screen:
+Others As screen:
 
     Container1_4 As groupContainer.manualLayoutContainer:
         Height: =1136
@@ -71,34 +71,28 @@ Other As screen:
                 TemplateSize: =268
                 ZIndex: =2
 
-                Image12 As image:
-                    Height: =128
-                    Image: =ThisItem.'Event Icon'
-                    OnSelect: =Select(Parent)
-                    Width: =128
-                    X: =16
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                    ZIndex: =1
-
                 Title4 As label:
+                    DisplayMode: =DisplayMode.View
+                    FontWeight: =FontWeight.Bold
                     Height: =Self.Size * 1.8
                     OnSelect: =Select(Parent)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
+                    PaddingBottom: =1
+                    PaddingLeft: =10
                     PaddingRight: =0
-                    PaddingTop: =0
+                    PaddingTop: =2
                     Text: =ThisItem.Title
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =Parent.TemplateWidth - Image12.Width - 104
-                    X: =Image12.X + Image12.Width + 24
+                    Width: =Parent.TemplateWidth
                     Y: =34
                     ZIndex: =2
 
                 Subtitle4 As label:
+                    DisplayMode: =DisplayMode.View
+                    FontWeight: =FontWeight.Semibold
                     Height: =Self.Size * 1.8
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
-                    PaddingLeft: =0
+                    PaddingLeft: =10
                     PaddingRight: =0
                     PaddingTop: =0
                     Text: |-
@@ -117,14 +111,25 @@ Other As screen:
                     ZIndex: =5
 
                 Label7_2 As label:
+                    DisplayMode: =DisplayMode.View
                     Font: =Font.Georgia
-                    Height: =180
+                    Height: =148
                     OnSelect: =Select(Parent)
+                    PaddingLeft: =10
+                    PaddingRight: =10
                     Size: =18
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =472
-                    X: =168
+                    Width: =640
                     Y: =70
                     ZIndex: =6
+
+                Label14 As label:
+                    Height: =35
+                    OnSelect: =Select(Parent)
+                    Size: =18
+                    Text: ="Posted @ " & ThisItem.Created
+                    Width: =560
+                    Y: =233
+                    ZIndex: =7
 

@@ -594,19 +594,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Other.Container1_4.Container3_4.Gallery4.AccessibleLabel"
+                  "fullyQualifiedName": "Others.Container1_4.Container3_4.Gallery4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Other.Container1_4.Container3_4.Gallery4.AccessibleLabel",
+                  "fullyQualifiedName": "Others.Container1_4.Container3_4.Gallery4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Other",
-                "type": "Other.Container1_4.Container3_4.Gallery4"
+                "module": "Others",
+                "type": "Others.Container1_4.Container3_4.Gallery4"
               }
             }
           ],
@@ -624,19 +624,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Other.Container1_4.Container3_4.Gallery4.TabIndex"
+                  "fullyQualifiedName": "Others.Container1_4.Container3_4.Gallery4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Other.Container1_4.Container3_4.Gallery4.TabIndex",
+                  "fullyQualifiedName": "Others.Container1_4.Container3_4.Gallery4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Other",
-                "type": "Other.Container1_4.Container3_4.Gallery4"
+                "module": "Others",
+                "type": "Others.Container1_4.Container3_4.Gallery4"
               }
             }
           ],
@@ -834,19 +834,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Other.Container1_4.Container2_5.Icon2_3.AccessibleLabel"
+                  "fullyQualifiedName": "Others.Container1_4.Container2_5.Icon2_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Other.Container1_4.Container2_5.Icon2_3.AccessibleLabel",
+                  "fullyQualifiedName": "Others.Container1_4.Container2_5.Icon2_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Other",
-                "type": "Other.Container1_4.Container2_5.Icon2_3"
+                "module": "Others",
+                "type": "Others.Container1_4.Container2_5.Icon2_3"
               }
             }
           ],
@@ -864,19 +864,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Other.Container1_4.Container2_5.Icon2_3.TabIndex"
+                  "fullyQualifiedName": "Others.Container1_4.Container2_5.Icon2_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Other.Container1_4.Container2_5.Icon2_3.TabIndex",
+                  "fullyQualifiedName": "Others.Container1_4.Container2_5.Icon2_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Other",
-                "type": "Other.Container1_4.Container2_5.Icon2_3"
+                "module": "Others",
+                "type": "Others.Container1_4.Container2_5.Icon2_3"
               }
             }
           ],

@@ -72,34 +72,27 @@
                 TemplateSize: =268
                 ZIndex: =2
 
-                Image10 As image:
-                    Height: =128
-                    Image: =ThisItem.'Event Icon'
-                    OnSelect: =Select(Parent)
-                    Width: =128
-                    X: =18
-                    Y: =51
-                    ZIndex: =1
-
                 Title2 As label:
+                    DisplayMode: =DisplayMode.View
+                    FontWeight: =FontWeight.Bold
                     Height: =Self.Size * 1.8
                     OnSelect: =Select(Parent)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
+                    PaddingBottom: =1
+                    PaddingLeft: =10
+                    PaddingTop: =2
                     Text: =ThisItem.Title
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =Parent.TemplateWidth - Image10.Width - 104
-                    X: =Image10.X + Image10.Width + 24
-                    Y: =41
+                    Width: =Parent.TemplateWidth
+                    Y: =28
                     ZIndex: =2
 
                 Subtitle2 As label:
+                    DisplayMode: =DisplayMode.View
+                    FontWeight: =FontWeight.Semibold
                     Height: =Self.Size * 1.8
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
-                    PaddingLeft: =0
+                    PaddingLeft: =10
                     PaddingRight: =0
                     PaddingTop: =0
                     Text: |-
@@ -117,14 +110,24 @@
                     ZIndex: =5
 
                 Label7 As label:
+                    DisplayMode: =DisplayMode.View
                     Font: =Font.Georgia
-                    Height: =182
+                    Height: =164
                     OnSelect: =Select(Parent)
+                    PaddingLeft: =10
+                    PaddingRight: =10
                     Size: =18
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =472
-                    X: =168
-                    Y: =86
+                    Width: =640
+                    Y: =64
                     ZIndex: =6
+
+                Label11 As label:
+                    OnSelect: =Select(Parent)
+                    Size: =18
+                    Text: ="Posted @ " & ThisItem.Created
+                    Width: =560
+                    Y: =228
+                    ZIndex: =7
 
