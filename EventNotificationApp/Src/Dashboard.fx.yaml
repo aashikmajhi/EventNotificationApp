@@ -89,6 +89,7 @@ Dashboard As screen:
                     Fill: =RGBA(21, 101, 192, 0.65)
                     Height: =240
                     OnSelect: =Navigate('Notice Screen')
+                    PressedFill: =Self.Fill
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -146,6 +147,7 @@ Dashboard As screen:
                     Fill: =RGBA(241, 244, 249, 1)
                     Height: =250
                     OnSelect: =Navigate('Event Screen')
+                    PressedFill: =Self.Fill
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -164,6 +166,7 @@ Dashboard As screen:
                     Height: =240
                     HoverFill: =ColorFade(RGBA(0, 130, 11, 0.87), -20%)
                     OnSelect: =Navigate('Event Screen')
+                    PressedFill: =Self.Fill
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -182,6 +185,7 @@ Dashboard As screen:
                     Height: =70
                     HoverFill: =
                     OnSelect: =Navigate('Event Screen')
+                    PressedFill: =Self.Fill
                     Size: =25
                     Text: ="Event"
                     Width: =280
@@ -196,6 +200,7 @@ Dashboard As screen:
                     Height: =50
                     HoverFill: =
                     OnSelect: =Navigate('Event Screen')
+                    PressedFill: =Self.Fill
                     RadiusBottomLeft: =45
                     RadiusBottomRight: =45
                     RadiusTopLeft: =45
@@ -220,6 +225,7 @@ Dashboard As screen:
                     Fill: =RGBA(241, 244, 249, 1)
                     Height: =250
                     OnSelect: =Navigate('Holiday Screen')
+                    PressedFill: =Self.Fill
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -238,6 +244,7 @@ Dashboard As screen:
                     Height: =240
                     HoverFill: =ColorFade(RGBA(237, 91, 0, 0.89), 0)
                     OnSelect: =Navigate('Holiday Screen')
+                    PressedFill: =Self.Fill
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -256,6 +263,7 @@ Dashboard As screen:
                     Height: =70
                     HoverFill: =
                     OnSelect: =Navigate('Holiday Screen')
+                    PressedFill: =Self.Fill
                     Size: =25
                     Text: ="Holiday"
                     Width: =280
@@ -270,6 +278,7 @@ Dashboard As screen:
                     Height: =50
                     HoverFill: =
                     OnSelect: =Navigate('Holiday Screen')
+                    PressedFill: =Self.Fill
                     RadiusBottomLeft: =45
                     RadiusBottomRight: =45
                     RadiusTopLeft: =45
@@ -341,6 +350,7 @@ Dashboard As screen:
                     Fill: =RGBA(241, 244, 249, 1)
                     Height: =250
                     OnSelect: =Navigate(Others)
+                    PressedFill: =Self.Fill
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -360,6 +370,7 @@ Dashboard As screen:
                     HoverColor: =RGBA(9,153,156,100)
                     HoverFill: =ColorFade(RGBA(9,153,156,100), -20%)
                     OnSelect: =Navigate(Others)
+                    PressedFill: =Self.Fill
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -378,6 +389,7 @@ Dashboard As screen:
                     Height: =70
                     HoverFill: =
                     OnSelect: =Navigate(Others)
+                    PressedFill: =Self.Fill
                     Size: =25
                     Text: ="Others"
                     Width: =280
@@ -392,6 +404,7 @@ Dashboard As screen:
                     Height: =50
                     HoverFill: =
                     OnSelect: =Navigate(Others)
+                    PressedFill: =Self.Fill
                     RadiusBottomLeft: =45
                     RadiusBottomRight: =45
                     RadiusTopLeft: =45
