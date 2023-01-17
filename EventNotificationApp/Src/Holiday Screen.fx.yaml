@@ -113,10 +113,9 @@
                     ZIndex: =5
 
                 Label7_1 As label:
-                    AutoHeight: =true
                     DisplayMode: =DisplayMode.View
                     Font: =Font.Georgia
-                    Height: =158
+                    Height: =195
                     OnSelect: =Select(Parent)
                     PaddingLeft: =10
                     PaddingRight: =10

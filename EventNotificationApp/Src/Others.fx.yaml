@@ -117,7 +117,7 @@ Others As screen:
                     AutoHeight: =true
                     DisplayMode: =DisplayMode.View
                     Font: =Font.Georgia
-                    Height: =163
+                    Height: =Max(Label7_2.AutoHeight,70)
                     OnSelect: =Select(Parent)
                     PaddingLeft: =10
                     PaddingRight: =10
