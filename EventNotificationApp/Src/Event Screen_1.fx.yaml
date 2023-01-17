@@ -1,4 +1,5 @@
 "'Event Screen_1' As screen":
+    BackgroundImage: =
 
     Container1_5 As groupContainer.manualLayoutContainer:
         Height: =1136
@@ -52,16 +53,14 @@
         Container3_5 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
-            Fill: =RGBA(153, 153, 153, 1)
             Height: =982
             Width: =640
             Y: =150
             ZIndex: =15
 
-            Image8_5 As image:
-                DisplayMode: =DisplayMode.View
-                Height: =Parent.Height
-                ImagePosition: =ImagePosition.Fill
+            Image10 As image:
+                Height: =982
+                Image: ='bg-3'
                 Width: =640
                 ZIndex: =1
 
@@ -72,7 +71,7 @@
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Event"),'Event Date', Descending)
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
-                TemplateSize: =623
+                TemplateSize: =333
                 ZIndex: =2
 
                 Title2_1 As label:

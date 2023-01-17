@@ -64,7 +64,7 @@
             Image8_6 As image:
                 DisplayMode: =DisplayMode.View
                 Height: =982
-                Image: =bg2
+                Image: ='bg-3'
                 ImagePosition: =ImagePosition.Fill
                 Width: =640
                 ZIndex: =1

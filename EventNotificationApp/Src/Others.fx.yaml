@@ -62,7 +62,6 @@ Others As screen:
             Image8_4 As image:
                 DisplayMode: =DisplayMode.View
                 Height: =982
-                Image: ='bg-others'
                 ImagePosition: =ImagePosition.Fill
                 Width: =640
                 ZIndex: =1

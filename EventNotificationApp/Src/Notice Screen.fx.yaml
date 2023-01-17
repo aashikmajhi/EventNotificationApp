@@ -62,12 +62,13 @@
             Image8_1 As image:
                 DisplayMode: =DisplayMode.View
                 Height: =982
-                Image: ='bg-notice'
                 ImagePosition: =ImagePosition.Fill
                 Width: =640
                 ZIndex: =1
 
             "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderThickness: =3
                 Height: =982
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Notice"),'Event Date', Descending)
                 Layout: =Layout.Vertical

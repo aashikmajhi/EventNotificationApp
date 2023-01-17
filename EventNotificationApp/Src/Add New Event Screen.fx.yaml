@@ -1,5 +1,5 @@
 "'Add New Event Screen' As screen":
-    BackgroundImage: ='bg-event'
+    BackgroundImage: =
     ImagePosition: =ImagePosition.Fill
     OnVisible: =
 

@@ -62,7 +62,6 @@
             Image8_2 As image:
                 DisplayMode: =DisplayMode.View
                 Height: =982
-                Image: ='bg-event'
                 ImagePosition: =ImagePosition.Fill
                 Width: =640
                 ZIndex: =1
