@@ -1,4 +1,6 @@
 "'Add New Event Screen' As screen":
+    BackgroundImage: ='bg-event'
+    ImagePosition: =ImagePosition.Fill
     OnVisible: =
 
     Form1 As form:
@@ -314,7 +316,7 @@
         ZIndex: =4
 
     Container4 As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(152, 208, 70, 1)
+        Fill: =RGBA(54, 176, 75, 1)
         Height: =146
         Width: =640
         ZIndex: =6
