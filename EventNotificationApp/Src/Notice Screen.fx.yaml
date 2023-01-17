@@ -30,14 +30,15 @@
                 ZIndex: =1
 
             Label2_1 As label:
+                Color: =RGBA(255, 255, 255, 1)
                 Font: =Font.Verdana
                 FontWeight: =FontWeight.Bold
                 Height: =70
                 Size: =21
-                Text: =User().FullName
+                Text: ="Hey! " & Office365Users.MyProfile().GivenName
                 Width: =385
-                X: =83
-                Y: =20
+                X: =88
+                Y: =40
                 ZIndex: =2
 
             Icon2 As icon.BackArrow:
@@ -46,7 +47,8 @@
                 Icon: =Icon.ArrowLeft
                 OnSelect: =Back()
                 Width: =50
-                Y: =90
+                X: =10
+                Y: =50
                 ZIndex: =3
 
         Container3_1 As groupContainer.manualLayoutContainer:
@@ -74,34 +76,33 @@
                 ZIndex: =2
 
                 Title1 As label:
+                    Align: =Align.Right
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Bold
                     Height: =Self.Size * 1.8
                     OnSelect: =Select(Parent)
-                    PaddingBottom: =1
-                    PaddingLeft: =10
+                    PaddingBottom: =2
+                    PaddingRight: =10
                     PaddingTop: =2
                     Text: =ThisItem.Title
                     VerticalAlign: =VerticalAlign.Top
-                    Width: = Label3.Width 
-                    X: =145
+                    Width: =Parent.Width
                     Y: =35
                     ZIndex: =2
 
                 Subtitle1 As label:
+                    Align: =Align.Right
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Semibold
                     Height: =Self.Size * 1.8
                     OnSelect: =Select(Parent)
-                    PaddingBottom: =0
-                    PaddingLeft: =10
-                    PaddingRight: =0
-                    PaddingTop: =0
+                    PaddingBottom: =2
+                    PaddingRight: =10
+                    PaddingTop: =2
                     Text: |-
                         ="Date: " &ThisItem.'Event Date'
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =Label3.Width
-                    X: =145
+                    Width: =Parent.Width
                     Y: =3
                     ZIndex: =3
 
@@ -113,8 +114,11 @@
                     ZIndex: =5
 
                 Label3 As label:
-                    Align: =Align.Justify
+                    BorderColor: =RGBA(255, 255, 255, 1)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =5
                     DisplayMode: =DisplayMode.View
+                    FocusedBorderThickness: =2
                     Font: =Font.Georgia
                     Height: =156
                     OnSelect: =Select(Parent)
@@ -123,7 +127,7 @@
                     Size: =18
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =457
+                    Width: =479
                     X: =145
                     Y: =71
                     ZIndex: =6
@@ -133,15 +137,15 @@
                     Size: =18
                     Text: ="Posted @ " & ThisItem.Created
                     Width: =560
-                    Y: =227
+                    Y: =228
                     ZIndex: =7
 
                 Image13 As image:
-                    Height: =132
+                    Height: =135
                     Image: ='icons8-loud-speaker-64'
                     OnSelect: =Select(Parent)
                     Width: =135
-                    X: =21
-                    Y: =35
+                    X: =10
+                    Y: =76
                     ZIndex: =8
 

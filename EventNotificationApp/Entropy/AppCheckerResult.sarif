@@ -1104,167 +1104,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.icons8-notice-58"
+                  "fullyQualifiedName": "App.icons8-sports-64"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.icons8-notice-58",
+                  "fullyQualifiedName": "App.icons8-sports-64",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "icons8-notice-58",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.icons8-leave-48"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.icons8-leave-48",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "icons8-leave-48",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.icons8-event-accepted-tentatively-100"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.icons8-event-accepted-tentatively-100",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "icons8-event-accepted-tentatively-100",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.icons8-participation-64"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.icons8-participation-64",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "icons8-participation-64",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.icons8-confetti-50"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.icons8-confetti-50",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "icons8-confetti-50",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.icons8-info-78"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.icons8-info-78",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "icons8-info-78",
+                "member": "icons8-sports-64",
                 "module": "App",
                 "type": "App"
               }
