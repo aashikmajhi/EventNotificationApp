@@ -73,7 +73,7 @@
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Notice"),'Event Date', Descending)
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
-                TemplateSize: =268
+                TemplateSize: =Title1.Y+Subtitle1.Y+Label3.Y+Label9.Y-60
                 ZIndex: =2
 
                 Title1 As label:
@@ -115,6 +115,7 @@
                     ZIndex: =5
 
                 Label3 As label:
+                    AutoHeight: =true
                     BorderColor: =RGBA(255, 255, 255, 1)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =5
@@ -129,7 +130,7 @@
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
                     Width: =479
-                    X: =145
+                    X: =161
                     Y: =71
                     ZIndex: =6
 
@@ -138,7 +139,9 @@
                     Size: =18
                     Text: ="Posted @ " & ThisItem.Created
                     Width: =560
-                    Y: =228
+                    X: |
+                        =0
+                    Y: =Label3.Y+Label3.Height+2
                     ZIndex: =7
 
                 Image13 As image:
@@ -147,6 +150,6 @@
                     OnSelect: =Select(Parent)
                     Width: =135
                     X: =10
-                    Y: =76
+                    Y: =71
                     ZIndex: =8
 

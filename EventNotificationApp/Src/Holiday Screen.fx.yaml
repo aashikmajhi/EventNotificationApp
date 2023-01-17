@@ -71,7 +71,7 @@
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Holiday"),'Event Date', Descending)
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
-                TemplateSize: =Min(268, Self.Height - 60)
+                TemplateSize: =Title3.Y+Subtitle3.Y+Label7_1.Y+Label12.Y-60
                 ZIndex: =2
 
                 Title3 As label:
@@ -113,6 +113,7 @@
                     ZIndex: =5
 
                 Label7_1 As label:
+                    AutoHeight: =true
                     DisplayMode: =DisplayMode.View
                     Font: =Font.Georgia
                     Height: =158
@@ -133,7 +134,7 @@
                     Size: =18
                     Text: ="Posted @ " & ThisItem.Created
                     Width: =560
-                    Y: =230
+                    Y: =Label7_1.Y+Label7_1.Height+5
                     ZIndex: =7
 
                 Image2 As image:

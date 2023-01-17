@@ -71,7 +71,7 @@
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Event"),'Event Date', Descending)
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
-                TemplateSize: =268
+                TemplateSize: =Title2.Y+Subtitle2.Y+Label7.Y+Label11.Y-60
                 ZIndex: =2
 
                 Title2 As label:
@@ -112,6 +112,7 @@
                     ZIndex: =5
 
                 Label7 As label:
+                    AutoHeight: =true
                     DisplayMode: =DisplayMode.View
                     Font: =Font.Georgia
                     Height: =156
@@ -131,7 +132,7 @@
                     Size: =18
                     Text: ="Posted @ " & ThisItem.Created
                     Width: =560
-                    Y: =228
+                    Y: =Label7.Y+Label7.Height+1
                     ZIndex: =7
 
                 Image1 As image:
