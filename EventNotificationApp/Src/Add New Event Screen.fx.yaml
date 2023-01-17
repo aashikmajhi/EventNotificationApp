@@ -327,7 +327,7 @@
             Icon: =Icon.ArrowLeft
             OnSelect: =Back()
             Width: =50
-            Y: =86
+            Y: =50
             ZIndex: =1
 
         Label8 As label:

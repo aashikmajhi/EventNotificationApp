@@ -71,7 +71,7 @@
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Holiday"),'Event Date', Descending)
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
-                TemplateSize: =Title3.Y+Subtitle3.Y+Label7_1.Y+Label12.Y-60
+                TemplateSize: =268
                 ZIndex: =2
 
                 Title3 As label:
@@ -134,7 +134,6 @@
                     Size: =18
                     Text: ="Posted @ " & ThisItem.Created
                     Width: =560
-                    Y: =Label7_1.Y+Label7_1.Height+5
                     ZIndex: =7
 
                 Image2 As image:

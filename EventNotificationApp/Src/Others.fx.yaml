@@ -71,7 +71,7 @@ Others As screen:
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Others"),'Event Date', Descending)
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
-                TemplateSize: =Title4.Y+Subtitle4.Y+Label7_2.Y+Label14.Y-60
+                TemplateSize: =Subtitle4.Y+Label7_2.Y+Label7_2.Height
                 ZIndex: =2
 
                 Title4 As label:
@@ -135,7 +135,7 @@ Others As screen:
                     Size: =18
                     Text: ="Posted @ " & ThisItem.Created
                     Width: =Label7_2.Width
-                    Y: =Label7_2.Y+Label7_2.Height
+                    X: =Image3.DisplayedHeight
                     ZIndex: =7
 
                 Image3 As image:
