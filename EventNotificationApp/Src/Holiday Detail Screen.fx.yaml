@@ -269,7 +269,8 @@
                             Color: =RGBA(255, 255, 255, 1)
                             Fill: |-
                                 =//If(DateValue(ThisItem.Value)=Text(DateValue(DataCardValue3_3),"d"),Red,RGBA(56, 96, 178, 1))
-                                RGBA(56, 96, 178, 1)
+                                //RGBA(56, 96, 178, 1)
+                                If((Self.Text)=Text(Gallery3.Selected.'Event Date',"d"),Red,RGBA(56, 96, 178, 1))
                             Height: =galDate_1.TemplateHeight
                             OnSelect: =Select(Parent)
                             PaddingBottom: =0

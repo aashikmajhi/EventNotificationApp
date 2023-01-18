@@ -70,8 +70,6 @@
                 Height: =982
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Holiday"),'Event Date', Descending)
                 Layout: =Layout.Vertical
-                OnSelect: |
-                    =true;Navigate('Holiday Detail Screen');
                 TemplatePadding: =0
                 TemplateSize: =200
                 ZIndex: =2
@@ -80,7 +78,6 @@
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Bold
                     Height: =Self.Size * 1.8
-                    OnSelect: =Select(Parent)
                     PaddingBottom: =2
                     PaddingTop: =2
                     Size: =19
@@ -101,7 +98,6 @@
                     DisplayMode: =DisplayMode.View
                     Font: =Font.Georgia
                     Height: =116
-                    OnSelect: =Select(Parent)
                     Size: =17
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
@@ -113,7 +109,6 @@
                 Label12 As label:
                     Align: =Align.Center
                     Height: =32
-                    OnSelect: =Select(Parent)
                     Size: =16
                     Text: ="Posted @ " & ThisItem.Created
                     Width: =495
@@ -124,9 +119,19 @@
                 Image2 As image:
                     Height: =130
                     Image: ='icons8-holiday-60'
-                    OnSelect: =Select(Parent)
                     Width: =130
                     X: =2
                     Y: =38
                     ZIndex: =8
+
+                Button6 As button:
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =199
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    OnSelect: =Navigate('Holiday Detail Screen')
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Size: =24
+                    Text: =""
+                    Width: =640
+                    ZIndex: =9
 
