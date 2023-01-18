@@ -70,7 +70,8 @@
                 Height: =982
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Holiday"),'Event Date', Descending)
                 Layout: =Layout.Vertical
-                OnSelect: =true;Navigate('Holiday Detail Screen')
+                OnSelect: |
+                    =true;Navigate('Holiday Detail Screen');
                 TemplatePadding: =0
                 TemplateSize: =200
                 ZIndex: =2
