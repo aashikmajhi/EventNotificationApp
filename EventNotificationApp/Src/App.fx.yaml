@@ -15,6 +15,6 @@ App As appinfo:
             )
         ) || Set( isUserAdminSPList,Email="naresh.dhami@astral.com.np" );
         
-        Set(varDate,DateValue(Month(Today()) & "/" & "1" & "/" & Year(Today())));
-        Set(varDays,DateAdd(varDate, -Weekday(varDate),Days));
+        //Set(varDate,DateValue(Month(Today()) & "/" & "1" & "/" & Year(Today())));
+        //Set(varDays,DateAdd(varDate, -Weekday(varDate),Days));
 
