@@ -116,12 +116,17 @@
     "Splash Screen",
     "Dashboard",
     "Notice Screen",
+    "Notice Detail Screen",
     "Event Screen",
+    "Event Detail Screen",
     "Holiday Screen",
+    "Holiday Detail Screen",
     "Others",
+    "Others Detail Screen",
     "Home Screen",
     "Add New Event Screen",
     "Notice Screen_1",
+    "Notice Screen_2",
     "Event Screen_1"
   ]
 }

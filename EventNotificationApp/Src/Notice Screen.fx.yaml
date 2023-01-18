@@ -72,40 +72,24 @@
                 Height: =982
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Notice"),'Event Date', Descending)
                 Layout: =Layout.Vertical
+                OnSelect: =true;Navigate('Notice Detail Screen')
                 TemplatePadding: =0
-                TemplateSize: =Subtitle1.Y+Label3.Y+Label3.Height
+                TemplateSize: =200
                 ZIndex: =2
 
                 Title1 As label:
-                    Align: =Align.Right
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Bold
                     Height: =Self.Size * 1.8
                     OnSelect: =Select(Parent)
                     PaddingBottom: =2
-                    PaddingRight: =10
                     PaddingTop: =2
+                    Size: =19
                     Text: =ThisItem.Title
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =Parent.Width
-                    Y: =35
+                    Width: =495
+                    X: =145
                     ZIndex: =2
-
-                Subtitle1 As label:
-                    Align: =Align.Right
-                    DisplayMode: =DisplayMode.View
-                    FontWeight: =FontWeight.Semibold
-                    Height: =Self.Size * 1.8
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =2
-                    PaddingRight: =10
-                    PaddingTop: =2
-                    Text: |-
-                        ="Date: " &ThisItem.'Event Date'
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =Parent.Width
-                    Y: =3
-                    ZIndex: =3
 
                 Separator1 As rectangle:
                     Height: =1
@@ -115,40 +99,39 @@
                     ZIndex: =5
 
                 Label3 As label:
-                    AutoHeight: =true
                     BorderColor: =RGBA(255, 255, 255, 1)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =5
                     DisplayMode: =DisplayMode.View
                     FocusedBorderThickness: =2
                     Font: =Font.Georgia
-                    Height: =156
+                    Height: =116
                     OnSelect: =Select(Parent)
-                    PaddingLeft: =10
-                    PaddingRight: =10
-                    Size: =18
+                    Size: =17
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =479
-                    X: =161
-                    Y: =71
+                    Width: =495
+                    X: =145
+                    Y: =32
                     ZIndex: =6
 
                 Label9 As label:
+                    Align: =Align.Center
+                    Height: =32
                     OnSelect: =Select(Parent)
-                    Size: =18
+                    Size: =16
                     Text: ="Posted @ " & ThisItem.Created
-                    Width: =560
-                    X: |
-                        =0
+                    Width: =495
+                    X: =145
+                    Y: =148
                     ZIndex: =7
 
                 Image13 As image:
-                    Height: =135
+                    Height: =130
                     Image: ='icons8-loud-speaker-64'
                     OnSelect: =Select(Parent)
-                    Width: =135
-                    X: =10
-                    Y: =71
+                    Width: =130
+                    X: =2
+                    Y: =38
                     ZIndex: =8
 

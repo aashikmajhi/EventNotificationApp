@@ -77,7 +77,7 @@
             Fill: =RGBA(56, 96, 178, 1)
             Icon: =Icon.Add
             OnSelect: =true; Navigate('Add New Event Screen')
-            X: =536
-            Y: =896
+            X: =544
+            Y: =1048
             ZIndex: =2
 

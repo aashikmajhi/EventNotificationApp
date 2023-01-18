@@ -71,40 +71,23 @@ Others As screen:
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Others"),'Event Date', Descending)
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
-                TemplateSize: =Subtitle4.Y+Label7_2.Y+Label7_2.Height
+                TemplateSize: =200
                 ZIndex: =2
 
                 Title4 As label:
-                    Align: =Align.Right
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Bold
                     Height: =Self.Size * 1.8
                     OnSelect: =Select(Parent)
                     PaddingBottom: =2
-                    PaddingRight: =10
                     PaddingTop: =2
+                    Size: =19
                     Text: =ThisItem.Title
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =Parent.TemplateWidth
-                    Y: =34
+                    Width: |
+                        =495
+                    X: =145
                     ZIndex: =2
-
-                Subtitle4 As label:
-                    Align: =Align.Right
-                    DisplayMode: =DisplayMode.View
-                    FontWeight: =FontWeight.Semibold
-                    Height: =Self.Size * 1.8
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =2
-                    PaddingRight: =10
-                    PaddingTop: =2
-                    Text: |-
-                        ="Date: " &ThisItem.'Event Date'
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =Title4.Width
-                    X: =Title4.X
-                    Y: =4
-                    ZIndex: =3
 
                 Separator4 As rectangle:
                     Height: =1
@@ -114,36 +97,36 @@ Others As screen:
                     ZIndex: =5
 
                 Label7_2 As label:
-                    AutoHeight: =true
-                    DisplayMode: =DisplayMode.View
                     Font: =Font.Georgia
-                    Height: =Max(Label7_2.AutoHeight,70)
-                    OnSelect: =Select(Parent)
+                    Height: =116
+                    OnSelect: =Navigate('Others Detail Screen')
                     PaddingLeft: =10
                     PaddingRight: =10
-                    Size: =18
+                    Size: =16
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =467
-                    X: =173
-                    Y: =70
+                    Width: =495
+                    X: =145
+                    Y: =32
                     ZIndex: =6
 
                 Label14 As label:
-                    Height: =35
+                    Align: =Align.Center
+                    Height: =30
                     OnSelect: =Select(Parent)
-                    Size: =18
+                    Size: =16
                     Text: ="Posted @ " & ThisItem.Created
                     Width: =Label7_2.Width
-                    X: =Image3.DisplayedHeight
+                    X: =145
+                    Y: =148
                     ZIndex: =7
 
                 Image3 As image:
-                    Height: =135
+                    Height: =130
                     Image: ='icons8-technical-64'
                     OnSelect: =Select(Parent)
-                    Width: =135
-                    X: =20
-                    Y: =76
+                    Width: =130
+                    X: =2
+                    Y: =38
                     ZIndex: =8
 

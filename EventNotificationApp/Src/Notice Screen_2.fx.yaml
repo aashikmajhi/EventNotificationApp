@@ -1,11 +1,11 @@
-"'Notice Screen_1' As screen":
+"'Notice Screen_2' As screen":
 
-    Container1_6 As groupContainer.manualLayoutContainer:
+    Container1_7 As groupContainer.manualLayoutContainer:
         Height: =1136
         Width: =640
         ZIndex: =3
 
-        Container2_7 As groupContainer.manualLayoutContainer:
+        Container2_8 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
             BorderThickness: =10
@@ -18,7 +18,7 @@
             Width: =640
             ZIndex: =6
 
-            Image7_7 As image:
+            Image7_8 As image:
                 Height: =150
                 Image: =User().Image
                 RadiusBottomLeft: =95
@@ -29,7 +29,7 @@
                 X: =490
                 ZIndex: =1
 
-            Label2_6 As label:
+            Label2_7 As label:
                 Color: =RGBA(255, 255, 255, 1)
                 Font: =Font.Verdana
                 FontWeight: =FontWeight.Bold
@@ -41,7 +41,7 @@
                 Y: =40
                 ZIndex: =2
 
-            Icon2_6 As icon.BackArrow:
+            Icon2_7 As icon.BackArrow:
                 Color: =RGBA(255, 255, 255, 1)
                 Height: =50
                 Icon: =Icon.ArrowLeft
@@ -51,7 +51,7 @@
                 Y: =50
                 ZIndex: =3
 
-        Container3_6 As groupContainer.manualLayoutContainer:
+        Container3_7 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
             BorderThickness: =5
@@ -61,7 +61,7 @@
             Y: =150
             ZIndex: =15
 
-            Image8_6 As image:
+            Image8_7 As image:
                 DisplayMode: =DisplayMode.View
                 Height: =982
                 Image: ='bg-3'
@@ -69,23 +69,23 @@
                 Width: =640
                 ZIndex: =1
 
-            "Gallery1_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+            "Gallery1_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                 DisplayMode: =DisplayMode.View
                 Height: =982
-                Items: =Sort(Filter('Event and Notice','Event Types'.Value="Notice"),'Event Date', Descending)
+                Items: =Sort(Filter('Event and Notice','Event Types'.Value="Others"),'Event Date', Descending)
                 Layout: =Layout.Vertical
                 TemplatePadding: =0
-                TemplateSize: =200
+                TemplateSize: =268
                 ZIndex: =2
 
-                Group2 As group:
+                Group2_1 As group:
                     Height: =5
                     Width: =5
                     X: =40
                     Y: =40
                     ZIndex: =9
 
-                    Button3 As button:
+                    Button3_1 As button:
                         Align: =Align.Left
                         BorderColor: =ColorFade(RGBA(245, 255, 253, 0.25),-80%)
                         BorderThickness: =15
@@ -93,7 +93,7 @@
                         DisabledFill: =RGBA(0, 0, 0, 0)
                         DisplayMode: =DisplayMode.Disabled
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =200
+                        Height: =265
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
@@ -110,73 +110,77 @@
                         Y: =3
                         ZIndex: =1
 
-                    Title1_1 As label:
+                    Title1_2 As label:
                         BorderColor: =RGBA(255, 255, 255, 1)
                         BorderStyle: =BorderStyle.None
                         DisplayMode: =DisplayMode.View
                         FontWeight: =FontWeight.Bold
                         Height: =35
                         OnSelect: =Select(Parent)
-                        PaddingBottom: =2
-                        PaddingTop: =2
+                        PaddingBottom: =0
+                        PaddingLeft: =10
+                        PaddingRight: =0
+                        PaddingTop: =0
                         Size: =19
                         Text: =ThisItem.Title
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =495
-                        X: =137
+                        Width: =614
+                        X: =13
                         Y: =17
                         ZIndex: =2
 
-                    Label3_2 As label:
+                    Label3_3 As label:
                         BorderColor: =RGBA(255, 255, 255, 1)
                         BorderStyle: =BorderStyle.None
                         DisplayMode: =DisplayMode.View
                         FocusedBorderThickness: =2
-                        Font: =Font.Georgia
+                        Font: =Font.Arial
                         Height: =116
-                        OnSelect: =Select(Parent)
-                        PaddingLeft: =10
-                        PaddingRight: =10
-                        Size: =16
-                        Text: =ThisItem.'Event Description'
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =495
-                        X: =132
-                        Y: =52
-                        ZIndex: =4
-
-                    Label9_1 As label:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(255, 255, 255, 1)
-                        BorderStyle: =BorderStyle.None
-                        DisplayMode: =DisplayMode.View
-                        Height: =32
                         OnSelect: =Select(Parent)
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =16
+                        Text: =ThisItem.'Event Description'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =479
+                        X: =153
+                        Y: =52
+                        ZIndex: =4
+
+                    Label9_2 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(255, 255, 255, 1)
+                        BorderStyle: =BorderStyle.None
+                        DisplayMode: =DisplayMode.View
+                        Height: =30
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =10
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =18
                         Text: ="Posted @ " & ThisItem.Created
                         Width: =495
-                        X: =64
-                        Y: =160
+                        X: =137
+                        Y: =181
                         ZIndex: =5
 
-                    Image13_1 As image:
+                    Image13_2 As image:
                         BorderColor: =RGBA(230, 230, 230, 1)
                         BorderThickness: =4
                         DisplayMode: =DisplayMode.View
-                        Height: =130
-                        Image: ='icons8-loud-speaker-64'
+                        Height: =135
+                        Image: ='icons8-technical-64'
                         OnSelect: =Select(Parent)
                         RadiusBottomLeft: =36
                         RadiusBottomRight: =36
                         RadiusTopLeft: =36
                         RadiusTopRight: =36
                         Transparency: =-10
-                        Width: =130
-                        X: =2
-                        Y: =47
+                        Width: =135
+                        X: =10
+                        Y: =76
                         ZIndex: =6
 

@@ -1,0 +1,194 @@
+"'Others Detail Screen' As screen":
+
+    Container1_8 As groupContainer.manualLayoutContainer:
+        Height: =Parent.Height
+        Width: =640
+        ZIndex: =3
+
+        Container2_9 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =10
+            Fill: =RGBA(7, 153, 185, 1)
+            Height: =150
+            PaddingBottom: =2
+            PaddingLeft: =2
+            PaddingRight: =2
+            PaddingTop: =2
+            Width: =640
+            ZIndex: =6
+
+            Image7_9 As image:
+                Height: =150
+                Image: =User().Image
+                RadiusBottomLeft: =95
+                RadiusBottomRight: =95
+                RadiusTopLeft: =95
+                RadiusTopRight: =95
+                Width: =150
+                X: =490
+                ZIndex: =1
+
+            Label2_8 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
+                Height: =70
+                Size: =21
+                Text: ="Hey! " & Office365Users.MyProfile().GivenName
+                Width: =455
+                X: =88
+                Y: =40
+                ZIndex: =2
+
+            Icon2_8 As icon.BackArrow:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =50
+                Icon: =Icon.ArrowLeft
+                OnSelect: =Back()
+                Width: =50
+                X: =10
+                Y: =50
+                ZIndex: =3
+
+        Container3_8 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(153, 153, 153, 1)
+            Height: =982
+            Width: =640
+            Y: =150
+            ZIndex: =15
+
+            Image8_5 As image:
+                DisplayMode: =DisplayMode.View
+                Height: =982
+                ImagePosition: =ImagePosition.Fill
+                Width: =640
+                ZIndex: =1
+
+            FormViewer1 As formViewer:
+                DataSource: ='Event and Notice'
+                Height: =982
+                Width: =640
+                ZIndex: =2
+
+                "'Event Date_DataCard2' As typedDataCard.textualViewCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="EventDate"
+                    Default: =ThisItem.'Event Date'
+                    DisplayMode: =DisplayMode.View
+                    DisplayName: =DataSourceInfo([@'Event and Notice'],DataSourceInfo.DisplayName,"EventDate")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =40
+                    Required: =false
+                    Width: =640
+                    X: =0
+                    Y: =0
+                    ZIndex: =3
+
+                    DataCardKey4 As label:
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Bold
+                        Height: =48
+                        Size: =21
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue4 As label:
+                        AutoHeight: =true
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =10
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =21
+                        Text: =Gallery4.Selected.'Event Date'
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                        ZIndex: =2
+
+                Title_DataCard2 As typedDataCard.textualViewCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Title"
+                    Default: =ThisItem.Title
+                    DisplayMode: =DisplayMode.View
+                    DisplayName: =DataSourceInfo([@'Event and Notice'],DataSourceInfo.DisplayName,"Title")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =40
+                    Required: =true
+                    Visible: =true
+                    Width: =640
+                    X: =0
+                    Y: =1
+                    ZIndex: =3
+
+                    DataCardKey3 As label:
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Bold
+                        Height: =48
+                        Size: =21
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue3 As label:
+                        AutoHeight: =true
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =10
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =21
+                        Text: =Gallery4.Selected.Title
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                        ZIndex: =2
+
+                "'Event Description_DataCard1' As typedDataCard.textualViewCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="EventDescription"
+                    Default: =ThisItem.'Event Description'
+                    DisplayMode: =DisplayMode.View
+                    DisplayName: =DataSourceInfo([@'Event and Notice'],DataSourceInfo.DisplayName,"EventDescription")
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =298
+                    Required: =true
+                    Width: =640
+                    X: =0
+                    Y: =2
+                    ZIndex: =3
+
+                    DataCardKey7 As label:
+                        AutoHeight: =true
+                        FontWeight: =FontWeight.Bold
+                        Height: =48
+                        Size: =21
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue7 As label:
+                        AutoHeight: =true
+                        DisplayMode: =Parent.DisplayMode
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =21
+                        Text: =Gallery4.Selected.'Event Description'
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                        ZIndex: =2
+
