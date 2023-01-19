@@ -72,7 +72,6 @@
                 Height: =982
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Notice"),'Event Date', Descending)
                 Layout: =Layout.Vertical
-                OnSelect: =true;Navigate('Notice Detail Screen')
                 TemplatePadding: =0
                 TemplateSize: =200
                 ZIndex: =2
@@ -134,4 +133,18 @@
                     X: =2
                     Y: =38
                     ZIndex: =8
+
+                Button6_1 As button:
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =199
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    OnSelect: |-
+                        =Set(varItem,ThisItem);
+                        Navigate('Notice Detail Screen')
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Size: =24
+                    Text: =""
+                    Width: =640
+                    Y: =1
+                    ZIndex: =9
 

@@ -128,7 +128,9 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =199
                     HoverFill: =RGBA(0, 0, 0, 0)
-                    OnSelect: =Navigate('Holiday Detail Screen')
+                    OnSelect: |-
+                        =Set(varItem,ThisItem);
+                        Navigate('Holiday Detail Screen')
                     PressedFill: =RGBA(0, 0, 0, 0)
                     Size: =24
                     Text: =""
