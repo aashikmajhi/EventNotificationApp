@@ -73,37 +73,6 @@
                 Width: =640
                 ZIndex: =2
 
-                DataCard3 As typedDataCard.blankCard:
-                    BorderStyle: =BorderStyle.Solid
-                    DisplayMode: =DisplayMode.Edit
-                    Fill: =RGBA(0, 0, 0, 0)
-                    Height: =132
-                    Width: =640
-                    X: =0
-                    Y: =3
-                    ZIndex: =1
-
-                    Label4 As label:
-                        Color: =RGBA(0, 16, 96, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =45
-                        Size: =21
-                        Text: ="Holiday Dates"
-                        Width: =560
-                        X: =36
-                        ZIndex: =1
-
-                    Label4_2 As label:
-                        Color: =RGBA(0, 16, 96, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =62
-                        Size: =21
-                        Text: ="2"&","&"3"
-                        Width: =560
-                        X: =36
-                        Y: =45
-                        ZIndex: =2
-
                 "'Event Date_DataCard2_3' As typedDataCard.textualViewCard":
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="EventDate"
@@ -241,7 +210,7 @@
             TemplateSize: =48
             Width: =637
             WrapCount: =7
-            Y: =879
+            Y: =775
             ZIndex: =2
 
             Title12_1 As label:
@@ -279,7 +248,7 @@
             TemplateSize: =30
             Width: =637
             WrapCount: =7
-            Y: =916
+            Y: =812
             ZIndex: =3
 
             Rectangle1_6 As rectangle:
@@ -293,7 +262,7 @@
             Title12_3 As label:
                 Align: =Align.Center
                 Color: =RGBA(255, 255, 255, 1)
-                Fill: |
+                Fill: |-
                     =//If(DateValue(ThisItem.Value)=Text(DateValue(DataCardValue3_3),"d"),Red,RGBA(56, 96, 178, 1))
                     //RGBA(56, 96, 178, 1)
                     If((Self.Text)=Text(Gallery3.Selected.'Event Date',"d"),Red,RGBA(56, 96, 178, 1))
@@ -331,7 +300,7 @@
             Text: =Text(varDate,"mmmm")
             Width: =202
             X: =282
-            Y: =828
+            Y: =724
             ZIndex: =4
 
         lblYear_1 As label:
@@ -343,6 +312,6 @@
             Text: =Text(varDate,"yyyy")
             Width: =111
             X: =171
-            Y: =828
+            Y: =724
             ZIndex: =5
 

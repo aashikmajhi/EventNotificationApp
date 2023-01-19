@@ -236,8 +236,8 @@ Dashboard As screen:
                     Size: =24
                     Text: =""
                     Width: =288
-                    X: =21
-                    Y: =433
+                    X: =18
+                    Y: =438
                     ZIndex: =10
 
                 Button2_2 As button:
@@ -258,8 +258,8 @@ Dashboard As screen:
                     Size: =25
                     Text: =""
                     Width: =280
-                    X: =25
-                    Y: =438
+                    X: =22
+                    Y: =443
                     ZIndex: =11
 
                 Button5_5 As button:
@@ -276,8 +276,8 @@ Dashboard As screen:
                     Size: =25
                     Text: ="Holiday"
                     Width: =280
-                    X: =25
-                    Y: =586
+                    X: =22
+                    Y: =591
                     ZIndex: =12
 
                 Button5_4 As button:
@@ -298,8 +298,8 @@ Dashboard As screen:
                     Size: =25
                     Text: =CountRows(Filter('Event and Notice','Event Types'.Value="Holiday"))
                     Width: =50
-                    X: =51
-                    Y: =469
+                    X: =48
+                    Y: =474
                     ZIndex: =13
 
             Group5_4 As group:
