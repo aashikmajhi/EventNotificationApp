@@ -43,7 +43,7 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =45
                 Items: =Choices([@'Event and Notice'].'Event Types')
                 OnSelect: =
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -91,7 +91,7 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Event and Notice'],DataSourceInfo.DisplayName,"EventDescription")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =435
+            Height: =347
             Required: =false
             Update: =DataCardValue5.Text
             Width: =640
@@ -115,7 +115,7 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Height: =340
+                Height: =260
                 HintText: ="Add event details and other information here"
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -158,6 +158,38 @@
                 Y: =DataCardKey5.Y
                 ZIndex: =4
 
+        DataCard1 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =157
+            Visible: =If(DataCardValue6.Selected.Value="Holiday",true,false)
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            ComboBox1 As combobox:
+                Height: =45
+                IsSearchable: =false
+                Items: =Sequence(35)
+                SearchItems: =[]
+                Size: =21
+                Width: =575
+                X: =40
+                Y: =53
+                ZIndex: =1
+
+            Label1 As label:
+                Color: =RGBA(39, 67, 125, 1)
+                Height: =48
+                Size: =21
+                Text: ="Select Holiday Dates"
+                Width: =580
+                X: =40
+                Y: =5
+                ZIndex: =2
+
         "'Event Date_DataCard1' As typedDataCard.dateEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="EventDate"
@@ -188,7 +220,7 @@
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
-                Height: =70
+                Height: =45
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
@@ -259,7 +291,7 @@
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =45
                 HintText: ="Add event title here"
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
