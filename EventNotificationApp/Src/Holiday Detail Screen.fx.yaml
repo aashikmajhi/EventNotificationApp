@@ -69,6 +69,7 @@
                 AcceptsFocus: =true
                 DataSource: ='Event and Notice'
                 Height: =982
+                Item: =varItem
                 Width: =640
                 ZIndex: =2
 

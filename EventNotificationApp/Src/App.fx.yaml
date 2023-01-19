@@ -15,4 +15,5 @@ App As appinfo:
             )
         ) || Set( isUserAdminSPList,Email="naresh.dhami@astral.com.np" );
         
+    StartScreen: ='Splash Screen'
 
