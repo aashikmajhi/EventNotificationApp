@@ -1584,49 +1584,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galWeekDays_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galDate_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galWeekDays_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Holiday Detail Screen",
-                "type": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galWeekDays_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galWeekDays_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galWeekDays_1.TabIndex",
+                  "fullyQualifiedName": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galDate_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Holiday Detail Screen",
-                "type": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galWeekDays_1"
+                "type": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galDate_1"
               }
             }
           ],
@@ -1674,19 +1644,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galDate_1.TabIndex"
+                  "fullyQualifiedName": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galWeekDays_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galDate_1.TabIndex",
+                  "fullyQualifiedName": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galWeekDays_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Holiday Detail Screen",
-                "type": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galDate_1"
+                "type": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galWeekDays_1"
               }
             }
           ],
@@ -1698,6 +1668,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galWeekDays_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galWeekDays_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Holiday Detail Screen",
+                "type": "'Holiday Detail Screen'.Container1_11.Container3_11.Container3_13.galWeekDays_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
         },
         {
           "locations": [
