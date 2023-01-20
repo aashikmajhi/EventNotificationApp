@@ -353,7 +353,7 @@
 
     Container4 As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(0, 121, 187, 1)
-        BorderThickness: =3
+        Fill: =RGBA(109, 206, 247, 1)
         Height: =146
         Width: =640
         ZIndex: =6
