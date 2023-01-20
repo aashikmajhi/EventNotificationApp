@@ -63,8 +63,10 @@
                 Height: =982
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Holiday"),'Event Date', Descending)
                 Layout: =Layout.Vertical
-                TemplatePadding: =3
+                TemplatePadding: |
+                    =3
                 TemplateSize: =200
+                WrapCount: =0
                 ZIndex: =2
 
                 Title3 As label:

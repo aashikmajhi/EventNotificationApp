@@ -2,6 +2,9 @@
     Fill: =RGBA(0, 0, 0, 0)
 
     Container5 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(39, 113, 194, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =10
         Fill: =RGBA(255, 255, 255, 1)
         Height: =Parent.Height
         Width: =Parent.Width
