@@ -95,6 +95,7 @@
                     BorderColor: =RGBA(255, 255, 255, 1)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =5
+                    Color: =RGBA(0, 16, 96, 1)
                     DisplayMode: =DisplayMode.View
                     FocusedBorderThickness: =2
                     Font: =Font.Georgia

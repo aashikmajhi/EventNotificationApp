@@ -91,12 +91,13 @@ Others As screen:
                     ZIndex: =5
 
                 Label7_2 As label:
+                    Color: =RGBA(0, 16, 96, 1)
                     Font: =Font.Georgia
                     Height: =116
                     OnSelect: =Navigate('Others Detail Screen')
                     PaddingLeft: =10
                     PaddingRight: =10
-                    Size: =16
+                    Size: =17
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
                     Width: =495

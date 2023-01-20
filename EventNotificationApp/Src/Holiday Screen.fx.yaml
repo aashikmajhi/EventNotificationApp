@@ -89,6 +89,7 @@
                     ZIndex: =5
 
                 Label7_1 As label:
+                    Color: =RGBA(0, 16, 96, 1)
                     DisplayMode: =DisplayMode.View
                     Font: =Font.Georgia
                     Height: =116
