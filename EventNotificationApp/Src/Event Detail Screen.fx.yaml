@@ -1,4 +1,5 @@
 "'Event Detail Screen' As screen":
+    BackgroundImage: =eventdetailbg
 
     Container1_10 As groupContainer.manualLayoutContainer:
         Height: =1136
@@ -9,7 +10,7 @@
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
             BorderThickness: =10
-            Fill: =RGBA(65, 152, 115, 1)
+            Fill: =RGBA(28, 99, 68, 0.57)
             Height: =150
             PaddingBottom: =2
             PaddingLeft: =2
@@ -53,96 +54,43 @@
 
         Container3_10 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(153, 153, 153, 1)
             Height: =982
             Width: =640
             Y: =150
             ZIndex: =15
 
-            Image8_9 As image:
-                DisplayMode: =DisplayMode.View
-                Height: =982
-                ImagePosition: =ImagePosition.Fill
-                Width: =640
-                ZIndex: =1
-
             FormViewer1_2 As formViewer:
                 DataSource: ='Event and Notice'
                 Height: =982
+                Item: =varItem
+                SnapToColumns: =false
                 Width: =640
                 ZIndex: =2
 
-                Attachments_DataCard1 As typedDataCard.attachmentsViewCard:
+                DataCard2 As typedDataCard.blankCard:
                     BorderStyle: =BorderStyle.Solid
-                    DataField: ="{Attachments}"
-                    Default: =ThisItem.Attachments
-                    DisplayMode: =DisplayMode.View
-                    DisplayName: =DataSourceInfo([@'Event and Notice'],DataSourceInfo.DisplayName,"{Attachments}")
+                    DisplayMode: =DisplayMode.Edit
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =50
-                    Required: =false
-                    Update: =DataCardValue11.Attachments
-                    Width: =640
+                    Height: =107
+                    Width: =636
                     X: =0
                     Y: =3
                     ZIndex: =1
 
-                    DataCardKey11 As label:
-                        AutoHeight: =true
-                        Height: =48
-                        Size: =21
-                        Text: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        Wrap: =false
-                        X: =30
-                        Y: =10
+                    Button7 As button:
+                        Fill: =RGBA(246, 88, 16, 0.71)
+                        Height: =70
+                        HoverFill: =ColorFade(Self.Fill,-20%)
+                        RadiusBottomLeft: =35
+                        RadiusBottomRight: =35
+                        RadiusTopLeft: =35
+                        RadiusTopRight: =35
+                        Size: =24
+                        Text: ="View Photos"
+                        Width: =280
+                        X: =189
+                        Y: =18
                         ZIndex: =1
-
-                    DataCardValue11 As attachments:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        DisplayMode: =Parent.DisplayMode
-                        Height: =520
-                        IsInDataCard: =true
-                        Items: =LookUp('Event and Notice',Gallery2.Selected.Title=DataCardValue3_2.Text,Attachments)
-                        PaddingBottom: =5
-                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                        PaddingRight: =5
-                        PaddingTop: =5
-                        Size: =21
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardKey11.Y + DataCardKey11.Height + 5
-                        ZIndex: =2
-
-                    Image7 As image:
-                        DisplayMode: =DisplayMode.View
-                        Fill: =RGBA(9, 33, 98, 1)
-                        Height: =212
-                        Image: ='icons8-sports-64'
-                        Width: =205
-                        X: =33
-                        Y: =342
-                        ZIndex: =3
-
-                    Image7_13 As image:
-                        DisplayMode: =DisplayMode.View
-                        Fill: =RGBA(9, 33, 98, 1)
-                        Height: =463
-                        Image: ='icons8-sports-64'
-                        Width: =337
-                        X: =273
-                        Y: =91
-                        ZIndex: =4
-
-                    Image7_14 As image:
-                        DisplayMode: =DisplayMode.View
-                        Fill: =RGBA(9, 33, 98, 1)
-                        Height: =211
-                        Image: ='icons8-sports-64'
-                        Width: =205
-                        X: =33
-                        Y: =94
-                        ZIndex: =5
 
                 "'Event Date_DataCard2_2' As typedDataCard.textualViewCard":
                     BorderStyle: =BorderStyle.Solid
@@ -151,28 +99,18 @@
                     DisplayMode: =DisplayMode.View
                     DisplayName: =DataSourceInfo([@'Event and Notice'],DataSourceInfo.DisplayName,"EventDate")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =40
+                    Height: =81
                     Required: =false
-                    Width: =640
+                    Width: =636
                     X: =0
                     Y: =0
                     ZIndex: =3
 
-                    DataCardKey4_2 As label:
-                        AutoHeight: =true
-                        FontWeight: =FontWeight.Bold
-                        Height: =48
-                        Size: =21
-                        Text: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        Wrap: =false
-                        X: =30
-                        Y: =10
-                        ZIndex: =1
-
                     DataCardValue4_2 As label:
                         AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
                         DisplayMode: =Parent.DisplayMode
+                        FontWeight: =FontWeight.Semibold
                         Height: =10
                         PaddingLeft: =0
                         PaddingRight: =0
@@ -180,8 +118,8 @@
                         Size: =21
                         Text: =Gallery2.Selected.'Event Date'
                         Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardKey4_2.Y + DataCardKey4_2.Height + 5
+                        X: =24
+                        Y: =24
                         ZIndex: =2
 
                 Title_DataCard2_2 As typedDataCard.textualViewCard:
@@ -191,38 +129,28 @@
                     DisplayMode: =DisplayMode.View
                     DisplayName: =DataSourceInfo([@'Event and Notice'],DataSourceInfo.DisplayName,"Title")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =40
+                    Height: =91
                     Required: =true
                     Visible: =true
-                    Width: =640
+                    Width: =636
                     X: =0
                     Y: =1
                     ZIndex: =3
 
-                    DataCardKey3_2 As label:
-                        AutoHeight: =true
-                        FontWeight: =FontWeight.Bold
-                        Height: =48
-                        Size: =21
-                        Text: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        Wrap: =false
-                        X: =30
-                        Y: =10
-                        ZIndex: =1
-
                     DataCardValue3_2 As label:
                         AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
                         DisplayMode: =Parent.DisplayMode
+                        FontWeight: =FontWeight.Bold
                         Height: =10
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =21
+                        Size: =25
                         Text: =Gallery2.Selected.Title
                         Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardKey3_2.Y + DataCardKey3_2.Height + 5
+                        X: =28
+                        Y: =20
                         ZIndex: =2
 
                 "'Event Description_DataCard1_2' As typedDataCard.textualViewCard":
@@ -239,28 +167,20 @@
                     Y: =2
                     ZIndex: =3
 
-                    DataCardKey7_2 As label:
-                        AutoHeight: =true
-                        FontWeight: =FontWeight.Bold
-                        Height: =48
-                        Size: =21
-                        Text: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        Wrap: =false
-                        X: =30
-                        Y: =10
-                        ZIndex: =1
-
                     DataCardValue7_2 As label:
                         AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
                         DisplayMode: =Parent.DisplayMode
+                        Font: =Font.Lato
+                        FontWeight: =FontWeight.Semibold
+                        Height: =221
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =21
                         Text: =Gallery2.Selected.'Event Description'
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardKey7_2.Y + DataCardKey7_2.Height + 5
+                        Width: =492
+                        X: =28
+                        Y: =40
                         ZIndex: =2
 

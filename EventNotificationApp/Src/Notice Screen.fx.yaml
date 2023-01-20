@@ -1,4 +1,5 @@
 "'Notice Screen' As screen":
+    BackgroundImage: =general
 
     Container1_1 As groupContainer.manualLayoutContainer:
         Height: =1136
@@ -9,7 +10,7 @@
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
             BorderThickness: =10
-            Fill: =RGBA(21, 101, 192, 1)
+            Fill: =RGBA(32, 21, 191, 0.9)
             Height: =150
             PaddingBottom: =2
             PaddingLeft: =2
@@ -45,7 +46,7 @@
                 Color: =RGBA(255, 255, 255, 1)
                 Height: =50
                 Icon: =Icon.ArrowLeft
-                OnSelect: =Back()
+                OnSelect: =Navigate(Dashboard)
                 Width: =50
                 X: =10
                 Y: =50
@@ -53,18 +54,10 @@
 
         Container3_1 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(153, 153, 153, 1)
             Height: =982
             Width: =640
             Y: =150
             ZIndex: =15
-
-            Image8_1 As image:
-                DisplayMode: =DisplayMode.View
-                Height: =982
-                ImagePosition: =ImagePosition.Fill
-                Width: =640
-                ZIndex: =1
 
             "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -77,6 +70,7 @@
                 ZIndex: =2
 
                 Title1 As label:
+                    Color: =RGBA(0, 18, 107, 1)
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Bold
                     Height: =Self.Size * 1.8
@@ -116,6 +110,7 @@
 
                 Label9 As label:
                     Align: =Align.Center
+                    FontWeight: =FontWeight.Semibold
                     Height: =32
                     OnSelect: =Select(Parent)
                     Size: =16
@@ -130,8 +125,7 @@
                     Image: ='icons8-loud-speaker-64'
                     OnSelect: =Select(Parent)
                     Width: =130
-                    X: =2
-                    Y: =38
+                    Y: =18
                     ZIndex: =8
 
                 Button6_1 As button:

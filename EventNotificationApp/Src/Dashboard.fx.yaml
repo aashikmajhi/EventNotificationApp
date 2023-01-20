@@ -332,7 +332,7 @@ Dashboard As screen:
                     BorderColor: =ColorValue("White")
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =0
-                    Fill: =RGBA(68, 191, 34, 1)
+                    Fill: =RGBA(29, 104, 184, 1)
                     Font: =Font.'Courier New'
                     FontWeight: =FontWeight.Bold
                     Height: =136

@@ -62,6 +62,7 @@
             Image8_5 As image:
                 DisplayMode: =DisplayMode.View
                 Height: =982
+                Image: ='others  detail bg'
                 ImagePosition: =ImagePosition.Fill
                 Width: =640
                 ZIndex: =1
@@ -101,7 +102,10 @@
 
                     DataCardValue4 As label:
                         AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
                         DisplayMode: =Parent.DisplayMode
+                        Font: =Font.Lato
+                        FontWeight: =FontWeight.Semibold
                         Height: =10
                         PaddingLeft: =0
                         PaddingRight: =0
@@ -111,47 +115,6 @@
                         Width: =Parent.Width - 60
                         X: =30
                         Y: =DataCardKey4.Y + DataCardKey4.Height + 5
-                        ZIndex: =2
-
-                Title_DataCard2 As typedDataCard.textualViewCard:
-                    BorderStyle: =BorderStyle.Solid
-                    DataField: ="Title"
-                    Default: =ThisItem.Title
-                    DisplayMode: =DisplayMode.View
-                    DisplayName: =DataSourceInfo([@'Event and Notice'],DataSourceInfo.DisplayName,"Title")
-                    Fill: =RGBA(0, 0, 0, 0)
-                    Height: =40
-                    Required: =true
-                    Visible: =true
-                    Width: =640
-                    X: =0
-                    Y: =1
-                    ZIndex: =3
-
-                    DataCardKey3 As label:
-                        AutoHeight: =true
-                        FontWeight: =FontWeight.Bold
-                        Height: =48
-                        Size: =21
-                        Text: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        Wrap: =false
-                        X: =30
-                        Y: =10
-                        ZIndex: =1
-
-                    DataCardValue3 As label:
-                        AutoHeight: =true
-                        DisplayMode: =Parent.DisplayMode
-                        Height: =10
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =21
-                        Text: =Gallery4.Selected.Title
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardKey3.Y + DataCardKey3.Height + 5
                         ZIndex: =2
 
                 "'Event Description_DataCard1' As typedDataCard.textualViewCard":
@@ -165,7 +128,7 @@
                     Required: =true
                     Width: =640
                     X: =0
-                    Y: =2
+                    Y: =1
                     ZIndex: =3
 
                     DataCardKey7 As label:
@@ -182,7 +145,9 @@
 
                     DataCardValue7 As label:
                         AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
                         DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Lato Black'
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
