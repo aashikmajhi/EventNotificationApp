@@ -58,82 +58,6 @@ Dashboard As screen:
                 Width: =640
                 ZIndex: =1
 
-            Group5 As group:
-                Height: =5
-                Width: =5
-                X: =40
-                Y: =40
-                ZIndex: =11
-
-                Button2_4 As button:
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =0
-                    Fill: =RGBA(241, 244, 249, 1)
-                    Height: =250
-                    OnSelect: =Navigate('Notice Screen')
-                    RadiusBottomLeft: =30
-                    RadiusBottomRight: =30
-                    RadiusTopLeft: =30
-                    RadiusTopRight: =30
-                    Size: =24
-                    Text: =""
-                    Width: =288
-                    X: =18
-                    Y: =160
-                    ZIndex: =2
-
-                Button2 As button:
-                    BorderColor: =ColorValue("White")
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =0
-                    Fill: =RGBA(21, 101, 192, 0.65)
-                    Height: =240
-                    OnSelect: =Navigate('Notice Screen')
-                    PressedFill: =Self.Fill
-                    RadiusBottomLeft: =30
-                    RadiusBottomRight: =30
-                    RadiusTopLeft: =30
-                    RadiusTopRight: =30
-                    Size: =25
-                    Text: =""
-                    Width: =280
-                    X: =21
-                    Y: =165
-                    ZIndex: =3
-
-                Button5 As button:
-                    BorderStyle: =BorderStyle.None
-                    DisplayMode: =DisplayMode.View
-                    Fill: =RGBA(0, 0, 0, 0)
-                    Height: =70
-                    HoverFill: =
-                    OnSelect: =Navigate('Notice Screen')
-                    Size: =25
-                    Text: ="Notice"
-                    Width: =280
-                    X: =21
-                    Y: =313
-                    ZIndex: =4
-
-                Button5_1 As button:
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =0
-                    Fill: =RGBA(150, 184, 240, 1)
-                    Height: =50
-                    HoverFill: =
-                    OnSelect: =Navigate('Notice Screen')
-                    RadiusBottomLeft: =45
-                    RadiusBottomRight: =45
-                    RadiusTopLeft: =45
-                    RadiusTopRight: =45
-                    Size: =25
-                    Text: |
-                        =CountRows(Filter('Event and Notice','Event Types'.Value="Notice"))
-                    Width: =50
-                    X: =47
-                    Y: =196
-                    ZIndex: =5
-
             Group5_1 As group:
                 Height: =5
                 Width: =5
@@ -301,6 +225,83 @@ Dashboard As screen:
                     X: =48
                     Y: =474
                     ZIndex: =13
+
+            Group5 As group:
+                Height: =5
+                Width: =5
+                X: =60
+                Y: =60
+                ZIndex: =20
+
+                Button2_10 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(241, 244, 249, 1)
+                    Height: =250
+                    OnSelect: =Navigate('Event Screen')
+                    PressedFill: =Self.Fill
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Size: =24
+                    Text: =""
+                    Width: =288
+                    X: =16
+                    Y: =160
+                    ZIndex: =2
+
+                Button2 As button:
+                    BorderColor: =ColorValue("White")
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(21, 101, 192, 0.65)
+                    Height: =240
+                    OnSelect: =Navigate('Notice Screen')
+                    PressedFill: =Self.Fill
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Size: =25
+                    Text: =""
+                    Width: =280
+                    X: =21
+                    Y: =165
+                    ZIndex: =3
+
+                Button5 As button:
+                    BorderStyle: =BorderStyle.None
+                    DisplayMode: =DisplayMode.View
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    HoverFill: =
+                    OnSelect: =Navigate('Notice Screen')
+                    Size: =25
+                    Text: ="Notice"
+                    Width: =280
+                    X: =21
+                    Y: =313
+                    ZIndex: =4
+
+                Button5_1 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(150, 184, 240, 1)
+                    Height: =50
+                    HoverFill: =
+                    OnSelect: =Navigate('Notice Screen')
+                    RadiusBottomLeft: =45
+                    RadiusBottomRight: =45
+                    RadiusTopLeft: =45
+                    RadiusTopRight: =45
+                    Size: =25
+                    Text: |
+                        =CountRows(Filter('Event and Notice','Event Types'.Value="Notice"))
+                    Width: =50
+                    X: =47
+                    Y: =196
+                    ZIndex: =5
 
             Group5_4 As group:
                 Height: =5

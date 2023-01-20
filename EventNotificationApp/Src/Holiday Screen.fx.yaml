@@ -63,7 +63,7 @@
                 Height: =982
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Holiday"),'Event Date', Descending)
                 Layout: =Layout.Vertical
-                TemplatePadding: =0
+                TemplatePadding: =3
                 TemplateSize: =200
                 ZIndex: =2
 
@@ -72,21 +72,12 @@
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Bold
                     Height: =Self.Size * 1.8
-                    PaddingBottom: =2
-                    PaddingTop: =2
                     Size: =19
                     Text: =ThisItem.Title
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =495
+                    Width: =475
                     X: =145
                     ZIndex: =2
-
-                Separator3 As rectangle:
-                    Height: =1
-                    OnSelect: =Select(Parent)
-                    Width: =Parent.TemplateWidth
-                    Y: =Parent.TemplateHeight - 1
-                    ZIndex: =5
 
                 Label7_1 As label:
                     Color: =RGBA(0, 16, 96, 1)
@@ -96,7 +87,7 @@
                     Size: =17
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =495
+                    Width: =475
                     X: =145
                     Y: =32
                     ZIndex: =6
@@ -106,7 +97,7 @@
                     Height: =32
                     Size: =16
                     Text: ="Posted @ " & ThisItem.Created
-                    Width: =495
+                    Width: =475
                     X: =145
                     Y: =148
                     ZIndex: =7
@@ -114,9 +105,13 @@
                 Image2 As image:
                     Height: =130
                     Image: ='icons8-holiday-60'
+                    PaddingBottom: =2
+                    PaddingLeft: =2
+                    PaddingRight: =2
+                    PaddingTop: =2
                     Width: =130
-                    X: =5
-                    Y: =18
+                    X: =15
+                    Y: =32
                     ZIndex: =8
 
                 Button6 As button:
@@ -131,4 +126,11 @@
                     Text: =""
                     Width: =640
                     ZIndex: =9
+
+                Image15 As image:
+                    Height: =200
+                    Image: ='Rectangle 2'
+                    OnSelect: =Select(Parent)
+                    Width: =634
+                    ZIndex: =10
 

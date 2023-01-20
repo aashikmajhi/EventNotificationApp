@@ -65,9 +65,16 @@
                 Height: =982
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Notice"),'Event Date', Descending)
                 Layout: =Layout.Vertical
-                TemplatePadding: =0
+                TemplatePadding: =3
                 TemplateSize: =200
                 ZIndex: =2
+
+                Image11 As image:
+                    Height: =200
+                    Image: ='Rectangle 2'
+                    OnSelect: =Select(Parent)
+                    Width: =634
+                    ZIndex: =1
 
                 Title1 As label:
                     Color: =RGBA(0, 18, 107, 1)
@@ -75,21 +82,12 @@
                     FontWeight: =FontWeight.Bold
                     Height: =Self.Size * 1.8
                     OnSelect: =Select(Parent)
-                    PaddingBottom: =2
-                    PaddingTop: =2
                     Size: =19
                     Text: =ThisItem.Title
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =495
+                    Width: =475
                     X: =145
                     ZIndex: =2
-
-                Separator1 As rectangle:
-                    Height: =1
-                    OnSelect: =Select(Parent)
-                    Width: =Parent.TemplateWidth
-                    Y: =Parent.TemplateHeight - 1
-                    ZIndex: =5
 
                 Label3 As label:
                     BorderColor: =RGBA(255, 255, 255, 1)
@@ -104,10 +102,10 @@
                     Size: =17
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =495
+                    Width: =475
                     X: =145
                     Y: =32
-                    ZIndex: =6
+                    ZIndex: =4
 
                 Label9 As label:
                     Align: =Align.Center
@@ -116,18 +114,22 @@
                     OnSelect: =Select(Parent)
                     Size: =16
                     Text: ="Posted @ " & ThisItem.Created
-                    Width: =495
+                    Width: =475
                     X: =145
                     Y: =148
-                    ZIndex: =7
+                    ZIndex: =5
 
                 Image13 As image:
                     Height: =130
                     Image: ='icons8-loud-speaker-64'
                     OnSelect: =Select(Parent)
+                    PaddingBottom: =2
+                    PaddingLeft: =2
+                    PaddingRight: =2
+                    PaddingTop: =2
                     Width: =130
                     Y: =18
-                    ZIndex: =8
+                    ZIndex: =6
 
                 Button6_1 As button:
                     Fill: =RGBA(0, 0, 0, 0)
@@ -141,5 +143,5 @@
                     Text: =""
                     Width: =640
                     Y: =1
-                    ZIndex: =9
+                    ZIndex: =7
 

@@ -2642,6 +2642,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Rectangle 4"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Rectangle 4",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Rectangle 4",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App"
                 }
               ],

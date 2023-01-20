@@ -63,7 +63,7 @@ Others As screen:
                 Height: =982
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Others"),'Event Date', Descending)
                 Layout: =Layout.Vertical
-                TemplatePadding: =0
+                TemplatePadding: =3
                 TemplateSize: =200
                 ZIndex: =2
 
@@ -73,22 +73,13 @@ Others As screen:
                     FontWeight: =FontWeight.Bold
                     Height: =Self.Size * 1.8
                     OnSelect: =Select(Parent)
-                    PaddingBottom: =2
-                    PaddingTop: =2
                     Size: =19
                     Text: =ThisItem.Title
                     VerticalAlign: =VerticalAlign.Top
                     Width: |
-                        =495
+                        =475
                     X: =145
                     ZIndex: =2
-
-                Separator4 As rectangle:
-                    Height: =1
-                    OnSelect: =Select(Parent)
-                    Width: =Parent.TemplateWidth
-                    Y: =Parent.TemplateHeight - 1
-                    ZIndex: =5
 
                 Label7_2 As label:
                     Color: =RGBA(0, 16, 96, 1)
@@ -100,7 +91,8 @@ Others As screen:
                     Size: =17
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =495
+                    Width: |
+                        =475
                     X: =145
                     Y: =32
                     ZIndex: =6
@@ -111,7 +103,8 @@ Others As screen:
                     OnSelect: =Select(Parent)
                     Size: =16
                     Text: ="Posted @ " & ThisItem.Created
-                    Width: =Label7_2.Width
+                    Width: |
+                        =475
                     X: =145
                     Y: =148
                     ZIndex: =7
@@ -120,8 +113,13 @@ Others As screen:
                     Height: =130
                     Image: ='icons8-technical-64'
                     OnSelect: =Select(Parent)
+                    PaddingBottom: =2
+                    PaddingLeft: =2
+                    PaddingRight: =2
+                    PaddingTop: =2
                     Width: =130
-                    Y: =18
+                    X: =15
+                    Y: =25
                     ZIndex: =8
 
                 Button6_3 As button:
@@ -137,4 +135,11 @@ Others As screen:
                     Width: =640
                     Y: =1
                     ZIndex: =9
+
+                Image16 As image:
+                    Height: =200
+                    Image: ='Rectangle 2'
+                    OnSelect: =Select(Parent)
+                    Width: =634
+                    ZIndex: =10
 

@@ -63,7 +63,7 @@
                 Height: =982
                 Items: =Sort(Filter('Event and Notice','Event Types'.Value="Event"),'Event Date', Descending)
                 Layout: =Layout.Vertical
-                TemplatePadding: =0
+                TemplatePadding: =3
                 TemplateSize: =200
                 ZIndex: =2
 
@@ -72,23 +72,13 @@
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Bold
                     OnSelect: =Select(Parent)
-                    PaddingBottom: =2
-                    PaddingTop: =2
                     Size: =19
                     Text: =ThisItem.Title
                     VerticalAlign: =VerticalAlign.Top
-                    Width: |
-                        =495
+                    Width: =475
                     X: =145
                     Y: =1
                     ZIndex: =2
-
-                Separator2 As rectangle:
-                    Height: =1
-                    OnSelect: =Select(Parent)
-                    Width: =Parent.TemplateWidth
-                    Y: =Parent.TemplateHeight - 1
-                    ZIndex: =5
 
                 Label7 As label:
                     Color: =RGBA(0, 16, 96, 1)
@@ -101,7 +91,7 @@
                     Size: =17
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =495
+                    Width: =475
                     X: =145
                     Y: =32
                     ZIndex: =6
@@ -112,7 +102,7 @@
                     OnSelect: =Select(Parent)
                     Size: =16
                     Text: ="Posted @ " & ThisItem.Created
-                    Width: =495
+                    Width: =475
                     X: =145
                     Y: =148
                     ZIndex: =7
@@ -121,6 +111,10 @@
                     Height: =130
                     Image: ='icons8-event-accepted-tentatively-100'
                     OnSelect: =Select(Parent)
+                    PaddingBottom: =2
+                    PaddingLeft: =2
+                    PaddingRight: =2
+                    PaddingTop: =2
                     Width: =130
                     Y: =18
                     ZIndex: =8
@@ -138,4 +132,11 @@
                     Width: =640
                     Y: =1
                     ZIndex: =9
+
+                Image14 As image:
+                    Height: =200
+                    Image: ='Rectangle 2'
+                    OnSelect: =Select(Parent)
+                    Width: =634
+                    ZIndex: =10
 
