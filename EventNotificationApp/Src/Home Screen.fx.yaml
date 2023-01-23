@@ -19,7 +19,7 @@
                 FontWeight: =FontWeight.Bold
                 Height: =47
                 OnSelect: =Select(Parent)
-                Size: =21
+                Size: =20
                 Text: =ThisItem.Title
                 Width: =630
                 Y: =47
