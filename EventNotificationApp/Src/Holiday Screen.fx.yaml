@@ -79,7 +79,7 @@
                     VerticalAlign: =VerticalAlign.Top
                     Width: =475
                     X: =145
-                    ZIndex: =2
+                    ZIndex: =1
 
                 Label7_1 As label:
                     Color: =RGBA(0, 16, 96, 1)
@@ -92,7 +92,7 @@
                     Width: =475
                     X: =145
                     Y: =32
-                    ZIndex: =6
+                    ZIndex: =2
 
                 Label12 As label:
                     Align: =Align.Center
@@ -102,7 +102,7 @@
                     Width: =475
                     X: =145
                     Y: =148
-                    ZIndex: =7
+                    ZIndex: =3
 
                 Image2 As image:
                     Height: =130
@@ -114,7 +114,14 @@
                     Width: =130
                     X: =15
                     Y: =32
-                    ZIndex: =8
+                    ZIndex: =4
+
+                Image15 As image:
+                    Height: =200
+                    Image: ='Rectangle 2'
+                    OnSelect: =Select(Parent)
+                    Width: =634
+                    ZIndex: =5
 
                 Button6 As button:
                     Fill: =RGBA(0, 0, 0, 0)
@@ -127,12 +134,5 @@
                     Size: =24
                     Text: =""
                     Width: =640
-                    ZIndex: =9
-
-                Image15 As image:
-                    Height: =200
-                    Image: ='Rectangle 2'
-                    OnSelect: =Select(Parent)
-                    Width: =634
-                    ZIndex: =10
+                    ZIndex: =6
 

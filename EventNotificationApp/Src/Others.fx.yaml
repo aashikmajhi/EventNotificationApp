@@ -79,7 +79,7 @@ Others As screen:
                     Width: |
                         =475
                     X: =145
-                    ZIndex: =2
+                    ZIndex: =1
 
                 Label7_2 As label:
                     Color: =RGBA(0, 16, 96, 1)
@@ -95,7 +95,7 @@ Others As screen:
                         =475
                     X: =145
                     Y: =32
-                    ZIndex: =6
+                    ZIndex: =2
 
                 Label14 As label:
                     Align: =Align.Center
@@ -107,7 +107,7 @@ Others As screen:
                         =475
                     X: =145
                     Y: =148
-                    ZIndex: =7
+                    ZIndex: =3
 
                 Image3 As image:
                     Height: =130
@@ -120,7 +120,14 @@ Others As screen:
                     Width: =130
                     X: =15
                     Y: =25
-                    ZIndex: =8
+                    ZIndex: =4
+
+                Image16 As image:
+                    Height: =200
+                    Image: ='Rectangle 2'
+                    OnSelect: =Select(Parent)
+                    Width: =634
+                    ZIndex: =5
 
                 Button6_3 As button:
                     Fill: =RGBA(0, 0, 0, 0)
@@ -134,12 +141,5 @@ Others As screen:
                     Text: =""
                     Width: =640
                     Y: =1
-                    ZIndex: =9
-
-                Image16 As image:
-                    Height: =200
-                    Image: ='Rectangle 2'
-                    OnSelect: =Select(Parent)
-                    Width: =634
-                    ZIndex: =10
+                    ZIndex: =6
 
