@@ -134,6 +134,59 @@
                         Y: =24
                         ZIndex: =2
 
+    "Gallery5_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Height: =259
+        Items: =Sequence(5,Value((Label10)-1))
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =2
+        TemplateSize: =45
+        Y: =876
+        ZIndex: =6
+
+        Title5_1 As label:
+            Align: =Align.Center
+            Fill: =If(!IsBlank(LookUp(Split(Text(Label10),","),Self.Text=Text(Label10))), Red, White)
+            Height: =Gallery5_1.TemplateHeight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =10
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Value
+            Visible: |-
+                =//If(Self.Text=Text(Label10),true,false)
+                true
+            Width: =45
+            X: =12
+            ZIndex: =2
+
+        Label4_2 As label:
+            Fill: =If(Title5_1.Fill=Red, Red, White)
+            FontWeight: =FontWeight.Semibold
+            Height: =Gallery5_1.TemplateHeight
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =LookUp('Event and Notice',Title=Label10.Text,Title)
+            Visible: |-
+                =//If(Self.Text=Text(Label10),true,false)
+                true
+            Width: =546
+            X: =79
+            ZIndex: =6
+
+        Icon1_2 As icon.VerticalLine:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(230, 230, 230, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =Gallery5_1.TemplateHeight
+            Icon: =Icon.VerticalLine
+            OnSelect: =Select(Parent)
+            Width: =24
+            X: =55
+            ZIndex: =7
+
     Group1 As group:
         Height: =5
         Width: =5
@@ -151,7 +204,8 @@
             TemplateSize: =48
             Width: =637
             WrapCount: =7
-            Y: =775
+            X: =1
+            Y: =648
             ZIndex: =2
 
             Title12_1 As label:
@@ -189,7 +243,8 @@
             TemplateSize: =30
             Width: =637
             WrapCount: =7
-            Y: =812
+            X: =1
+            Y: =685
             ZIndex: =3
 
             Rectangle1_6 As rectangle:
@@ -241,8 +296,8 @@
             Size: =21
             Text: =Text(varDate,"mmmm")
             Width: =202
-            X: =282
-            Y: =724
+            X: =283
+            Y: =597
             ZIndex: =4
 
         lblYear_1 As label:
@@ -254,7 +309,7 @@
             Size: =21
             Text: =Text(varDate,"yyyy")
             Width: =111
-            X: =171
-            Y: =724
+            X: =172
+            Y: =597
             ZIndex: =5
 

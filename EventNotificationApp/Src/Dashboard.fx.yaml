@@ -173,7 +173,7 @@ Dashboard As screen:
                     OnSelect: |-
                         =Set(varDate,DateValue(Month(Today()) & "/" & "1" & "/" & Year(Today())));
                         Set(varDays,DateAdd(varDate, -Weekday(varDate),Days));
-                        Navigate('Holiday Screen')
+                        Navigate('Holiday Screen_2')
                     PressedFill: =Self.Fill
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
