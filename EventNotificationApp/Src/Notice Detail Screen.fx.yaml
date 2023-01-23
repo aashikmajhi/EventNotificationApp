@@ -90,6 +90,7 @@
 
                     DataCardKey4_1 As label:
                         AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
                         Height: =48
                         Size: =21
@@ -102,6 +103,7 @@
 
                     DataCardValue4_1 As label:
                         AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
                         DisplayMode: =Parent.DisplayMode
                         FontWeight: =FontWeight.Semibold
                         Height: =10
@@ -132,6 +134,7 @@
 
                     DataCardKey3_1 As label:
                         AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
                         Height: =48
                         Size: =21
@@ -144,6 +147,7 @@
 
                     DataCardValue3_1 As label:
                         AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
                         DisplayMode: =Parent.DisplayMode
                         FontWeight: =FontWeight.Bold
                         Height: =10
@@ -173,6 +177,7 @@
 
                     DataCardKey7_1 As label:
                         AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
                         FontWeight: =FontWeight.Bold
                         Height: =48
                         Size: =21
@@ -185,6 +190,7 @@
 
                     DataCardValue7_1 As label:
                         AutoHeight: =true
+                        Color: =RGBA(255, 255, 255, 1)
                         DisplayMode: =Parent.DisplayMode
                         FontWeight: =FontWeight.Semibold
                         PaddingLeft: =0

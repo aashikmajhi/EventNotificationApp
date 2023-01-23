@@ -1,5 +1,5 @@
 "'Event Screen' As screen":
-    BackgroundImage: =general
+    BackgroundImage: =eventdetailbg
 
     Container1_2 As groupContainer.manualLayoutContainer:
         Height: =1136
@@ -68,7 +68,7 @@
                 ZIndex: =2
 
                 Title2 As label:
-                    Color: =RGBA(0, 18, 107, 1)
+                    Color: =RGBA(230, 230, 230, 1)
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Bold
                     OnSelect: =Select(Parent)
@@ -81,7 +81,7 @@
                     ZIndex: =1
 
                 Label7 As label:
-                    Color: =RGBA(0, 16, 96, 1)
+                    Color: =RGBA(230, 230, 230, 1)
                     DisplayMode: =DisplayMode.View
                     Font: =Font.Georgia
                     Height: =116
@@ -98,6 +98,7 @@
 
                 Label11 As label:
                     Align: =Align.Center
+                    Color: =RGBA(230, 230, 230, 1)
                     Height: =32
                     OnSelect: =Select(Parent)
                     Size: =16

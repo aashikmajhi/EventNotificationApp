@@ -1,9 +1,9 @@
-"'Add New Event Screen' As screen":
+"'Add New Event Screen_1' As screen":
     BackgroundImage: =bg
     ImagePosition: =ImagePosition.Fill
     OnVisible: =
 
-    Form1 As form:
+    Form1_1 As form:
         AcceptsFocus: =true
         DataSource: ='Event and Notice'
         DefaultMode: =FormMode.New
@@ -12,7 +12,7 @@
         Y: =146
         ZIndex: =3
 
-        "'Event Types_DataCard1' As typedDataCard.comboBoxEditCard":
+        "'Event Types_DataCard1_1' As typedDataCard.comboBoxEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="EventTypes"
             Default: =ThisItem.'Event Types'
@@ -21,13 +21,13 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =130
             Required: =false
-            Update: =DataCardValue6.Selected
+            Update: =DataCardValue6_1.Selected
             Width: =640
             X: =0
             Y: =1
             ZIndex: =1
 
-            DataCardKey6 As label:
+            DataCardKey6_1 As label:
                 AutoHeight: =true
                 FontWeight: =FontWeight.Bold
                 Height: =48
@@ -39,7 +39,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue6 As combobox:
+            DataCardValue6_1 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
@@ -49,16 +49,16 @@
                 OnSelect: =
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Event and Notice'.'Event Types',DataCardValue6.SearchText)
+                SearchItems: =Choices('Event and Notice'.'Event Types',DataCardValue6_1.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                Y: =DataCardKey6_1.Y + DataCardKey6_1.Height + 5
                 ZIndex: =2
 
-            ErrorMessage6 As label:
+            ErrorMessage6_1 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -71,21 +71,21 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue6.Y + DataCardValue6.Height
+                Y: =DataCardValue6_1.Y + DataCardValue6_1.Height
                 ZIndex: =3
 
-            StarVisible6 As label:
+            StarVisible6_1 As label:
                 Align: =Align.Center
-                Height: =DataCardKey6.Height
+                Height: =DataCardKey6_1.Height
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey6.Y
+                Y: =DataCardKey6_1.Y
                 ZIndex: =4
 
-        "'Event Description_DataCard2' As typedDataCard.textualMultiLineEditCard":
+        "'Event Description_DataCard2_1' As typedDataCard.textualMultiLineEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="EventDescription"
             Default: =ThisItem.'Event Description'
@@ -94,13 +94,13 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =341
             Required: =false
-            Update: =DataCardValue5.Text
+            Update: =DataCardValue5_1.Text
             Width: =640
             X: =0
             Y: =3
             ZIndex: =1
 
-            DataCardKey5 As label:
+            DataCardKey5_1 As label:
                 AutoHeight: =true
                 FontWeight: =FontWeight.Bold
                 Height: =48
@@ -112,7 +112,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue5 As text:
+            DataCardValue5_1 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -129,10 +129,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                Y: =DataCardKey5_1.Y + DataCardKey5_1.Height + 5
                 ZIndex: =2
 
-            ErrorMessage5 As label:
+            ErrorMessage5_1 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -145,22 +145,56 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue5.Y + DataCardValue5.Height
+                Y: =DataCardValue5_1.Y + DataCardValue5_1.Height
                 ZIndex: =3
 
-            StarVisible5 As label:
+            StarVisible5_1 As label:
                 Align: =Align.Center
                 Color: =RGBA(56, 96, 178, 1)
-                Height: =DataCardKey5.Height
+                Height: =DataCardKey5_1.Height
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey5.Y
+                Y: =DataCardKey5_1.Y
                 ZIndex: =4
 
-        "'Event Date_DataCard1' As typedDataCard.dateEditCard":
+        DataCard1_1 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =129
+            Visible: |-
+                =//If(DataCardValue6.Selected.Value="Holiday",true,false)
+                false
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            ComboBox1_1 As combobox:
+                Height: =45
+                IsSearchable: =false
+                Items: =Sequence(35)
+                SearchItems: =[]
+                Size: =21
+                Width: =575
+                X: =40
+                Y: =53
+                ZIndex: =1
+
+            Label1_1 As label:
+                Color: =RGBA(39, 67, 125, 1)
+                Height: =48
+                Size: =21
+                Text: ="Select Holiday Dates"
+                Width: =580
+                X: =40
+                Y: =5
+                ZIndex: =2
+
+        "'Event Date_DataCard1_1' As typedDataCard.dateEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="EventDate"
             Default: =ThisItem.'Event Date'
@@ -169,13 +203,13 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =128
             Required: =false
-            Update: =DataCardValue2.SelectedDate
+            Update: =DataCardValue2_1.SelectedDate
             Width: =640
             X: =0
             Y: =0
             ZIndex: =4
 
-            DataCardKey2 As label:
+            DataCardKey2_1 As label:
                 AutoHeight: =true
                 FontWeight: =FontWeight.Bold
                 Height: =48
@@ -187,7 +221,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue2 As datepicker:
+            DataCardValue2_1 As datepicker:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
@@ -200,10 +234,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                Y: =DataCardKey2_1.Y + DataCardKey2_1.Height + 5
                 ZIndex: =2
 
-            ErrorMessage2 As label:
+            ErrorMessage2_1 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -216,21 +250,21 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue2.Y + DataCardValue2.Height
+                Y: =DataCardValue2_1.Y + DataCardValue2_1.Height
                 ZIndex: =3
 
-            StarVisible2 As label:
+            StarVisible2_1 As label:
                 Align: =Align.Center
-                Height: =DataCardKey2.Height
+                Height: =DataCardKey2_1.Height
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey2.Y
+                Y: =DataCardKey2_1.Y
                 ZIndex: =4
 
-        Title_DataCard1 As typedDataCard.textualEditCard:
+        Title_DataCard1_1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Title
@@ -240,13 +274,13 @@
             Height: =130
             MaxLength: =DataSourceInfo([@'Event and Notice'], DataSourceInfo.MaxLength, "Title")
             Required: =true
-            Update: =DataCardValue1.Text
+            Update: =DataCardValue1_1.Text
             Width: =640
             X: =0
             Y: =2
             ZIndex: =4
 
-            DataCardKey1 As label:
+            DataCardKey1_1 As label:
                 AutoHeight: =true
                 FontWeight: =FontWeight.Bold
                 Height: =48
@@ -258,7 +292,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue1 As text:
+            DataCardValue1_1 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -275,10 +309,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                Y: =DataCardKey1_1.Y + DataCardKey1_1.Height + 5
                 ZIndex: =2
 
-            ErrorMessage1 As label:
+            ErrorMessage1_1 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -291,25 +325,25 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue1.Y + DataCardValue1.Height
+                Y: =DataCardValue1_1.Y + DataCardValue1_1.Height
                 ZIndex: =3
 
-            StarVisible1 As label:
+            StarVisible1_1 As label:
                 Align: =Align.Center
-                Height: =DataCardKey1.Height
+                Height: =DataCardKey1_1.Height
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey1.Y
+                Y: =DataCardKey1_1.Y
                 ZIndex: =4
 
-    Button1 As button:
+    Button1_1 As button:
         Height: =70
         OnSelect: |-
-            =SubmitForm(Form1);
-            ResetForm(Form1);
+            =SubmitForm(Form1_1);
+            ResetForm(Form1_1);
             ClickPowerAppsbuttontosendapushnotification.Run();
             Navigate(Dashboard);
         Size: =24
@@ -319,14 +353,14 @@
         Y: =1028
         ZIndex: =4
 
-    Container4 As groupContainer.manualLayoutContainer:
+    Container4_1 As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(0, 121, 187, 1)
         Fill: =RGBA(109, 206, 247, 1)
         Height: =146
         Width: =640
         ZIndex: =6
 
-        Icon2_4 As icon.BackArrow:
+        Icon2_7 As icon.BackArrow:
             Height: =50
             Icon: =Icon.ArrowLeft
             OnSelect: =Back()
@@ -334,7 +368,7 @@
             Y: =50
             ZIndex: =1
 
-        Label8 As label:
+        Label8_1 As label:
             Align: =Align.Center
             Font: =Font.Georgia
             FontWeight: =FontWeight.Semibold

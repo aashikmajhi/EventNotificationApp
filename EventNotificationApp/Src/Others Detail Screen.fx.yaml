@@ -62,7 +62,7 @@
             Image8_5 As image:
                 DisplayMode: =DisplayMode.View
                 Height: =982
-                Image: ='others  detail bg'
+                Image: =general
                 ImagePosition: =ImagePosition.Fill
                 Width: =640
                 ZIndex: =1

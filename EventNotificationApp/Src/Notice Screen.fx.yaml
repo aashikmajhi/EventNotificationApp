@@ -1,5 +1,5 @@
 "'Notice Screen' As screen":
-    BackgroundImage: =general
+    BackgroundImage: ='notice detail ng'
 
     Container1_1 As groupContainer.manualLayoutContainer:
         Height: =1136
@@ -77,10 +77,10 @@
                     ZIndex: =1
 
                 Title1 As label:
-                    Color: =RGBA(0, 18, 107, 1)
+                    Color: =RGBA(255, 255, 255, 1)
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Bold
-                    Height: =Self.Size * 1.8
+                    Height: =55
                     OnSelect: =Select(Parent)
                     Size: =19
                     Text: =ThisItem.Title
@@ -93,30 +93,32 @@
                     BorderColor: =RGBA(255, 255, 255, 1)
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =5
-                    Color: =RGBA(0, 16, 96, 1)
+                    Color: =RGBA(255, 255, 255, 1)
                     DisplayMode: =DisplayMode.View
                     FocusedBorderThickness: =2
                     Font: =Font.Georgia
-                    Height: =116
+                    Height: =114
                     OnSelect: =Select(Parent)
                     Size: =17
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
                     Width: =475
                     X: =145
-                    Y: =32
+                    Y: =34
                     ZIndex: =4
 
                 Label9 As label:
                     Align: =Align.Center
+                    AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =32
                     OnSelect: =Select(Parent)
-                    Size: =16
+                    Size: =14
                     Text: ="Posted @ " & ThisItem.Created
                     Width: =475
                     X: =145
-                    Y: =148
+                    Y: =157
                     ZIndex: =5
 
                 Image13 As image:
