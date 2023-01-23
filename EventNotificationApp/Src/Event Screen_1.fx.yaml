@@ -1,16 +1,16 @@
-Others As screen:
-    BackgroundImage: =general
+"'Event Screen_1' As screen":
+    BackgroundImage: =eventdetailbg
 
-    Container1_4 As groupContainer.manualLayoutContainer:
-        Height: =Parent.Height
+    Container1_7 As groupContainer.manualLayoutContainer:
+        Height: =1136
         Width: =640
         ZIndex: =3
 
-        Container2_5 As groupContainer.manualLayoutContainer:
+        Container2_8 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
             BorderThickness: =10
-            Fill: =RGBA(7, 153, 185, 1)
+            Fill: =RGBA(65, 152, 115, 1)
             Height: =150
             PaddingBottom: =2
             PaddingLeft: =2
@@ -19,7 +19,7 @@ Others As screen:
             Width: =640
             ZIndex: =6
 
-            Image7_4 As image:
+            Image7_8 As image:
                 Height: =150
                 Image: =User().Image
                 RadiusBottomLeft: =95
@@ -30,7 +30,7 @@ Others As screen:
                 X: =490
                 ZIndex: =1
 
-            Label2_4 As label:
+            Label2_7 As label:
                 Color: =RGBA(255, 255, 255, 1)
                 Font: =Font.Verdana
                 FontWeight: =FontWeight.Bold
@@ -42,7 +42,7 @@ Others As screen:
                 Y: =40
                 ZIndex: =2
 
-            Icon2_3 As icon.BackArrow:
+            Icon2_13 As icon.BackArrow:
                 Color: =RGBA(255, 255, 255, 1)
                 Height: =50
                 Icon: =Icon.ArrowLeft
@@ -52,95 +52,100 @@ Others As screen:
                 Y: =50
                 ZIndex: =3
 
-        Container3_4 As groupContainer.manualLayoutContainer:
+        Container3_7 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             Height: =982
             Width: =640
             Y: =150
             ZIndex: =15
 
-            "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+            "Gallery2_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                 Height: =982
-                Items: =Sort(Filter('Event and Notice','Event Types'.Value="Others"),'Event Date', Descending)
+                Items: =Sort(Filter('Event and Notice','Event Types'.Value="Event"),'Event Date', Descending)
                 Layout: =Layout.Vertical
+                ShowScrollbar: =false
                 TemplatePadding: =3
-                TemplateSize: =200
+                TemplateSize: =430
                 ZIndex: =2
 
-                Title4 As label:
-                    Color: =RGBA(255, 255, 255, 1)
+                Title2_1 As label:
+                    AutoHeight: =true
+                    Color: =RGBA(230, 230, 230, 1)
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Bold
-                    Height: =Self.Size * 1.8
+                    Height: =50
                     OnSelect: =Select(Parent)
-                    Size: =19
+                    Size: =25
                     Text: =ThisItem.Title
                     VerticalAlign: =VerticalAlign.Top
-                    Width: |
-                        =475
-                    X: =145
+                    Width: =620
+                    Y: =79
                     ZIndex: =1
 
-                Label7_2 As label:
-                    Color: =RGBA(255, 255, 255, 1)
+                Label7_5 As label:
+                    Color: =RGBA(230, 230, 230, 1)
+                    DisplayMode: =DisplayMode.View
                     Font: =Font.Georgia
                     Height: =116
-                    OnSelect: =Navigate('Others Detail Screen')
+                    OnSelect: =Select(Parent)
                     PaddingLeft: =10
-                    PaddingRight: =10
-                    Size: =17
+                    PaddingRight: =0
+                    Size: =20
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
-                    Width: |
-                        =475
-                    X: =145
-                    Y: =32
+                    Width: =634
+                    Y: =175
                     ZIndex: =2
 
-                Label14 As label:
-                    Align: =Align.Center
-                    Color: =RGBA(255, 255, 255, 1)
-                    Height: =30
+                Label11_1 As label:
+                    Align: =Align.Right
+                    Color: =RGBA(230, 230, 230, 1)
+                    Height: =32
                     OnSelect: =Select(Parent)
                     Size: =16
                     Text: ="Posted @ " & ThisItem.Created
-                    Width: |
-                        =475
-                    X: =145
-                    Y: =148
+                    Width: =475
+                    X: =159
+                    Y: =398
                     ZIndex: =3
 
-                Image3 As image:
-                    Height: =130
-                    Image: ='icons8-technical-64'
+                Label1 As label:
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.Georgia
+                    FontWeight: =FontWeight.Bold
+                    Height: =52
                     OnSelect: =Select(Parent)
-                    PaddingBottom: =2
-                    PaddingLeft: =2
-                    PaddingRight: =2
-                    PaddingTop: =2
-                    Width: =130
-                    X: =15
-                    Y: =25
+                    Size: =21
+                    Text: =ThisItem.'Event Date'
+                    Width: =560
                     ZIndex: =4
 
-                Image16 As image:
-                    Height: =200
-                    Image: ='Rectangle 2'
-                    OnSelect: =Select(Parent)
-                    Width: =634
+                Button7_1 As button:
+                    Fill: =RGBA(246, 88, 16, 0.71)
+                    Height: =70
+                    HoverFill: =ColorFade(Self.Fill,-20%)
+                    RadiusBottomLeft: =35
+                    RadiusBottomRight: =35
+                    RadiusTopLeft: =35
+                    RadiusTopRight: =35
+                    Size: =24
+                    Text: ="View Photos"
+                    Width: =280
+                    X: =170
+                    Y: =328
                     ZIndex: =5
 
-                Button6_3 As button:
+                Button6_7 As button:
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =199
+                    Height: =429
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
                         =Set(varItem,ThisItem);
-                        Navigate('Others Detail Screen')
+                        Navigate('Event Detail Screen')
                     PressedFill: =RGBA(0, 0, 0, 0)
                     Size: =24
                     Text: =""
-                    Width: =640
+                    Width: =634
                     Y: =1
                     ZIndex: =6
 
