@@ -10,7 +10,7 @@
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
             BorderThickness: =10
-            Fill: =RGBA(65, 152, 115, 1)
+            Fill: =RGBA(12, 97, 29, 1)
             Height: =150
             PaddingBottom: =2
             PaddingLeft: =2
