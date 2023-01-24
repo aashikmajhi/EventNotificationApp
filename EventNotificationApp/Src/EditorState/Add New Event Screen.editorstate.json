@@ -94,7 +94,7 @@
       "StyleName": "defaultScreenStyle",
       "Type": "ControlInfo"
     },
-    "Button1": {
+    "Button1_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -157,7 +157,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Button1",
+      "Name": "Button1_2",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [

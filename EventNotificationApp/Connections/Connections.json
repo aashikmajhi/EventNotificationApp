@@ -41,24 +41,6 @@
     "dependents": [],
     "id": "9ca85e32-e581-4eba-b83c-372482ac12dc"
   },
-  "9e8355da-42e8-4cd3-9bd8-b0a56eaf1b0d": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
-    "connectionRef": {
-      "displayName": "Power Apps Notification V2",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1609/1.0.1609.3084/powerappsnotificationv2/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_powerappsnotificationv2",
-      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_powerappsnotificationv2/connections/shared-powerappsnoti-99b4a542-be10-4ae7-9c19-791572459ce0"
-    },
-    "datasets": {},
-    "dataSources": [
-      "PowerAppsNotificationV2"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "9e8355da-42e8-4cd3-9bd8-b0a56eaf1b0d"
-  },
   "c2594bea-0e56-479d-a55c-17cdfcbf2255": {
     "connectionParameters": {
       "sku": "Enterprise"
@@ -86,5 +68,23 @@
     "dependencies": {},
     "dependents": [],
     "id": "c2594bea-0e56-479d-a55c-17cdfcbf2255"
+  },
+  "f7d4f669-0f30-4d1e-8d74-99aa37a4c0bc": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Power Apps Notification V2",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1609/1.0.1609.3084/powerappsnotificationv2/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_powerappsnotificationv2",
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_powerappsnotificationv2/connections/shared-powerappsnoti-99b4a542-be10-4ae7-9c19-791572459ce0"
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerAppsNotificationV2"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "f7d4f669-0f30-4d1e-8d74-99aa37a4c0bc"
   }
 }

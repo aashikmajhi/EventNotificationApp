@@ -305,19 +305,6 @@
                 Y: =DataCardKey1.Y
                 ZIndex: =4
 
-    Button1 As button:
-        Height: =70
-        OnSelect: |-
-            =SubmitForm(Form1);
-            ResetForm(Form1);
-            Navigate(Dashboard);
-        Size: =24
-        Text: ="Post"
-        Width: =280
-        X: =168
-        Y: =1028
-        ZIndex: =4
-
     Container4 As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(0, 121, 187, 1)
         Fill: =RGBA(109, 206, 247, 1)
@@ -344,4 +331,18 @@
             X: =40
             Y: =40
             ZIndex: =2
+
+    Button1_2 As button:
+        Height: =70
+        OnSelect: |-
+            =SubmitForm(Form1);
+            ResetForm(Form1);
+            Navigate(Dashboard);
+            PowerAppsNotificationV2.SendPushNotificationV2("PowerApps","Astral Event Notification App",Office365Users.UserProfile(Email),"Hello!",true,{});
+        Size: =24
+        Text: ="Post"
+        Width: =280
+        X: =168
+        Y: =1028
+        ZIndex: =7
 
