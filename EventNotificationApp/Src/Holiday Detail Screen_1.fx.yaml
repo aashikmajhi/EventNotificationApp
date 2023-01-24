@@ -273,8 +273,8 @@
                     //If((Self.Text)=Text(Gallery3.Selected.'Event Date',"d"),Red,RGBA(56, 96, 178, 1))
                     //If(!IsBlank(LookUp(Split(Text(Label10),","),Self.Text=Text(Label10))), Red, RGBA(56, 96, 178, 1))
                     //If(!IsBlank(LookUp(Split(Text(Label10),","),Self.Text=Text(Label10))), Red, RGBA(56, 96, 178, 1))
-                    //If(CountIf(Split(Label10.Text, ","), Self.Text=Text(Label10))>0, Red, RGBA(56, 96, 178, 1))
-                    If(Self.Text = Value(Split(Label10.Text, ",")[0]) || Self.Text = Value(Split(Label10.Text, ",")[1]) || Self.Text = Value(Split(Label10.Text, ",")[2]) || Self.Text = Value(Split(Label10.Text, ",")[3]), "HighlightColor", "DefaultColor")
+                    If(CountIf(Split(Label10.Text, ","), Self.Text=Text(Label10))>0, Red, RGBA(56, 96, 178, 1))
+                    //If(Self.Text = Value(Split(Label10.Text, ",")[0]) || Self.Text = Value(Split(Label10.Text, ",")[1]) || Self.Text = Value(Split(Label10.Text, ",")[2]) || Self.Text = Value(Split(Label10.Text, ",")[3]), "HighlightColor", "DefaultColor")
                 Height: =galDate_2.TemplateHeight
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -345,18 +345,18 @@
 
         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
             Height: =385
-            Items: =Sequence(5,Value((Label10)-1))
+            Items: =Sequence(1,Value((Label10)-0))
             Layout: =Layout.Vertical
             ShowScrollbar: =false
             TemplatePadding: =0
-            TemplateSize: =100
+            TemplateSize: =137
             Y: =751
             ZIndex: =22
 
             Title5 As label:
                 Align: =Align.Center
                 Fill: =If(!IsBlank(LookUp(Split(Text(Label10),","),Self.Text=Text(Label10))), Red, White)
-                Height: =100
+                Height: =137
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =10
@@ -366,17 +366,19 @@
                 Visible: |-
                     =//If(Self.Text=Text(Label10),true,false)
                     true
-                Width: =45
+                Width: =43
                 X: =12
                 ZIndex: =2
 
             Label4 As label:
                 Fill: =If(Title5.Fill=Red, Red, White)
+                Font: =Font.Arial
                 FontWeight: =FontWeight.Semibold
-                Height: =100
+                Height: =137
                 OnSelect: =Select(Parent)
-                Size: =21
+                Size: =14
                 Text: =DataCardValue7_3.Text
+                VerticalAlign: =VerticalAlign.Top
                 Visible: |-
                     =//If(Self.Text=Text(Label10),true,false)
                     true

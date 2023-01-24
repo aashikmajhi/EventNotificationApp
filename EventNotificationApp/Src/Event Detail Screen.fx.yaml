@@ -99,7 +99,7 @@
                     DisplayMode: =DisplayMode.View
                     DisplayName: =DataSourceInfo([@'Event and Notice'],DataSourceInfo.DisplayName,"EventDate")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =81
+                    Height: =171
                     Required: =false
                     Width: =636
                     X: =0
@@ -107,17 +107,16 @@
                     ZIndex: =3
 
                     DataCardValue4_2 As label:
-                        AutoHeight: =true
                         Color: =RGBA(255, 255, 255, 1)
                         DisplayMode: =Parent.DisplayMode
                         FontWeight: =FontWeight.Semibold
-                        Height: =10
+                        Height: =97
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =21
+                        Size: =25
                         Text: =Gallery2.Selected.'Event Date'
-                        Width: =Parent.Width - 60
+                        Width: =578
                         X: =24
                         Y: =24
                         ZIndex: =2
@@ -129,7 +128,7 @@
                     DisplayMode: =DisplayMode.View
                     DisplayName: =DataSourceInfo([@'Event and Notice'],DataSourceInfo.DisplayName,"Title")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =91
+                    Height: =167
                     Required: =true
                     Visible: =true
                     Width: =636
@@ -138,19 +137,18 @@
                     ZIndex: =3
 
                     DataCardValue3_2 As label:
-                        AutoHeight: =true
                         Color: =RGBA(255, 255, 255, 1)
                         DisplayMode: =Parent.DisplayMode
                         FontWeight: =FontWeight.Bold
-                        Height: =10
+                        Height: =114
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =25
                         Text: =Gallery2.Selected.Title
-                        Width: =Parent.Width - 60
-                        X: =28
-                        Y: =20
+                        Width: =593
+                        X: =22
+                        Y: =22
                         ZIndex: =2
 
                 "'Event Description_DataCard1_2' As typedDataCard.textualViewCard":
@@ -160,9 +158,9 @@
                     DisplayMode: =DisplayMode.View
                     DisplayName: =DataSourceInfo([@'Event and Notice'],DataSourceInfo.DisplayName,"EventDescription")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =298
+                    Height: =333
                     Required: =true
-                    Width: =640
+                    Width: =636
                     X: =0
                     Y: =2
                     ZIndex: =3
@@ -173,14 +171,14 @@
                         DisplayMode: =Parent.DisplayMode
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
-                        Height: =221
+                        Height: =226
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =21
                         Text: =Gallery2.Selected.'Event Description'
-                        Width: =492
-                        X: =28
-                        Y: =40
+                        Width: =579
+                        X: =26
+                        Y: =8
                         ZIndex: =2
 

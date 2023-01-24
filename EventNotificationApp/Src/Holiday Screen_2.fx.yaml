@@ -84,8 +84,8 @@
                     BorderColor: =White
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =3
-                    Fill: =RGBA(247, 10, 38, 0.79)
-                    Height: =Label7_4.Height
+                    Fill: =RGBA(194, 28, 19, 0.8)
+                    Height: =129
                     HoverFill: =RGBA(0, 0, 0, 0)
                     PaddingBottom: =0
                     PaddingLeft: =0
@@ -100,20 +100,20 @@
                     Text: =""
                     Width: =490
                     X: =142
-                    Y: =32
+                    Y: =34
                     ZIndex: =2
 
                 Label7_4 As label:
                     Color: =RGBA(255, 255, 255, 1)
                     DisplayMode: =DisplayMode.View
                     Font: =Font.Georgia
-                    Height: =116
+                    Height: =131
                     Size: =17
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =475
+                    Width: =489
                     X: =145
-                    Y: =32
+                    Y: =34
                     ZIndex: =3
 
                 Label12_2 As label:
@@ -122,8 +122,8 @@
                     Size: =16
                     Text: ="Posted @ " & ThisItem.Created
                     Width: =475
-                    X: =145
-                    Y: =148
+                    X: =157
+                    Y: =165
                     ZIndex: =4
 
                 Label16_1 As label:

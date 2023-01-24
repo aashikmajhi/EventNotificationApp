@@ -81,40 +81,27 @@
                     DisplayMode: =DisplayMode.View
                     DisplayName: =DataSourceInfo([@'Event and Notice'],DataSourceInfo.DisplayName,"EventDate")
                     Fill: =RGBA(0, 0, 0, 0)
-                    Height: =40
+                    Height: =139
                     Required: =false
                     Width: =640
                     X: =0
                     Y: =0
                     ZIndex: =3
 
-                    DataCardKey4 As label:
-                        AutoHeight: =true
-                        FontWeight: =FontWeight.Bold
-                        Height: =48
-                        Size: =21
-                        Text: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        Wrap: =false
-                        X: =30
-                        Y: =10
-                        ZIndex: =1
-
                     DataCardValue4 As label:
-                        AutoHeight: =true
                         Color: =RGBA(255, 255, 255, 1)
                         DisplayMode: =Parent.DisplayMode
                         Font: =Font.Lato
                         FontWeight: =FontWeight.Semibold
-                        Height: =10
+                        Height: =94
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
-                        Size: =21
+                        Size: =25
                         Text: =Gallery4.Selected.'Event Date'
                         Width: =Parent.Width - 60
                         X: =30
-                        Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                        Y: =
                         ZIndex: =2
 
                 "'Event Description_DataCard1' As typedDataCard.textualViewCard":
@@ -131,30 +118,19 @@
                     Y: =1
                     ZIndex: =3
 
-                    DataCardKey7 As label:
-                        AutoHeight: =true
-                        FontWeight: =FontWeight.Bold
-                        Height: =48
-                        Size: =21
-                        Text: =Parent.DisplayName
-                        Width: =Parent.Width - 60
-                        Wrap: =false
-                        X: =30
-                        Y: =10
-                        ZIndex: =1
-
                     DataCardValue7 As label:
                         AutoHeight: =true
                         Color: =RGBA(255, 255, 255, 1)
                         DisplayMode: =Parent.DisplayMode
                         Font: =Font.'Lato Black'
+                        Height: =144
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =21
                         Text: =Gallery4.Selected.'Event Description'
                         Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                        X: =28
+                        Y: =10
                         ZIndex: =2
 

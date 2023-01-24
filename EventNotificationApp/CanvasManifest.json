@@ -122,13 +122,15 @@
     "Event Detail Screen",
     "Holiday Screen",
     "Holiday Screen_1",
-    "Holiday Screen_2",
+    "Holiday Screen_3",
     "Holiday Detail Screen",
     "Others",
     "Others Detail Screen",
     "Add New Event Screen",
     "Add New Event Screen_1",
     "Home Screen",
-    "Holiday Detail Screen_1"
+    "Holiday Detail Screen_1",
+    "Holiday Screen_2",
+    "Holiday Detail Screen_2"
   ]
 }

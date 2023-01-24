@@ -65,7 +65,7 @@
                 Layout: =Layout.Vertical
                 ShowScrollbar: =false
                 TemplatePadding: =3
-                TemplateSize: =430
+                TemplateSize: =479
                 ZIndex: =2
 
                 Title2_1 As label:
@@ -106,12 +106,11 @@
                     Text: ="Posted @ " & ThisItem.Created
                     Width: =475
                     X: =159
-                    Y: =398
+                    Y: =425
                     ZIndex: =3
 
                 Label1 As label:
                     Color: =RGBA(255, 255, 255, 1)
-                    Font: =Font.Georgia
                     FontWeight: =FontWeight.Bold
                     Height: =52
                     OnSelect: =Select(Parent)
@@ -132,7 +131,7 @@
                     Text: ="View Photos"
                     Width: =280
                     X: =170
-                    Y: =328
+                    Y: =355
                     ZIndex: =5
 
                 Button6_7 As button:
