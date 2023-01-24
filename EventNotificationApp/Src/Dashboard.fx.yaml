@@ -57,7 +57,7 @@ Dashboard As screen:
                 Image: ='bg-3'
                 ImagePosition: =ImagePosition.Fill
                 Width: =640
-                ZIndex: =2
+                ZIndex: =1
 
             Group5_1 As group:
                 Height: =5
@@ -384,7 +384,7 @@ Dashboard As screen:
                     Width: =288
                     X: =332
                     Y: =433
-                    ZIndex: =1
+                    ZIndex: =2
 
                 Button2_3 As button:
                     BorderStyle: =BorderStyle.None
