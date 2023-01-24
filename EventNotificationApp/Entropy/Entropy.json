@@ -368,7 +368,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/24/2023 09:55:57",
+  "HeaderLastSavedDateTimeUTC": "01/24/2023 10:21:50",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0f46a403-f202-4513-93ae-c228012354ae": "\"/providers/microsoft.powerapps/apis/shared_powerappsnotificationv2/connections/shared-powerappsnoti-99b4a542-be10-4ae7-9c19-791572459ce0\"",
@@ -425,6 +425,7 @@
     "CustomGallerySample": 3,
     "DropDownSample": 6,
     "Event and Notice": 4,
+    "occurances": 7,
     "Office365Users": 1,
     "PowerAppsNotificationV2": 0,
     "Security Control": 2
@@ -1255,7 +1256,7 @@
       "typedDataCard": 22
     },
     "DeserializationLoadTime": 10.088676,
-    "ErrorCount": 4
+    "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

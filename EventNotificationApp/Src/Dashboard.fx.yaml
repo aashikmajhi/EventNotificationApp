@@ -1,5 +1,5 @@
 Dashboard As screen:
-    OnVisible: =
+    OnVisible: =Collect(occurances,'Event and Notice');
 
     Container1 As groupContainer.manualLayoutContainer:
         Height: =1136
@@ -57,7 +57,7 @@ Dashboard As screen:
                 Image: ='bg-3'
                 ImagePosition: =ImagePosition.Fill
                 Width: =640
-                ZIndex: =1
+                ZIndex: =2
 
             Group5_1 As group:
                 Height: =5
@@ -82,7 +82,7 @@ Dashboard As screen:
                     Width: =288
                     X: =328
                     Y: =160
-                    ZIndex: =6
+                    ZIndex: =7
 
                 Button2_1 As button:
                     BorderStyle: =BorderStyle.None
@@ -101,7 +101,7 @@ Dashboard As screen:
                     Width: =280
                     X: =332
                     Y: =165
-                    ZIndex: =7
+                    ZIndex: =8
 
                 Button5_3 As button:
                     BorderStyle: =BorderStyle.None
@@ -116,7 +116,7 @@ Dashboard As screen:
                     Width: =280
                     X: =332
                     Y: =313
-                    ZIndex: =8
+                    ZIndex: =9
 
                 Button5_2 As button:
                     BorderStyle: =BorderStyle.None
@@ -131,11 +131,11 @@ Dashboard As screen:
                     RadiusTopLeft: =45
                     RadiusTopRight: =45
                     Size: =25
-                    Text: =CountRows(Filter('Event and Notice','Event Types'.Value="Event"))
+                    Text: =CountRows(Filter(occurances,'Event Types'.Value="Event"))
                     Width: =50
                     X: =358
                     Y: =196
-                    ZIndex: =9
+                    ZIndex: =10
 
             Group5_2 As group:
                 Height: =5
@@ -163,7 +163,7 @@ Dashboard As screen:
                     Width: =288
                     X: =18
                     Y: =438
-                    ZIndex: =10
+                    ZIndex: =11
 
                 Button2_2 As button:
                     BorderStyle: =BorderStyle.None
@@ -185,7 +185,7 @@ Dashboard As screen:
                     Width: =280
                     X: =22
                     Y: =443
-                    ZIndex: =11
+                    ZIndex: =12
 
                 Button5_5 As button:
                     BorderStyle: =BorderStyle.None
@@ -203,7 +203,7 @@ Dashboard As screen:
                     Width: =280
                     X: =22
                     Y: =591
-                    ZIndex: =12
+                    ZIndex: =13
 
                 Button5_4 As button:
                     BorderStyle: =BorderStyle.None
@@ -221,11 +221,11 @@ Dashboard As screen:
                     RadiusTopLeft: =45
                     RadiusTopRight: =45
                     Size: =25
-                    Text: =CountRows(Filter('Event and Notice','Event Types'.Value="Holiday"))
+                    Text: =CountRows(Filter(occurances,'Event Types'.Value="Holiday"))
                     Width: =50
                     X: =48
                     Y: =474
-                    ZIndex: =13
+                    ZIndex: =14
 
             Group5 As group:
                 Height: =5
@@ -250,7 +250,7 @@ Dashboard As screen:
                     Width: =288
                     X: =16
                     Y: =160
-                    ZIndex: =2
+                    ZIndex: =3
 
                 Button2 As button:
                     BorderColor: =ColorValue("White")
@@ -269,7 +269,7 @@ Dashboard As screen:
                     Width: =280
                     X: =21
                     Y: =165
-                    ZIndex: =3
+                    ZIndex: =4
 
                 Button5 As button:
                     BorderStyle: =BorderStyle.None
@@ -283,7 +283,7 @@ Dashboard As screen:
                     Width: =280
                     X: =21
                     Y: =313
-                    ZIndex: =4
+                    ZIndex: =5
 
                 Button5_1 As button:
                     BorderStyle: =BorderStyle.None
@@ -297,11 +297,12 @@ Dashboard As screen:
                     RadiusTopLeft: =45
                     RadiusTopRight: =45
                     Size: =25
-                    Text: =CountRows(Filter('Event and Notice','Event Types'.Value="Event"))
+                    Text: |
+                        =CountRows(Filter(occurances,'Event Types'.Value="Event"))
                     Width: =50
                     X: =47
                     Y: =196
-                    ZIndex: =5
+                    ZIndex: =6
 
             Group5_4 As group:
                 Height: =5
@@ -339,6 +340,7 @@ Dashboard As screen:
                     Height: =136
                     HoverFill: =ColorValue("Green")
                     OnSelect: =Navigate('Add New Event Screen')
+                    PressedColor: =Self.Color
                     PressedFill: =Self.Fill
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
@@ -363,7 +365,10 @@ Dashboard As screen:
                     BorderThickness: =0
                     Fill: =RGBA(241, 244, 249, 1)
                     Height: =250
-                    OnSelect: =Navigate(Others)
+                    HoverFill: =ColorFade(RGBA(9,153,156,100), -20%)
+                    OnSelect: |-
+                        =Navigate(Others);
+                        Set(ev,occurances)-1
                     PressedFill: =Self.Fill
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
@@ -374,14 +379,15 @@ Dashboard As screen:
                     Width: =288
                     X: =332
                     Y: =433
-                    ZIndex: =14
+                    ZIndex: =1
 
                 Button2_3 As button:
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =0
                     Fill: =RGBA(7, 153, 185, 1)
                     Height: =240
-                    HoverColor: =RGBA(9,153,156,100)
+                    HoverBorderColor: =ColorFade(RGBA(9,153,156,100), -20%)
+                    HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =ColorFade(RGBA(9,153,156,100), -20%)
                     OnSelect: =Navigate(Others)
                     PressedFill: =Self.Fill
@@ -401,8 +407,10 @@ Dashboard As screen:
                     DisplayMode: =DisplayMode.View
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
+                    HoverColor: =ColorFade(RGBA(9,153,156,100), -20%)
                     HoverFill: =
                     OnSelect: =Navigate(Others)
+                    PressedColor: =ColorFade(RGBA(9,153,156,100), -20%)
                     PressedFill: =Self.Fill
                     Size: =25
                     Text: ="Others"
@@ -425,7 +433,7 @@ Dashboard As screen:
                     RadiusTopRight: =45
                     Size: =25
                     Text: |
-                        =CountRows(Filter('Event and Notice','Event Types'.Value="Others"))
+                        =CountRows(Filter(occurances,'Event Types'.Value="Others"))
                     Width: =50
                     X: =362
                     Y: =469
