@@ -13,7 +13,7 @@ App As appinfo:
                     Admin.Email = varUser.Email
                 )
             )
-        ) || Set( isUserAdminSPList,Email="naresh.dhami@astral.com.np" );
+        ) || Set( isUserAdminSPList,Email="sumit.manandhar@astral.com.np" );
         
     StartScreen: ='Splash Screen'
 

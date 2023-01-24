@@ -324,7 +324,9 @@ Dashboard As screen:
                     RadiusTopRight: =30
                     Size: =24
                     Text: =""
-                    Visible: =varUser.Email="naresh.dhami@astral.com.np"
+                    Visible: |-
+                        =//isUserAdminSPList
+                        varUser.Email="naresh.dhami@astral.com.np"
                     Width: =587
                     X: =25
                     Y: =732
@@ -348,6 +350,9 @@ Dashboard As screen:
                     RadiusTopRight: =30
                     Size: =35
                     Text: ="Add"
+                    Visible: |-
+                        =//isUserAdminSPList
+                        varUser.Email="naresh.dhami@astral.com.np"
                     Width: =579
                     X: =30
                     Y: =735
@@ -361,9 +366,9 @@ Dashboard As screen:
                 ZIndex: =24
 
                 Button2_7 As button:
-                    BorderStyle: =BorderStyle.None
                     BorderThickness: =0
-                    Fill: =RGBA(241, 244, 249, 1)
+                    DisabledFill: =RGBA(255, 255, 255, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
                     Height: =250
                     HoverFill: =ColorFade(RGBA(9,153,156,100), -20%)
                     OnSelect: |-
@@ -384,13 +389,14 @@ Dashboard As screen:
                 Button2_3 As button:
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =0
-                    Fill: =RGBA(7, 153, 185, 1)
+                    Fill: =RGBA(15, 148, 153, 0.98)
                     Height: =240
                     HoverBorderColor: =ColorFade(RGBA(9,153,156,100), -20%)
                     HoverColor: =RGBA(0, 0, 0, 0)
                     HoverFill: =ColorFade(RGBA(9,153,156,100), -20%)
                     OnSelect: =Navigate(Others)
-                    PressedFill: =Self.Fill
+                    PressedColor: =ColorFade(RGBA(9,153,156,100),-10%)
+                    PressedFill: =ColorFade(RGBA(9,153,156,100), -20%)
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
@@ -407,7 +413,7 @@ Dashboard As screen:
                     DisplayMode: =DisplayMode.View
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
-                    HoverColor: =ColorFade(RGBA(9,153,156,100), -20%)
+                    HoverColor: =Self.Fill
                     HoverFill: =
                     OnSelect: =Navigate(Others)
                     PressedColor: =ColorFade(RGBA(9,153,156,100), -20%)
