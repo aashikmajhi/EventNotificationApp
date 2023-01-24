@@ -368,13 +368,13 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "01/24/2023 07:16:46",
+  "HeaderLastSavedDateTimeUTC": "01/24/2023 08:54:39",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
+    "0f46a403-f202-4513-93ae-c228012354ae": "\"/providers/microsoft.powerapps/apis/shared_powerappsnotificationv2/connections/shared-powerappsnoti-99b4a542-be10-4ae7-9c19-791572459ce0\"",
     "8b8ad9e3-553e-441e-9969-49c13f77fa24": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/072a7fa6c6714e29b6bec794f28596cd\"",
     "9ca85e32-e581-4eba-b83c-372482ac12dc": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/235b20766fd44c0e9efcc34357395801\"",
-    "c2594bea-0e56-479d-a55c-17cdfcbf2255": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/790a6f34bc9b4f3fa1c477f566032e55\"",
-    "f7d4f669-0f30-4d1e-8d74-99aa37a4c0bc": "\"/providers/microsoft.powerapps/apis/shared_powerappsnotificationv2/connections/shared-powerappsnoti-99b4a542-be10-4ae7-9c19-791572459ce0\""
+    "c2594bea-0e56-479d-a55c-17cdfcbf2255": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/790a6f34bc9b4f3fa1c477f566032e55\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -1089,7 +1089,7 @@
     "Image7_2": 64,
     "Image7_3": 107,
     "Image7_4": 163,
-    "Image7_5": 8,
+    "Image7_5": 7,
     "Image7_6": 121,
     "Image7_7": 295,
     "Image7_8": 78,
@@ -1138,7 +1138,7 @@
     "Label4_1": 247,
     "Label4_3": 339,
     "Label5": 245,
-    "Label6": 7,
+    "Label6": 8,
     "Label7": 74,
     "Label7_1": 116,
     "Label7_2": 173,
@@ -1255,7 +1255,7 @@
       "typedDataCard": 22
     },
     "DeserializationLoadTime": 10.088676,
-    "ErrorCount": 6
+    "ErrorCount": 4
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

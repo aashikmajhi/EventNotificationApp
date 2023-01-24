@@ -23,11 +23,12 @@ Dashboard As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 Font: =Font.Verdana
                 FontWeight: =FontWeight.Bold
-                Height: =132
+                Height: =145
                 Size: =19
                 Text: ="Hey! " & Office365Users.MyProfile().GivenName & Char(13) & If(Hour(Now())<12, "Good morning, ", Hour(Now())<17, "Good afternoon, ", "Good evening, ") & " Welcome Back"
                 Width: =339
-                X: =114
+                X: =61
+                Y: =5
                 ZIndex: =1
 
             Image7_5 As image:

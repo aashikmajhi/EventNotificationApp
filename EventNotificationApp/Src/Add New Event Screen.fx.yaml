@@ -338,7 +338,6 @@
             =SubmitForm(Form1);
             ResetForm(Form1);
             Navigate(Dashboard);
-            PowerAppsNotificationV2.SendPushNotificationV2("PowerApps","Astral Event Notification App",Office365Users.UserProfile(Email),"Hello!",true,{});
         Size: =24
         Text: ="Post"
         Width: =280
