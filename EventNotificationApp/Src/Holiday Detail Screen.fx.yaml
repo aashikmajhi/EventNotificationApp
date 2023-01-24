@@ -98,7 +98,7 @@
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =25
-                        Text: =Gallery3.Selected.'Event Date'
+                        Text: =Gallery3_3.Selected.'Event Date'
                         Width: =580
                         X: =28
                         Y: =16
@@ -127,7 +127,7 @@
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =21
-                        Text: =Gallery3.Selected.'Event Description'
+                        Text: =Gallery3_3.Selected.'Event Description'
                         Width: =Parent.Width - 60
                         X: =28
                         Y: =28

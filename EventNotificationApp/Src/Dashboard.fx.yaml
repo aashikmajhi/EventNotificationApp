@@ -71,7 +71,7 @@ Dashboard As screen:
                     BorderThickness: =0
                     Fill: =RGBA(241, 244, 249, 1)
                     Height: =250
-                    OnSelect: =Navigate('Event Screen')
+                    OnSelect: =Navigate('Event Screen_1')
                     PressedFill: =Self.Fill
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
@@ -90,7 +90,7 @@ Dashboard As screen:
                     Fill: =RGBA(65, 152, 115, 1)
                     Height: =240
                     HoverFill: =ColorFade(RGBA(0, 130, 11, 0.87), -20%)
-                    OnSelect: =Navigate('Event Screen')
+                    OnSelect: =Navigate('Event Screen_1')
                     PressedFill: =Self.Fill
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
@@ -109,7 +109,7 @@ Dashboard As screen:
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =70
                     HoverFill: =
-                    OnSelect: =Navigate('Event Screen')
+                    OnSelect: =Navigate('Event Screen_1')
                     PressedFill: =Self.Fill
                     Size: =25
                     Text: ="Event"
@@ -124,7 +124,7 @@ Dashboard As screen:
                     Fill: =RGBA(82, 191, 144, 1)
                     Height: =50
                     HoverFill: =
-                    OnSelect: =Navigate('Event Screen')
+                    OnSelect: =Navigate('Event Screen_1')
                     PressedFill: =Self.Fill
                     RadiusBottomLeft: =45
                     RadiusBottomRight: =45
@@ -174,7 +174,7 @@ Dashboard As screen:
                     OnSelect: |-
                         =Set(varDate,DateValue(Month(Today()) & "/" & "1" & "/" & Year(Today())));
                         Set(varDays,DateAdd(varDate, -Weekday(varDate),Days));
-                        Navigate('Holiday Screen_2')
+                        Navigate('Holiday Screen_3')
                     PressedFill: =Self.Fill
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
