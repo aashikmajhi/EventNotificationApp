@@ -334,7 +334,7 @@
 
     Button1_2 As button:
         Height: =70
-        OnSelect: |-
+        OnSelect: |
             =SubmitForm(Form1);
             ResetForm(Form1);
             Navigate(Dashboard);
