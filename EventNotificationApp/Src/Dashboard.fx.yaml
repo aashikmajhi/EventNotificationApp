@@ -1,5 +1,5 @@
 Dashboard As screen:
-    OnVisible: =Collect(occurances,'Event and Notice');
+    OnVisible: =//Collect(occurances,Filter('Event and Notice','Event Types'.Value))
 
     Container1 As groupContainer.manualLayoutContainer:
         Height: =1136
@@ -131,7 +131,7 @@ Dashboard As screen:
                     RadiusTopLeft: =45
                     RadiusTopRight: =45
                     Size: =25
-                    Text: =CountRows(Filter(occurances,'Event Types'.Value="Event"))
+                    Text: =CountRows(Filter('Event and Notice','Event Types'.Value="Event"))
                     Width: =50
                     X: =358
                     Y: =196
@@ -209,7 +209,7 @@ Dashboard As screen:
                     RadiusTopLeft: =45
                     RadiusTopRight: =45
                     Size: =25
-                    Text: =CountRows(Filter(occurances,'Event Types'.Value="Holiday"))
+                    Text: =CountRows(Filter('Event and Notice','Event Types'.Value="Holiday"))
                     Width: =50
                     X: =48
                     Y: =474
@@ -286,7 +286,7 @@ Dashboard As screen:
                     RadiusTopRight: =45
                     Size: =25
                     Text: |
-                        =CountRows(Filter(occurances,'Event Types'.Value="Event"))
+                        =CountRows(Filter('Event and Notice','Event Types'.Value="Notice"))
                     Width: =50
                     X: =47
                     Y: =196
@@ -365,9 +365,7 @@ Dashboard As screen:
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =250
                     HoverFill: =ColorFade(RGBA(9,153,156,100), -20%)
-                    OnSelect: |-
-                        =Navigate(Others);
-                        Set(ev,occurances)-1
+                    OnSelect: =Navigate(Others);
                     PressedFill: =Self.Fill
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
@@ -433,7 +431,7 @@ Dashboard As screen:
                     RadiusTopRight: =45
                     Size: =25
                     Text: |
-                        =CountRows(Filter(occurances,'Event Types'.Value="Others"))
+                        =CountRows(Filter('Event and Notice','Event Types'.Value="Others"))
                     Width: =50
                     X: =362
                     Y: =469
