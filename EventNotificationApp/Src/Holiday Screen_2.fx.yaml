@@ -73,7 +73,7 @@
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Bold
                     Height: =Self.Size * 1.8
-                    Size: =19
+                    Size: =18
                     Text: =ThisItem.Title
                     VerticalAlign: =VerticalAlign.Top
                     Width: =475
@@ -84,7 +84,7 @@
                     BorderColor: =White
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =3
-                    Fill: =RGBA(194, 28, 19, 0.8)
+                    Fill: =RGBA(168, 0, 0, 100)
                     Height: =129
                     HoverFill: =RGBA(0, 0, 0, 0)
                     PaddingBottom: =0
