@@ -86,7 +86,7 @@
                     Color: =RGBA(230, 230, 230, 1)
                     DisplayMode: =DisplayMode.View
                     Font: =Font.Georgia
-                    Height: =116
+                    Height: =163
                     OnSelect: =Select(Parent)
                     PaddingLeft: =10
                     PaddingRight: =0
