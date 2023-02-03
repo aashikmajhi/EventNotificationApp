@@ -83,6 +83,7 @@
                     ZIndex: =1
 
                 Label7_5 As label:
+                    AutoHeight: =true
                     Color: =RGBA(230, 230, 230, 1)
                     DisplayMode: =DisplayMode.View
                     Font: =Font.Georgia
