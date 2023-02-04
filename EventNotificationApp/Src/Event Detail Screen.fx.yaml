@@ -1,5 +1,5 @@
 "'Event Detail Screen' As screen":
-    BackgroundImage: =eventdetailbg
+    BackgroundImage: =bgg
 
     Container1_10 As groupContainer.manualLayoutContainer:
         Height: =1136
@@ -10,7 +10,7 @@
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
             BorderThickness: =10
-            Fill: =RGBA(28, 99, 68, 0.57)
+            Fill: =RGBA(9, 85, 237, 0.44)
             Height: =150
             PaddingBottom: =2
             PaddingLeft: =2
@@ -78,7 +78,7 @@
                     ZIndex: =1
 
                     Button7 As button:
-                        Fill: =RGBA(246, 88, 16, 0.71)
+                        Fill: =RGBA(19, 77, 212, 0.71)
                         Height: =70
                         HoverFill: =ColorFade(Self.Fill,-20%)
                         RadiusBottomLeft: =35

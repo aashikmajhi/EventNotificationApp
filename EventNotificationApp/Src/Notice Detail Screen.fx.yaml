@@ -1,4 +1,5 @@
 "'Notice Detail Screen' As screen":
+    BackgroundImage: =bgg
 
     Container1_9 As groupContainer.manualLayoutContainer:
         Height: =1136
@@ -9,7 +10,7 @@
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
             BorderThickness: =10
-            Fill: =RGBA(32, 21, 191, 0.9)
+            Fill: =RGBA(9, 85, 237, 0.44)
             Height: =150
             PaddingBottom: =2
             PaddingLeft: =2
@@ -62,7 +63,7 @@
             Image8_8 As image:
                 DisplayMode: =DisplayMode.View
                 Height: =982
-                Image: ='notice detail ng'
+                Image: =bgg
                 ImagePosition: =ImagePosition.Fill
                 Width: =640
                 ZIndex: =1

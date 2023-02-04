@@ -1,5 +1,5 @@
 Others As screen:
-    BackgroundImage: =general
+    BackgroundImage: =bgg
 
     Container1_4 As groupContainer.manualLayoutContainer:
         Height: =Parent.Height
@@ -10,7 +10,7 @@ Others As screen:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
             BorderThickness: =10
-            Fill: =RGBA(7, 153, 185, 1)
+            Fill: =RGBA(9, 85, 237, 0.44)
             Height: =150
             PaddingBottom: =2
             PaddingLeft: =2

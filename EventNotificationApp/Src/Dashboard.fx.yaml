@@ -10,7 +10,7 @@ Dashboard As screen:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
             BorderThickness: =10
-            Fill: =RGBA(50, 86, 160, 1)
+            Fill: =RGBA(9, 85, 237, 0.8)
             Height: =150
             PaddingBottom: =2
             PaddingLeft: =2
@@ -327,7 +327,6 @@ Dashboard As screen:
                     BorderColor: =ColorValue("White")
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =0
-                    Fill: =RGBA(29, 104, 184, 1)
                     Font: =Font.'Courier New'
                     FontWeight: =FontWeight.Bold
                     Height: =136
@@ -374,8 +373,8 @@ Dashboard As screen:
                     Size: =24
                     Text: =""
                     Width: =288
-                    X: =332
-                    Y: =433
+                    X: =328
+                    Y: =438
                     ZIndex: =2
 
                 Button2_3 As button:
@@ -396,8 +395,8 @@ Dashboard As screen:
                     Size: =25
                     Text: =""
                     Width: =280
-                    X: =336
-                    Y: =438
+                    X: =332
+                    Y: =443
                     ZIndex: =15
 
                 Button5_7 As button:
@@ -414,7 +413,7 @@ Dashboard As screen:
                     Text: ="Others"
                     Width: =280
                     X: =336
-                    Y: =586
+                    Y: =599
                     ZIndex: =16
 
                 Button5_6 As button:
@@ -434,6 +433,6 @@ Dashboard As screen:
                         =CountRows(Filter('Event and Notice','Event Types'.Value="Others"))
                     Width: =50
                     X: =362
-                    Y: =469
+                    Y: =482
                     ZIndex: =17
 

@@ -1,5 +1,5 @@
 "'Holiday Screen' As screen":
-    BackgroundImage: =general
+    BackgroundImage: =bgg
 
     Container1_3 As groupContainer.manualLayoutContainer:
         Height: =1136
@@ -10,7 +10,7 @@
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
             BorderThickness: =10
-            Fill: =RGBA(244, 147, 31, 1)
+            Fill: =RGBA(9, 85, 237, 0.44)
             Height: =150
             PaddingBottom: =2
             PaddingLeft: =2
@@ -126,8 +126,9 @@
 
                 Label17 As label:
                     Align: =Align.Center
-                    BorderColor: =RGBA(204, 204, 204, 1)
+                    BorderColor: =RGBA(153, 207, 236, 1)
                     BorderThickness: =2
+                    Color: =RGBA(184, 0, 0, 1)
                     Font: =Font.'Lato Black'
                     FontWeight: =FontWeight.Bold
                     Height: =99

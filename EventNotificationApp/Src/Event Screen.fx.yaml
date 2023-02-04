@@ -1,5 +1,5 @@
 "'Event Screen' As screen":
-    BackgroundImage: =eventdetailbg
+    BackgroundImage: =bgg
 
     Container1_2 As groupContainer.manualLayoutContainer:
         Height: =1136
@@ -10,7 +10,7 @@
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
             BorderThickness: =10
-            Fill: =RGBA(12, 97, 29, 1)
+            Fill: =RGBA(9, 85, 237, 0.44)
             Height: =150
             PaddingBottom: =2
             PaddingLeft: =2
