@@ -28,7 +28,7 @@
     "Button5_3": 130,
     "Button5_4": 136,
     "Button5_5": 138,
-    "Button5_6": 135,
+    "Button5_6": 364,
     "Button5_7": 137,
     "Button6": 55,
     "Button6_1": 95,
@@ -191,11 +191,11 @@
     "galWeekDays": 242,
     "galWeekDays_2": 256,
     "galWeekDays_3": 331,
+    "Group1": 365,
     "Group1_1": 347,
     "Group5": 141,
     "Group5_1": 144,
     "Group5_2": 143,
-    "Group5_3": 142,
     "Group5_4": 145,
     "Holiday Detail Screen": 272,
     "Holiday Detail Screen_1": 228,
@@ -366,7 +366,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/04/2023 14:57:51",
+  "HeaderLastSavedDateTimeUTC": "02/04/2023 15:10:54",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0f46a403-f202-4513-93ae-c228012354ae": "\"/providers/microsoft.powerapps/apis/shared_powerappsnotificationv2/connections/shared-powerappsnoti-99b4a542-be10-4ae7-9c19-791572459ce0\"",
@@ -420,6 +420,12 @@
     "Security Control": 2
   },
   "OrderGroupControls": {
+    "Group1": {
+      "Button2_3": 0,
+      "Button2_7": 3,
+      "Button5_6": 2,
+      "Button5_7": 1
+    },
     "Group1_1": {
       "galDate_3": 0,
       "galWeekDays_3": 1,
@@ -443,12 +449,6 @@
       "Button2_6": 3,
       "Button5_4": 0,
       "Button5_5": 1
-    },
-    "Group5_3": {
-      "Button2_3": 2,
-      "Button2_7": 3,
-      "Button5_6": 0,
-      "Button5_7": 1
     },
     "Group5_4": {
       "Button2_8": 0,
@@ -661,11 +661,11 @@
     "galWeekDays": {},
     "galWeekDays_2": {},
     "galWeekDays_3": {},
+    "Group1": {},
     "Group1_1": {},
     "Group5": {},
     "Group5_1": {},
     "Group5_2": {},
-    "Group5_3": {},
     "Group5_4": {},
     "Holiday Detail Screen": {},
     "Holiday Detail Screen_1": {},
@@ -1023,11 +1023,11 @@
     "galWeekDays": 261,
     "galWeekDays_2": 275,
     "galWeekDays_3": 322,
+    "Group1": 24,
     "Group1_1": 319,
     "Group5": 12,
     "Group5_1": 14,
     "Group5_2": 22,
-    "Group5_3": 24,
     "Group5_4": 32,
     "Holiday Detail Screen": 0,
     "Holiday Detail Screen_1": 0,
@@ -1217,7 +1217,7 @@
     "AnalysisLoadTime": 2.361226,
     "ControlCount": {
       "4850d41aa11f4ec5875a40f421f42046": 1,
-      "button": 34,
+      "button": 36,
       "combobox": 3,
       "datepicker": 2,
       "form": 2,

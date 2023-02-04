@@ -132,6 +132,7 @@ Dashboard As screen:
                     RadiusTopRight: =45
                     Size: =25
                     Text: =CountRows(Filter('Event and Notice','Event Types'.Value="Event"))
+                    Visible: =If(newEvent,true,false)
                     Width: =50
                     X: =358
                     Y: =196
@@ -210,6 +211,7 @@ Dashboard As screen:
                     RadiusTopRight: =45
                     Size: =25
                     Text: =CountRows(Filter('Event and Notice','Event Types'.Value="Holiday"))
+                    Visible: =If(newEvent,true,false)
                     Width: =50
                     X: =48
                     Y: =474
@@ -246,7 +248,7 @@ Dashboard As screen:
                     BorderThickness: =0
                     Fill: =RGBA(21, 101, 192, 0.65)
                     Height: =240
-                    OnSelect: =Navigate('Notice Screen')
+                    OnSelect: =Navigate('Notice Screen');
                     PressedFill: =Self.Fill
                     RadiusBottomLeft: =30
                     RadiusBottomRight: =30
@@ -287,76 +289,18 @@ Dashboard As screen:
                     Size: =25
                     Text: |
                         =CountRows(Filter('Event and Notice','Event Types'.Value="Notice"))
+                    Visible: =If(newEvent,true,false)
                     Width: =50
                     X: =47
                     Y: =196
                     ZIndex: =6
 
-            Group5_4 As group:
+            Group1 As group:
                 Height: =5
                 Width: =5
-                X: =23
-                Y: =-120
-                ZIndex: =22
-
-                Button2_9 As button:
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =0
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =142
-                    OnSelect: |
-                        =Set(varDate,DateValue(Month(Today()) & "/" & "1" & "/" & Year(Today())));
-                        Set(varDays,DateAdd(varDate, -Weekday(varDate),Days));
-                        Navigate('Add New Event Screen');
-                    PressedFill: =Self.Fill
-                    RadiusBottomLeft: =30
-                    RadiusBottomRight: =30
-                    RadiusTopLeft: =30
-                    RadiusTopRight: =30
-                    Size: =24
-                    Text: =""
-                    Visible: |-
-                        =//isUserAdminSPList
-                        varUser.Email="naresh.dhami@astral.com.np"
-                    Width: =587
-                    X: =25
-                    Y: =732
-                    ZIndex: =18
-
-                Button2_8 As button:
-                    BorderColor: =ColorValue("White")
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =0
-                    Font: =Font.'Courier New'
-                    FontWeight: =FontWeight.Bold
-                    Height: =136
-                    HoverFill: =ColorValue("Green")
-                    OnSelect: |
-                        =Set(varDate,DateValue(Month(Today()) & "/" & "1" & "/" & Year(Today())));
-                        Set(varDays,DateAdd(varDate, -Weekday(varDate),Days));
-                        Navigate('Add New Event Screen');
-                    PressedColor: =Self.Color
-                    PressedFill: =Self.Fill
-                    RadiusBottomLeft: =30
-                    RadiusBottomRight: =30
-                    RadiusTopLeft: =30
-                    RadiusTopRight: =30
-                    Size: =35
-                    Text: ="Add"
-                    Visible: |-
-                        =//isUserAdminSPList
-                        varUser.Email="naresh.dhami@astral.com.np"
-                    Width: =579
-                    X: =30
-                    Y: =735
-                    ZIndex: =19
-
-            Group5_3 As group:
-                Height: =5
-                Width: =5
-                X: =23
-                Y: =-120
-                ZIndex: =24
+                X: =40
+                Y: =40
+                ZIndex: =21
 
                 Button2_7 As button:
                     BorderThickness: =0
@@ -419,20 +363,79 @@ Dashboard As screen:
                 Button5_6 As button:
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =0
-                    Fill: =RGBA(106, 182, 198, 1)
+                    Fill: =RGBA(248, 190, 120, 1)
                     Height: =50
                     HoverFill: =
-                    OnSelect: =Navigate(Others)
+                    OnSelect: =Navigate('Holiday Screen')
                     PressedFill: =Self.Fill
                     RadiusBottomLeft: =45
                     RadiusBottomRight: =45
                     RadiusTopLeft: =45
                     RadiusTopRight: =45
                     Size: =25
-                    Text: |
-                        =CountRows(Filter('Event and Notice','Event Types'.Value="Others"))
+                    Text: =CountRows(Filter('Event and Notice','Event Types'.Value="Others"))
+                    Visible: =If(newEvent,true,false)
                     Width: =50
-                    X: =362
-                    Y: =482
-                    ZIndex: =17
+                    X: =358
+                    Y: =479
+                    ZIndex: =20
+
+            Group5_4 As group:
+                Height: =5
+                Width: =5
+                X: =23
+                Y: =-120
+                ZIndex: =22
+
+                Button2_9 As button:
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =142
+                    OnSelect: |
+                        =Set(varDate,DateValue(Month(Today()) & "/" & "1" & "/" & Year(Today())));
+                        Set(varDays,DateAdd(varDate, -Weekday(varDate),Days));
+                        Navigate('Add New Event Screen');
+                    PressedFill: =Self.Fill
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Size: =24
+                    Text: =""
+                    Visible: |-
+                        =//isUserAdminSPList
+                        varUser.Email="naresh.dhami@astral.com.np"
+                    Width: =587
+                    X: =25
+                    Y: =732
+                    ZIndex: =18
+
+                Button2_8 As button:
+                    BorderColor: =ColorValue("White")
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =0
+                    Font: =Font.'Courier New'
+                    FontWeight: =FontWeight.Bold
+                    Height: =136
+                    HoverFill: =ColorValue("Green")
+                    OnSelect: |
+                        =Set(varDate,DateValue(Month(Today()) & "/" & "1" & "/" & Year(Today())));
+                        Set(varDays,DateAdd(varDate, -Weekday(varDate),Days));
+                        Navigate('Add New Event Screen');
+                    PressedColor: =Self.Color
+                    PressedFill: =Self.Fill
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Size: =35
+                    Text: ="Add"
+                    Visible: |-
+                        =//isUserAdminSPList
+                        varUser.Email="naresh.dhami@astral.com.np"
+                    Width: =579
+                    X: =30
+                    Y: =735
+                    ZIndex: =19
 

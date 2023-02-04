@@ -341,6 +341,7 @@
             =SubmitForm(Form1);
             ResetForm(Form1);
             Navigate(Dashboard);
+            Set(newEvent,true)
         PressedColor: =Self.Color
         Size: =24
         Text: ="Post"
