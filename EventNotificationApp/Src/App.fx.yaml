@@ -5,7 +5,7 @@ App As appinfo:
             varUser,
             User()
         );
-        Set(newEvent,false);
+        
         Set(
             isUserAdminSPList,
             !IsBlank(
