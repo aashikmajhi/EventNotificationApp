@@ -35,7 +35,7 @@
                     Color: =RGBA(0, 18, 107, 1)
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Bold
-                    Height: =Self.Size * 1.8
+                    Height: =38
                     Size: =19
                     Text: =ThisItem.Title
                     VerticalAlign: =VerticalAlign.Top
@@ -47,13 +47,13 @@
                     Color: =RGBA(0, 16, 96, 1)
                     DisplayMode: =DisplayMode.View
                     Font: =Font.Georgia
-                    Height: =116
+                    Height: =105
                     Size: =17
                     Text: =ThisItem.'Event Description'
                     VerticalAlign: =VerticalAlign.Top
                     Width: =475
                     X: =145
-                    Y: =32
+                    Y: =42
                     ZIndex: =2
 
                 Label12 As label:

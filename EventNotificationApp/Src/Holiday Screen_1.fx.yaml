@@ -34,7 +34,7 @@
                     Color: =RGBA(0, 18, 107, 1)
                     DisplayMode: =DisplayMode.View
                     FontWeight: =FontWeight.Bold
-                    Height: =Self.Size * 1.8
+                    Height: =42
                     Size: =19
                     Text: =ThisItem.Title
                     VerticalAlign: =VerticalAlign.Top
@@ -52,7 +52,7 @@
                     VerticalAlign: =VerticalAlign.Top
                     Width: =475
                     X: =145
-                    Y: =32
+                    Y: =42
                     ZIndex: =2
 
                 Label12_1 As label:

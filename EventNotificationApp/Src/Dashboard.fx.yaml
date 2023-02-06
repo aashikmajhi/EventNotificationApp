@@ -469,7 +469,6 @@ Dashboard As screen:
         Button1 As button:
             BorderColor: =RGBA(204, 231, 246, 1)
             Color: =RGBA(39, 67, 125, 1)
-            DisplayMode: =DisplayMode.View
             Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.Verdana
             FontWeight: =FontWeight.Bold
