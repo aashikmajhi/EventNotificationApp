@@ -344,7 +344,7 @@
         OnSelect: |-
             =SubmitForm(Form1_1);
             ResetForm(Form1_1);
-            Navigate(Dashboard_P1);
+            Navigate(Dashboard);
         Size: =24
         Text: ="Post"
         Width: =280

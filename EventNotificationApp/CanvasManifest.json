@@ -114,8 +114,8 @@
   },
   "ScreenOrder": [
     "Splash Screen",
+    "Dashboard_Old",
     "Dashboard",
-    "Dashboard_P1",
     "Dashboard_2",
     "Notice Screen",
     "Notice Detail Screen",

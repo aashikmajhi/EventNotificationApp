@@ -16,7 +16,7 @@
             AutoStart: =true
             Duration: =11200
             Height: =70
-            OnTimerEnd: =Navigate(Dashboard,None)
+            OnTimerEnd: =Navigate(Dashboard_Old,None)
             Visible: =false
             Width: =280
             X: =182
