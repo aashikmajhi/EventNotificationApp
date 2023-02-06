@@ -358,7 +358,7 @@
         OnSelect: |-
             =SubmitForm(Form1);
             ResetForm(Form1);
-            Navigate(Dashboard);
+            Navigate(Dashboard_P1);
             Set(newEvent,true);
         PressedColor: =Self.Color
         Size: =24

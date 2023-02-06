@@ -98,7 +98,7 @@
     "Id": "efc138cc-1841-4d5e-be2d-33c34a3395ec",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "Astral+Event+Notification+App.msapp",
+    "Name": "Astral Event Notification App",
     "OriginatingVersion": "1.326"
   },
   "PublishInfo": {
@@ -115,6 +115,8 @@
   "ScreenOrder": [
     "Splash Screen",
     "Dashboard",
+    "Dashboard_P1",
+    "Dashboard_2",
     "Notice Screen",
     "Notice Detail Screen",
     "Event Screen",
@@ -131,6 +133,7 @@
     "Home Screen",
     "Holiday Detail Screen_1",
     "Holiday Screen_2",
-    "Holiday Detail Screen_2"
+    "Holiday Detail Screen_2",
+    "Splash Screen_1"
   ]
 }
