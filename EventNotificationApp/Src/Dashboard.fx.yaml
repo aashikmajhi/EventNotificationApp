@@ -9,51 +9,48 @@ Dashboard As screen:
         Container2 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderStyle: =BorderStyle.None
-            BorderThickness: =10
-            Fill: =RGBA(9, 85, 237, 0.8)
-            Height: =150
+            Height: =134
             PaddingBottom: =2
             PaddingLeft: =2
             PaddingRight: =2
             PaddingTop: =2
             Width: =640
+            Y: =112
             ZIndex: =6
 
             Label6 As label:
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(39, 67, 125, 1)
                 Font: =Font.Verdana
                 FontWeight: =FontWeight.Bold
-                Height: =145
+                Height: =138
                 Size: =19
                 Text: ="Hey! " & Office365Users.MyProfile().GivenName & Char(13) & If(Hour(Now())<12, "Good morning, ", Hour(Now())<17, "Good afternoon, ", "Good evening, ") & " Welcome Back"
-                Width: =339
-                X: =61
-                Y: =5
+                Width: =301
+                X: =2
+                Y: =1
                 ZIndex: =1
 
-            Image7_5 As image:
-                Height: =150
-                Image: =varUser.Image
-                RadiusBottomLeft: =95
-                RadiusBottomRight: =95
-                RadiusTopLeft: =95
-                RadiusTopRight: =95
-                Width: =150
-                X: =490
+            Image7 As image:
+                Height: =73
+                Image: ='icons8-add-reminder-500 (1)'
+                Visible: =If(newEvent,true)
+                Width: =110
+                X: =514
+                Y: =33
                 ZIndex: =2
 
         Container3 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(153, 153, 153, 1)
-            Height: =982
+            Height: =886
             Width: =640
-            Y: =150
+            Y: =246
             ZIndex: =15
 
             Image8 As image:
                 DisplayMode: =DisplayMode.View
                 Fill: =RGBA(9, 33, 98, 1)
-                Height: =982
+                Height: =886
                 Image: ='Background Contacts'
                 ImagePosition: =ImagePosition.Fill
                 Width: =640
@@ -83,7 +80,7 @@ Dashboard As screen:
                     Text: =""
                     Width: =288
                     X: =328
-                    Y: =160
+                    Y: =90
                     ZIndex: =7
 
                 Button2_1 As button:
@@ -104,7 +101,7 @@ Dashboard As screen:
                     Text: =""
                     Width: =280
                     X: =332
-                    Y: =165
+                    Y: =95
                     ZIndex: =8
 
                 Button5_3 As button:
@@ -121,7 +118,7 @@ Dashboard As screen:
                     Text: ="Event"
                     Width: =280
                     X: =332
-                    Y: =313
+                    Y: =243
                     ZIndex: =9
 
                 Button5_2 As button:
@@ -142,7 +139,7 @@ Dashboard As screen:
                     Text: =CountRows(Filter('Event and Notice','Event Types'.Value="Event"))
                     Width: =50
                     X: =358
-                    Y: =196
+                    Y: =126
                     ZIndex: =10
 
             Group5_2 As group:
@@ -169,7 +166,7 @@ Dashboard As screen:
                     Text: =""
                     Width: =288
                     X: =18
-                    Y: =438
+                    Y: =368
                     ZIndex: =11
 
                 Button2_2 As button:
@@ -190,7 +187,7 @@ Dashboard As screen:
                     Text: =""
                     Width: =280
                     X: =22
-                    Y: =443
+                    Y: =373
                     ZIndex: =12
 
                 Button5_5 As button:
@@ -207,7 +204,7 @@ Dashboard As screen:
                     Text: ="Holiday"
                     Width: =280
                     X: =22
-                    Y: =591
+                    Y: =521
                     ZIndex: =13
 
                 Button5_4 As button:
@@ -228,7 +225,7 @@ Dashboard As screen:
                     Text: =CountRows(Filter('Event and Notice','Event Types'.Value="Holiday"))
                     Width: =50
                     X: =48
-                    Y: =474
+                    Y: =404
                     ZIndex: =14
 
             Group5 As group:
@@ -256,7 +253,7 @@ Dashboard As screen:
                     Text: =""
                     Width: =288
                     X: =16
-                    Y: =160
+                    Y: =90
                     ZIndex: =3
 
                 Button2 As button:
@@ -278,7 +275,7 @@ Dashboard As screen:
                     Text: =""
                     Width: =280
                     X: =21
-                    Y: =165
+                    Y: =95
                     ZIndex: =4
 
                 Button5 As button:
@@ -294,7 +291,7 @@ Dashboard As screen:
                     Text: ="Notice"
                     Width: =280
                     X: =21
-                    Y: =313
+                    Y: =243
                     ZIndex: =5
 
                 Button5_1 As button:
@@ -315,17 +312,8 @@ Dashboard As screen:
                     Text: =CountRows(Filter('Event and Notice','Event Types'.Value="Notice"))
                     Width: =50
                     X: =47
-                    Y: =196
+                    Y: =126
                     ZIndex: =6
-
-            Image7 As image:
-                Height: =115
-                Image: ='icons8-add-reminder-500 (1)'
-                Visible: =If(newEvent,true)
-                Width: =148
-                X: =444
-                Y: =26
-                ZIndex: =21
 
             Group1 As group:
                 Height: =5
@@ -352,7 +340,7 @@ Dashboard As screen:
                     Text: =""
                     Width: =288
                     X: =328
-                    Y: =438
+                    Y: =368
                     ZIndex: =2
 
                 Button2_3 As button:
@@ -376,7 +364,7 @@ Dashboard As screen:
                     Text: =""
                     Width: =280
                     X: =332
-                    Y: =443
+                    Y: =373
                     ZIndex: =15
 
                 Button5_7 As button:
@@ -395,7 +383,7 @@ Dashboard As screen:
                     Text: ="Others"
                     Width: =280
                     X: =336
-                    Y: =599
+                    Y: =529
                     ZIndex: =16
 
                 Button5_6 As button:
@@ -416,8 +404,8 @@ Dashboard As screen:
                     Text: =CountRows(Filter('Event and Notice','Event Types'.Value="Others"))
                     Width: =50
                     X: =358
-                    Y: =479
-                    ZIndex: =20
+                    Y: =409
+                    ZIndex: =19
 
             Group5_4 As group:
                 Height: =5
@@ -447,8 +435,8 @@ Dashboard As screen:
                         varUser.Email="naresh.dhami@astral.com.np"
                     Width: =587
                     X: =25
-                    Y: =732
-                    ZIndex: =18
+                    Y: =642
+                    ZIndex: =17
 
                 Button2_8 As button:
                     BorderColor: =ColorValue("White")
@@ -475,6 +463,24 @@ Dashboard As screen:
                         varUser.Email="naresh.dhami@astral.com.np"
                     Width: =579
                     X: =30
-                    Y: =735
-                    ZIndex: =19
+                    Y: =648
+                    ZIndex: =18
+
+        Button1 As button:
+            BorderColor: =RGBA(153, 207, 236, 1)
+            Color: =RGBA(39, 67, 125, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Bold
+            Height: =96
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =32
+            Text: ="Astral Event Notification"
+            Width: =610
+            X: =15
+            Y: =15
+            ZIndex: =16
 
