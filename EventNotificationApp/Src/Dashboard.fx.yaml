@@ -35,8 +35,7 @@ Dashboard As screen:
                 Size: =19
                 Text: ="Hey! " & Office365Users.MyProfile().GivenName & Char(13) & If(Hour(Now())<12, "Good morning, ", Hour(Now())<17, "Good afternoon, ", "Good evening, ") & " Welcome Back"
                 Width: =301
-                X: =2
-                Y: =1
+                X: =22
                 ZIndex: =1
 
             Image7 As image:
