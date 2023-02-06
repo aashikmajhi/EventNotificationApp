@@ -94,7 +94,8 @@
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
                         =Set(varItem,ThisItem);
-                        Navigate('Event Detail Screen')
+                        Navigate('Event Detail Screen');
+                        Set(newEvent,false)
                     PressedFill: =RGBA(0, 0, 0, 0)
                     Size: =24
                     Text: =""

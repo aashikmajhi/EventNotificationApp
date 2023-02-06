@@ -99,7 +99,8 @@ Others As screen:
                     HoverFill: =RGBA(0, 0, 0, 0)
                     OnSelect: |-
                         =Set(varItem,ThisItem);
-                        Navigate('Others Detail Screen')
+                        Navigate('Others Detail Screen');
+                        Set(newEvent,false)
                     PressedFill: =RGBA(0, 0, 0, 0)
                     Size: =24
                     Text: =""
