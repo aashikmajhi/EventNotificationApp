@@ -84,7 +84,7 @@ Dashboard As screen:
                 Button2_1 As button:
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =0
-                    Fill: =RGBA(28, 163, 236, 1)
+                    Fill: =RGBA(35, 137, 218, 1)
                     Height: =105
                     HoverFill: =ColorFade(RGBA(0, 130, 11, 0.87), -20%)
                     OnSelect: |-
@@ -170,7 +170,7 @@ Dashboard As screen:
                 Button2_2 As button:
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =0
-                    Fill: =RGBA(90, 188, 216, 1)
+                    Fill: =RGBA(28, 163, 236, 1)
                     Height: =96
                     HoverFill: =ColorFade(RGBA(237, 91, 0, 0.89), 0)
                     OnSelect: |-
@@ -260,7 +260,7 @@ Dashboard As screen:
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =0
                     DisplayMode: =
-                    Fill: =RGBA(35, 137, 218, 1)
+                    Fill: =RGBA(33, 126, 196, 1)
                     Height: =103
                     OnSelect: |-
                         =Set(newEvent,false);
@@ -443,6 +443,7 @@ Dashboard As screen:
                     BorderColor: =ColorValue("White")
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =0
+                    Fill: =RGBA(90, 188, 216, 1)
                     Font: =Font.'Courier New'
                     FontWeight: =FontWeight.Bold
                     Height: =103
