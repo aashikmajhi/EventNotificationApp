@@ -107,7 +107,7 @@
                 Size: =21
                 Text: ="Hey! " & Office365Users.MyProfile().GivenName
                 Width: =385
-                X: =71
+                X: =81
                 Y: =117
                 ZIndex: =2
 
@@ -117,8 +117,8 @@
                 Icon: =Icon.ArrowLeft
                 OnSelect: =Navigate(Dashboard)
                 Width: =50
-                X: =2
-                Y: =122
+                X: =12
+                Y: =125
                 ZIndex: =3
 
             Button1_13 As button:
