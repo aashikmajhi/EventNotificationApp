@@ -136,7 +136,7 @@
                 Icon: =Icon.ArrowLeft
                 OnSelect: =Navigate(Dashboard)
                 Width: =50
-                Y: =139
+                Y: =126
                 ZIndex: =3
 
             Button1_9 As button:
@@ -152,7 +152,7 @@
                 Size: =32
                 Text: ="Astral Event Notification"
                 Width: =610
-                X: =17
+                X: =15
                 Y: =14
                 ZIndex: =4
 
