@@ -111,7 +111,7 @@
                     PressedFill: =RGBA(0, 0, 0, 0)
                     Size: =24
                     Text: =""
-                    Width: =634
+                    Width: =640
                     ZIndex: =8
 
         Container2_15 As groupContainer.manualLayoutContainer:
