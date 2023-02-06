@@ -95,15 +95,15 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "6520621b-9fff-41a8-9d33-3ec098c18060",
-    "Id": "6520621b-9fff-41a8-9d33-3ec098c18060",
+    "Id": "efc138cc-1841-4d5e-be2d-33c34a3395ec",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "Astral Event Notification App",
+    "Name": "Astral+Event+Notification+App.msapp",
     "OriginatingVersion": "1.326"
   },
   "PublishInfo": {
     "AppName": "Astral Event Notification App",
-    "BackgroundColor": "rgba(219, 219, 219, 1)",
+    "BackgroundColor": "rgba(255, 255, 255, 1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "",
     "LogoFileName": "logo.jpg",
